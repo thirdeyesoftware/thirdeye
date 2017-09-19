@@ -1,0 +1,15 @@
+set ts=2
+set number
+set autoindent
+set textwidth=79
+set ffs=unix
+set ff=unix 
+set showmatch
+set noexpandtab
+set shiftwidth=2
+set backspace=2
+set ruler
+set laststatus=2
+set ignorecase
+set clipboard=unnamed
+syntax on
