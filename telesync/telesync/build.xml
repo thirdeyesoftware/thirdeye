@@ -1,0 +1,63 @@
+<project name="ocu" default="ocu.jar" basedir=".">
+
+	<property name="source.path" value="c:\projects\telesync"/>
+	<property name="temp.path" value="c:\projects\telesync\classes"/>
+	<property name="help.jar" value="c:\java\jh1.1.2\javahelp\lib\jhall.jar"/>
+
+	<property name="compile.classpath" value=".;${help.jar}"/>
+	<target name="all">
+		<mkdir dir="${temp.path}"/>
+		<javac classpath="${compile.classpath}"
+					 destdir="${temp.path}"
+					 includes="pippin/**, telesync/**">
+			<src path="${source.path}"/>
+		</javac>
+	</target>
+
+	<target name="ocu.jar">
+		<delete file="ocu.jar"/>
+		<mkdir dir="${temp.path}"/>
+
+
+		<javac classpath="${compile.classpath}"
+				destdir="${temp.path}"
+				includes="pippin/**, telesync/**">
+
+			<src path="${source.path}"/>
+
+		</javac>
+
+
+		<copy todir="${temp.path}/META-INF">
+			<fileset dir="${source.path}">
+				<include name="**/*.properties"/>
+			</fileset>
+		</copy>
+
+		<copy todir="${temp.path}">
+			<fileset dir="${source.path}">
+				<include name="**/*.gif"/>
+			</fileset>
+		</copy>
+
+
+		<jar jarfile="ocu.jar" basedir="${temp.path}"/>
+
+
+		<delete dir="${temp.path}"/>
+	</target>
+
+
+
+
+	<target name="source.jar">
+		<tstamp>
+			<format property="arch_stamp" pattern="yyMMddhh"/>
+		</tstamp>
+
+		<jar jarfile="ocu_${arch_stamp}.jar"
+				basedir="."
+				includes="pippin/**, telesync/**, *.properties, *.xml"/>
+	</target>
+
+</project>

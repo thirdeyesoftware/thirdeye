@@ -1,0 +1,49 @@
+////
+//
+//
+//
+//
+
+package telesync.gui.icons.binders;
+
+
+
+import java.awt.*;
+import javax.swing.*;
+
+
+
+public class RedDot {
+
+	static byte[] sImageArray = new byte[] {
+		(byte)0x47, (byte)0x49, (byte)0x46, (byte)0x38, 
+		(byte)0x39, (byte)0x61, (byte)0x0c, (byte)0x00, 
+		(byte)0x0c, (byte)0x00, (byte)0x91, (byte)0xff, 
+		(byte)0x00, (byte)0xff, (byte)0xff, (byte)0xff, 
+		(byte)0xff, (byte)0x00, (byte)0x00, (byte)0x00, 
+		(byte)0x00, (byte)0x00, (byte)0xc0, (byte)0xc0, 
+		(byte)0xc0, (byte)0x21, (byte)0xf9, (byte)0x04, 
+		(byte)0x01, (byte)0x00, (byte)0x00, (byte)0x03, 
+		(byte)0x00, (byte)0x2c, (byte)0x00, (byte)0x00, 
+		(byte)0x00, (byte)0x00, (byte)0x0c, (byte)0x00, 
+		(byte)0x0c, (byte)0x00, (byte)0x40, (byte)0x02, 
+		(byte)0x10, (byte)0x9c, (byte)0x8f, (byte)0xa9, 
+		(byte)0x3b, (byte)0x11, (byte)0x0c, (byte)0x91, 
+		(byte)0x73, (byte)0xb1, (byte)0xda, (byte)0x3a, 
+		(byte)0x1f, (byte)0xa3, (byte)0xb7, (byte)0x8f, 
+		(byte)0x02, (byte)0x00, (byte)0x3b, 
+	};
+
+
+	static ImageIcon sImageIcon = new ImageIcon(sImageArray);
+
+
+	public static Image getImage(Toolkit toolkit) {
+		return toolkit.createImage(sImageArray);
+	}
+
+
+	public static ImageIcon getImageIcon() {
+		return sImageIcon;
+	}
+}

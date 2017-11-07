@@ -1,0 +1,91 @@
+////
+// //
+// PippinSoft
+//
+//
+
+package pippin.pui;
+
+import java.util.Vector;
+import pippin.util.Fifo;
+
+public class SubscriptionQueue implements Runnable {
+	
+	private Thread mQueueEater;
+	private Vector mQueue;
+	
+	private static final SubscriptionQueue mInstance = new SubscriptionQueue();
+	
+	private SubscriptionQueue() {
+		mQueue = new Vector();
+		mQueueEater = new Thread(this,"QueueConsumer");
+		
+		mQueueEater.start();
+	}
+	
+	public static SubscriptionQueue getInstance() {
+		return mInstance;
+	}
+	
+	public synchronized void addSubscriptionRequest(PComponent comp, PStateChangeListener lsnr) {
+		QueueItem item = new QueueItem(comp,lsnr);
+		mQueue.addElement(item);
+		notifyAll();
+		System.out.println("SubscriptionQueue.addSubscriptionRequest()-" + comp.getName());
+	}
+	
+	public synchronized QueueItem get() {
+		while (true) {
+			if (mQueue.size() > 0) {
+				QueueItem queueItem = (QueueItem)mQueue.elementAt(0);
+				mQueue.removeElementAt(0);
+				return queueItem;
+			}
+			else {
+				try {
+					wait();
+				}
+				catch (InterruptedException ie) {}
+			}
+		}
+	}
+		
+
+	class QueueItem {
+		private PComponent mComponent;
+		private PStateChangeListener mListener;
+		
+		public QueueItem(PComponent comp, PStateChangeListener lsnr) {
+			mComponent = comp;
+			mListener = lsnr;
+		}
+		public PComponent getComponent() {
+			return mComponent;
+		}
+		public PStateChangeListener getListener() {
+			return mListener;
+		}
+	}
+	
+	public void run() {
+		QueueItem queueItem;
+
+		for (;;) {
+				
+			queueItem = get();
+			try {
+				System.out.println("Notifed." + queueItem.getComponent().getName());
+				queueItem.getComponent().addStateChangeListener(queueItem.getListener(),false);
+
+			}
+			catch (Exception e) {}
+
+		}
+	
+	}
+	
+			
+}
+
+					
+	

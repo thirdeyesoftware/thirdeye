@@ -1,0 +1,59 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: libnative - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP160.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "c:\jdk1.3\include" /I "c:\jdk1.3\include\win32" /I "c:\projects\ts\jni" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBNATIVE_EXPORTS" /Fp"Debug/libnative.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"C:\projects\ts\jni\libnative\nativelib.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP160.tmp" 
+<h3>Output Window</h3>
+Compiling...
+nativelib.c
+c:\projects\ts\jni\libnative\nativelib.c(6) : error C2065: 'caddr_t' : undeclared identifier
+c:\projects\ts\jni\libnative\nativelib.c(6) : error C2146: syntax error : missing ';' before identifier 'm'
+c:\projects\ts\jni\libnative\nativelib.c(6) : error C2065: 'm' : undeclared identifier
+c:\projects\ts\jni\libnative\nativelib.c(7) : error C2275: 'jbyteArray' : illegal use of this type as an expression
+        c:\jdk1.3\include\jni.h(92) : see declaration of 'jbyteArray'
+c:\projects\ts\jni\libnative\nativelib.c(7) : error C2146: syntax error : missing ';' before identifier 'jb'
+c:\projects\ts\jni\libnative\nativelib.c(7) : error C2065: 'jb' : undeclared identifier
+c:\projects\ts\jni\libnative\nativelib.c(8) : error C2275: 'jboolean' : illegal use of this type as an expression
+        c:\jdk1.3\include\jni.h(42) : see declaration of 'jboolean'
+c:\projects\ts\jni\libnative\nativelib.c(8) : error C2146: syntax error : missing ';' before identifier 'iscopy'
+c:\projects\ts\jni\libnative\nativelib.c(8) : error C2065: 'iscopy' : undeclared identifier
+c:\projects\ts\jni\libnative\nativelib.c(9) : error C2143: syntax error : missing ';' before 'type'
+c:\projects\ts\jni\libnative\nativelib.c(10) : error C2143: syntax error : missing ';' before 'const'
+c:\projects\ts\jni\libnative\nativelib.c(12) : error C2143: syntax error : missing ';' before 'type'
+c:\projects\ts\jni\libnative\nativelib.c(14) : error C2065: 'fd' : undeclared identifier
+c:\projects\ts\jni\libnative\nativelib.c(15) : error C2065: 'mfile' : undeclared identifier
+c:\projects\ts\jni\libnative\nativelib.c(17) : warning C4013: 'lstat' undefined; assuming extern returning int
+c:\projects\ts\jni\libnative\nativelib.c(17) : error C2065: 'finfo' : undeclared identifier
+c:\projects\ts\jni\libnative\nativelib.c(18) : warning C4013: 'mmap' undefined; assuming extern returning int
+c:\projects\ts\jni\libnative\nativelib.c(18) : error C2143: syntax error : missing ')' before 'constant'
+c:\projects\ts\jni\libnative\nativelib.c(24) : error C2224: left of '.st_size' must have struct/union type
+c:\projects\ts\jni\libnative\nativelib.c(24) : error C2198: 'function through pointer' : too few actual parameters
+c:\projects\ts\jni\libnative\nativelib.c(24) : warning C4047: '=' : 'int ' differs in levels of indirection from 'struct _jobject *'
+c:\projects\ts\jni\libnative\nativelib.c(25) : warning C4047: 'function' : 'struct _jobject *' differs in levels of indirection from 'int '
+c:\projects\ts\jni\libnative\nativelib.c(25) : warning C4024: 'function through pointer' : different types for formal and actual parameter 2
+c:\projects\ts\jni\libnative\nativelib.c(26) : error C2224: left of '.st_size' must have struct/union type
+c:\projects\ts\jni\libnative\nativelib.c(26) : warning C4047: 'function' : 'long ' differs in levels of indirection from 'char *'
+c:\projects\ts\jni\libnative\nativelib.c(26) : warning C4024: 'function through pointer' : different types for formal and actual parameter 4
+c:\projects\ts\jni\libnative\nativelib.c(26) : error C2198: 'function through pointer' : too few actual parameters
+c:\projects\ts\jni\libnative\nativelib.c(27) : warning C4013: 'close' undefined; assuming extern returning int
+c:\projects\ts\jni\libnative\nativelib.c(28) : warning C4047: 'function' : 'const char *' differs in levels of indirection from 'int '
+c:\projects\ts\jni\libnative\nativelib.c(28) : warning C4024: 'function through pointer' : different types for formal and actual parameter 3
+c:\projects\ts\jni\libnative\nativelib.c(29) : warning C4047: 'return' : 'struct _jobject *' differs in levels of indirection from 'int '
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+nativelib.obj - 20 error(s), 11 warning(s)
+</pre>
+</body>
+</html>

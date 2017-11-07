@@ -1,0 +1,213 @@
+/* CompareEngine */
+/* RMI Server - */
+
+package telesync.qov.rmi;
+
+import telesync.qov.*;
+
+import java.rmi.server.*;
+import java.rmi.*;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.*;
+import java.awt.event.*;
+
+import java.io.*;
+import java.util.*;
+
+public class CompareEngine extends UnicastRemoteObject implements Compare {
+	private static String PROP_FILE = "/META-INF/rmi.properties";
+	private static LoggerWindow logWindow;
+	
+	public CompareEngine() throws RemoteException {
+		super();
+	}
+	
+	/* RMI Remote Method */
+	public Results compareSamples(Long testType, DataSample reference, DataSample degraded) 
+		throws RemoteException {
+			
+			long type = testType.longValue();
+			
+			if (reference==null || degraded == null) 
+				throw new RemoteException("CompareEngine() : compareSamples - reference and degraded samples must not	be null");
+
+			String tempReference = createTempFile(reference, "qov","wav");
+			String tempDegraded = createTempFile(degraded, "qov", "wav");
+
+			if (tempReference == null || degraded == null) {
+				return null;
+			}
+
+			Results results = null;
+			try {
+				results = compareSamples(type, tempReference, tempDegraded);
+			}
+			catch (Exception e) {
+				throw new RemoteException(e.getMessage());
+			}
+			finally {
+				killTempFile(tempReference);
+				killTempFile(tempDegraded);
+			}
+					
+		return results;
+	
+	}
+	
+	/* RMI Remote Method */
+	public Results compareSamples(DataSample reference, DataSample degraded)
+		throws RemoteException {
+	
+		return compareSamples(new Long(QualityOfVoiceManager.DEFAULT_TEST), reference, degraded );
+		
+		
+	}
+	
+	/* RMI Remote Method */
+	public Results compareSamples(File referenceFile, File degradedFile) 
+		throws RemoteException {
+			String ref, deg;
+			
+			try {
+				ref = referenceFile.getAbsolutePath();
+				deg = degradedFile.getAbsolutePath();
+				return compareSamples(QualityOfVoiceManager.DEFAULT_TEST, ref, deg);
+				
+			}
+			catch (Exception e) {
+				logWindow.add(e.getMessage());
+				throw new RemoteException(e.toString());
+				
+			}
+	}
+	
+	
+	/* private method to do QualityOfVOiceManager work */
+	private Results compareSamples(long type, String referenceFilename, String degradedFilename) throws Exception {
+		logWindow.add("compareSamples() : " + referenceFilename + ", " + degradedFilename);
+		float[] results = QualityOfVoiceManager.compare(type, referenceFilename, degradedFilename);
+		return new Results( results );
+	}
+	
+	
+	
+	private void killTempFile(String filename) {
+		File f = new File(filename);
+		if (f != null) {
+			f.delete();
+		}
+	
+		
+	}
+	
+	/* method creates a temp file from sample byte[] and returns filename */
+	private String createTempFile(DataSample sample, String prefix, String suffix) {
+
+		File tempFile = null;
+		
+		FileOutputStream out = null;
+		try {
+			tempFile = File.createTempFile(prefix + System.currentTimeMillis(), "." + suffix);
+			out = new FileOutputStream(	tempFile );
+			out.write(sample.getStream());
+			out.flush();
+			
+			
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+		finally {
+			try {
+				out.close();
+			}
+			catch (Exception e) {
+			}
+		}
+
+		return tempFile.getAbsolutePath();
+	}
+	
+	/* This method retrieves the preferred port #.  If an error occurs -1 is returned. */
+	private static int getPort() {
+		
+		Properties mProperties = new Properties();
+				
+		try {
+			mProperties.load(CompareEngine.class.getResourceAsStream(PROP_FILE));
+			String value = mProperties.getProperty("port");
+			return (new Integer(value)).intValue();
+		}
+		catch (IOException ioe) {
+			ioe.printStackTrace();
+			mProperties = null;
+			return -1;
+		}
+		catch (NullPointerException npe) {
+			
+			return -1;
+		}
+		
+
+	}
+
+
+	
+	public static void main(String args[]) {
+		/*if (System.getSecurityManager()==null) {
+			System.setSecurityManager( new RMISecurityManager() );
+		}
+		*/
+		logWindow = new LoggerWindow("Compare Engine Log");
+		logWindow.setSize(500,200);
+		logWindow.setVisible( true );
+		
+		logWindow.add(System.getProperty("java.home"));
+		logWindow.addWindowListener( new WindowAdapter() {
+			public void windowClosing( WindowEvent event ) {
+				System.exit(0);
+			}
+		});
+		
+				
+		int port = 0;
+		
+		if ((port = getPort()) == -1) {
+					port = 2090;
+		}
+		
+		String host = "//localhost:" + port + "/Compare";
+		logWindow.add(host);
+		Registry registry;
+		
+		try {
+			registry = LocateRegistry.createRegistry(port);
+			
+		}
+		catch (RemoteException re) {
+			logWindow.add("re: " + re.toString());
+			try {
+				//
+			}
+			catch (Exception e) {
+				logWindow.add(e.getMessage());
+				e.printStackTrace();
+				return;
+			}
+		}
+		
+		try {
+			
+			
+			Compare compareEngine = new CompareEngine();
+			Naming.rebind(host, compareEngine);
+			logWindow.add(host + " successfully bound ");
+		}
+		catch (Exception e) {
+			System.out.println("CompareEngine error : " + e.getMessage());
+			e.printStackTrace();
+		}
+	}
+}
+

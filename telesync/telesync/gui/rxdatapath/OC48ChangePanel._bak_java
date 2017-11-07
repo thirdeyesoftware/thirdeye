@@ -1,0 +1,75 @@
+////
+//
+// Telesync 5320 Project
+//
+//
+
+package telesync.gui.rxdatapath;
+
+
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.border.*;
+import pippin.pui.*;
+import pippin.binder.*;
+import pippin.binder.pui.*;
+import telesync.pui.tsi5320.*;
+
+
+
+public class OC48ChangePanel extends BasicForm {
+	Oc48c_rx mOC48c;
+
+	protected OC48ChangePanel(Oc48c_rx oc48c, Rx48datapath datapath, boolean setupLock) {
+		super(new ChangeTypeSet());
+
+		mOC48c = oc48c;
+
+		PEnvelope env = new PEnvelope(new ChangeTypeSet());
+		try {
+			env.mergePComponent(getOC48c());
+			env.mergePComponent(datapath);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		BooleanBinder boolBinder;
+		addField("setupLock", boolBinder = new BooleanBinder("AutoScan"), Binder.HIDE_EVENTS);
+		
+		boolBinder.setInverted(true);
+		
+		if (setupLock) {
+			addField("payloadType",
+				new ComboBinder("Payload Type", Oc48c_rx.PayloadType.class,
+				Oc48c_rx.PayloadType.getInstances()));
+			addField("pattern",
+				new ComboBinder("Pattern", Oc48c_rx.Pattern.class,
+				Oc48c_rx.Pattern.getInstances()));
+			addField("patternInvert", new BooleanBinder("Pattern Invert"));
+		}
+		
+		
+		
+		setEnvelope(env);
+	}
+
+
+	public Oc48c_rx getOC48c() {
+		return mOC48c;
+	}
+
+
+	public void start() {
+		// Start any needed listeners.
+	}
+
+
+	public void dispose() {
+		super.dispose();
+
+		// Disconnect any listeners from start().
+	}
+}

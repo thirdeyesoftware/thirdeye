@@ -1,0 +1,37 @@
+/* AUTOMATICALLY GENERATED ON Wed Sep 26 23:18:30 EDT 2001*/
+/* DO NOT EDIT */
+
+grant codeBase "file:${java.home}/lib/ext/*" {
+  permission java.security.AllPermission;
+};
+
+grant codeBase "file:c:/projects/ts/jni/telesync/qov/rmi/*" {
+  permission java.security.AllPermission;
+};
+
+grant {
+  permission java.lang.RuntimePermission "stopThread";
+  permission java.net.SocketPermission "localhost:1024-", "accept, connect, listen, resolve";
+  permission java.util.PropertyPermission "java.version", "read";
+  permission java.util.PropertyPermission "java.vendor", "read";
+  permission java.util.PropertyPermission "java.vendor.url", "read";
+  permission java.util.PropertyPermission "java.class.version", "read";
+  permission java.util.PropertyPermission "os.name", "read";
+  permission java.util.PropertyPermission "os.version", "read";
+  permission java.util.PropertyPermission "os.arch", "read";
+  permission java.util.PropertyPermission "file.separator", "read";
+  permission java.util.PropertyPermission "path.separator", "read";
+  permission java.util.PropertyPermission "line.separator", "read";
+  permission java.util.PropertyPermission "java.specification.version", "read";
+  permission java.util.PropertyPermission "java.specification.vendor", "read";
+  permission java.util.PropertyPermission "java.specification.name", "read";
+  permission java.util.PropertyPermission "java.vm.specification.version", "read";
+  permission java.util.PropertyPermission "java.vm.specification.vendor", "read";
+  permission java.util.PropertyPermission "java.vm.specification.name", "read";
+  permission java.util.PropertyPermission "java.vm.version", "read";
+  permission java.util.PropertyPermission "java.vm.vendor", "read";
+  permission java.util.PropertyPermission "java.vm.name", "read";
+  permission java.net.SocketPermission "*:1024-65535", "connect,accept,resolve,listen";
+  permission java.net.SocketPermission "*:80", "accept, connect, listen, resolve";
+};
+

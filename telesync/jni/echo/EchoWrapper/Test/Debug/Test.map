@@ -1,0 +1,109 @@
+ Test
+
+ Timestamp is 3e26f394 (Thu Jan 16 13:01:56 2003)
+
+ Preferred load address is 00400000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000004a0H .text                   CODE
+ 0002:00000000 00000054H .rdata                  DATA
+ 0002:00000054 00000000H .edata                  DATA
+ 0003:00000000 00000004H .CRT$XCA                DATA
+ 0003:00000004 00000004H .CRT$XCZ                DATA
+ 0003:00000008 00000004H .CRT$XIA                DATA
+ 0003:0000000c 00000004H .CRT$XIZ                DATA
+ 0003:00000010 00000004H .data                   DATA
+ 0003:00000020 0000001cH .bss                    DATA
+ 0004:00000000 00000048H .idata$2                DATA
+ 0004:00000048 00000014H .idata$3                DATA
+ 0004:00000060 0000007cH .idata$4                DATA
+ 0004:000000e0 0000007cH .idata$5                DATA
+ 0004:00000160 00000142H .idata$6                DATA
+ 0004:000002b0 00000020H .idata$7                DATA
+
+  Address         Publics by Value              Rva+Base     Lib:Object
+
+ 0001:00000000       _main                      00401000 f   Test.obj
+ 0001:00000150       ?doAnalyze@@YAHPANPAH1@Z   00401150 f   Test.obj
+ 0001:000001d0       ?loadEchoDLL@@YAPAUHINSTANCE__@@PBD@Z 004011d0 f   Test.obj
+ 0001:000001f0       ?releaseEchoDLL@@YAXPAUHINSTANCE__@@@Z 004011f0 f   Test.obj
+ 0001:0000020a       _GetProcAddress@8          0040120a f   kernel32:KERNEL32.dll
+ 0001:00000210       _LoadLibraryA@4            00401210 f   kernel32:KERNEL32.dll
+ 0001:00000216       _FreeLibrary@4             00401216 f   kernel32:KERNEL32.dll
+ 0001:00000220       _ed_v1@12                  00401220     echodll_v1:2.obj
+ 0001:00000230       _free                      00401230 f   MSVCRTD:MSVCRTD.dll
+ 0001:00000236       _printf                    00401236 f   MSVCRTD:MSVCRTD.dll
+ 0001:00000240       __chkstk                   00401240 f   MSVCRTD:chkstk.obj
+ 0001:00000240       __alloca_probe             00401240 f   MSVCRTD:chkstk.obj
+ 0001:00000270       _mainCRTStartup            00401270 f   MSVCRTD:crtexe.obj
+ 0001:000003b8       __exit                     004013b8 f   MSVCRTD:MSVCRTD.dll
+ 0001:000003be       __XcptFilter               004013be f   MSVCRTD:MSVCRTD.dll
+ 0001:000003c4       _exit                      004013c4 f   MSVCRTD:MSVCRTD.dll
+ 0001:000003ca       ___p___initenv             004013ca f   MSVCRTD:MSVCRTD.dll
+ 0001:000003d0       ___getmainargs             004013d0 f   MSVCRTD:MSVCRTD.dll
+ 0001:000003d6       __initterm                 004013d6 f   MSVCRTD:MSVCRTD.dll
+ 0001:000003e0       __setdefaultprecision      004013e0 f   MSVCRTD:fp8.obj
+ 0001:000003f8       ___setusermatherr          004013f8 f   MSVCRTD:MSVCRTD.dll
+ 0001:00000400       __matherr                  00401400 f   MSVCRTD:merr.obj
+ 0001:00000410       __setargv                  00401410 f   MSVCRTD:dllargv.obj
+ 0001:00000416       ___p__commode              00401416 f   MSVCRTD:MSVCRTD.dll
+ 0001:0000041c       ___p__fmode                0040141c f   MSVCRTD:MSVCRTD.dll
+ 0001:00000430       __onexit                   00401430 f   MSVCRTD:atonexit.obj
+ 0001:00000470       _atexit                    00401470 f   MSVCRTD:atonexit.obj
+ 0001:00000488       ___set_app_type            00401488 f   MSVCRTD:MSVCRTD.dll
+ 0001:0000048e       __except_handler3          0040148e f   MSVCRTD:MSVCRTD.dll
+ 0001:00000494       __controlfp                00401494 f   MSVCRTD:MSVCRTD.dll
+ 0001:0000049a       ___dllonexit               0040149a f   MSVCRTD:MSVCRTD.dll
+ 0002:0000001c       ??_C@_0P@CDPE@element?5?$DN?5?$CFd?6?$AN?$AA@ 0040201c     Test.obj
+ 0002:0000002c       ??_C@_09KADD@_ed_v1?$EA12?$AA@ 0040202c     Test.obj
+ 0002:00000038       ??_C@_0P@FMNM@echodll_v1?4dll?$AA@ 00402038     Test.obj
+ 0003:00000000       ___xc_a                    00403000     MSVCRTD:cinitexe.obj
+ 0003:00000004       ___xc_z                    00403004     MSVCRTD:cinitexe.obj
+ 0003:00000008       ___xi_a                    00403008     MSVCRTD:cinitexe.obj
+ 0003:0000000c       ___xi_z                    0040300c     MSVCRTD:cinitexe.obj
+ 0003:00000010       ___defaultmatherr          00403010     MSVCRTD:merr.obj
+ 0003:00000020       __dowildcard               00403020     MSVCRTD:wildcard.obj
+ 0003:00000024       __newmode                  00403024     MSVCRTD:_newmode.obj
+ 0003:00000028       __commode                  00403028     MSVCRTD:xncommod.obj
+ 0003:0000002c       __fmode                    0040302c     MSVCRTD:xtxtmode.obj
+ 0003:00000030       ___onexitend               00403030     <common>
+ 0003:00000034       ___onexitbegin             00403034     <common>
+ 0003:00000038       __adjust_fdiv              00403038     <common>
+ 0004:00000000       __IMPORT_DESCRIPTOR_KERNEL32 00404000     kernel32:KERNEL32.dll
+ 0004:00000020       $hechodll_v1               00404020     echodll_v1:1.obj
+ 0004:00000034       __IMPORT_DESCRIPTOR_MSVCRTD 00404034     MSVCRTD:MSVCRTD.dll
+ 0004:00000048       __NULL_IMPORT_DESCRIPTOR   00404048     kernel32:KERNEL32.dll
+ 0004:00000100       __imp__ed_v1@12            00404100     echodll_v1:2.obj
+ 0004:00000104       __imp__FreeLibrary@4       00404104     kernel32:KERNEL32.dll
+ 0004:00000108       __imp__GetProcAddress@8    00404108     kernel32:KERNEL32.dll
+ 0004:0000010c       __imp__LoadLibraryA@4      0040410c     kernel32:KERNEL32.dll
+ 0004:00000110       \177KERNEL32_NULL_THUNK_DATA 00404110     kernel32:KERNEL32.dll
+ 0004:00000114       __imp__printf              00404114     MSVCRTD:MSVCRTD.dll
+ 0004:00000118       __imp___exit               00404118     MSVCRTD:MSVCRTD.dll
+ 0004:0000011c       __imp___XcptFilter         0040411c     MSVCRTD:MSVCRTD.dll
+ 0004:00000120       __imp__exit                00404120     MSVCRTD:MSVCRTD.dll
+ 0004:00000124       __imp__free                00404124     MSVCRTD:MSVCRTD.dll
+ 0004:00000128       __imp____p___initenv       00404128     MSVCRTD:MSVCRTD.dll
+ 0004:0000012c       __imp____getmainargs       0040412c     MSVCRTD:MSVCRTD.dll
+ 0004:00000130       __imp___initterm           00404130     MSVCRTD:MSVCRTD.dll
+ 0004:00000134       __imp____setusermatherr    00404134     MSVCRTD:MSVCRTD.dll
+ 0004:00000138       __imp___adjust_fdiv        00404138     MSVCRTD:MSVCRTD.dll
+ 0004:0000013c       __imp____p__commode        0040413c     MSVCRTD:MSVCRTD.dll
+ 0004:00000140       __imp____p__fmode          00404140     MSVCRTD:MSVCRTD.dll
+ 0004:00000144       __imp____set_app_type      00404144     MSVCRTD:MSVCRTD.dll
+ 0004:00000148       __imp___except_handler3    00404148     MSVCRTD:MSVCRTD.dll
+ 0004:0000014c       __imp___controlfp          0040414c     MSVCRTD:MSVCRTD.dll
+ 0004:00000150       __imp____dllonexit         00404150     MSVCRTD:MSVCRTD.dll
+ 0004:00000154       __imp___onexit             00404154     MSVCRTD:MSVCRTD.dll
+ 0004:00000158       \177MSVCRTD_NULL_THUNK_DATA 00404158     MSVCRTD:MSVCRTD.dll
+ 0004:000002c0       $techodll_v1               004042c0     echodll_v1:0.obj
+
+ entry point at        0001:00000270
+
+ Static symbols
+
+ 0001:00000240       _$$$00001                  00401240 f   MSVCRTD:chkstk.obj
+ 0001:0000024c       probepages                 0040124c f   MSVCRTD:chkstk.obj
+ 0001:00000260       lastpage                   00401260 f   MSVCRTD:chkstk.obj
+
+FIXUPS: 1009 d2 84 45 19 2a1 1a ffffff76 fffffef8 1c f 3b 1f 27

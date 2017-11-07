@@ -1,0 +1,305 @@
+Compiled from QualityOfVoice.java
+public class telesync.qov.QualityOfVoice extends java.lang.Object {
+    public telesync.qov.QualityOfVoice();
+	/*   ()V   */
+    class telesync.qov.QualityOfVoice. RESULTDATA extends java.lang.Object 
+    /* ACC_SUPER bit NOT set */
+{
+        java.lang.String mVersionID;
+	/*   Ljava/lang/String;   */
+        java.lang.String mCopyright1;
+	/*   Ljava/lang/String;   */
+        java.lang.String mCopyright2;
+	/*   Ljava/lang/String;   */
+        java.lang.String mDate;
+	/*   Ljava/lang/String;   */
+        java.lang.String mTime;
+	/*   Ljava/lang/String;   */
+        java.lang.String mDescription1;
+	/*   Ljava/lang/String;   */
+        java.lang.String mDescription2;
+	/*   Ljava/lang/String;   */
+        java.lang.String mDegSourceName;
+	/*   Ljava/lang/String;   */
+        java.lang.String mFilename;
+	/*   Ljava/lang/String;   */
+        java.lang.String mConditionalFilename;
+	/*   Ljava/lang/String;   */
+        java.lang.String mAmplitudeUnits;
+	/*   Ljava/lang/String;   */
+        float mReserved;
+	/*   F   */
+        telesync.qov.QualityOfVoice.FAILCONDITIONS mGreaterThan;
+	/*   Ltelesync/qov/QualityOfVoice$FAILCONDITIONS;   */
+        telesync.qov.QualityOfVoice.FAILCONDITIONS mLessThan;
+	/*   Ltelesync/qov/QualityOfVoice$FAILCONDITIONS;   */
+        float mResults[];
+	/*   [F   */
+        int mRstOption;
+	/*   I   */
+        java.lang.String mRstFilename;
+	/*   Ljava/lang/String;   */
+        public telesync.qov.QualityOfVoice.RESULTDATA(telesync.qov.QualityOfVoice);
+	/*   (Ltelesync/qov/QualityOfVoice;)V   */
+        public java.lang.String getVersionID();
+	/*   ()Ljava/lang/String;   */
+        public void setVersionID(java.lang.String);
+	/*   (Ljava/lang/String;)V   */
+        public java.lang.String getCopyright1();
+	/*   ()Ljava/lang/String;   */
+        public void setCopyright1(java.lang.String);
+	/*   (Ljava/lang/String;)V   */
+        public java.lang.String getCopyright2();
+	/*   ()Ljava/lang/String;   */
+        public void setCopyright2(java.lang.String);
+	/*   (Ljava/lang/String;)V   */
+        public java.lang.String getDate();
+	/*   ()Ljava/lang/String;   */
+        public void setDate(java.lang.String);
+	/*   (Ljava/lang/String;)V   */
+        public java.lang.String getTime();
+	/*   ()Ljava/lang/String;   */
+        public void setTime(java.lang.String);
+	/*   (Ljava/lang/String;)V   */
+        public java.lang.String getDescription1();
+	/*   ()Ljava/lang/String;   */
+        public void setDescription1(java.lang.String);
+	/*   (Ljava/lang/String;)V   */
+        public java.lang.String getDescription2();
+	/*   ()Ljava/lang/String;   */
+        public void setDescription2(java.lang.String);
+	/*   (Ljava/lang/String;)V   */
+        public java.lang.String getDegSourceName();
+	/*   ()Ljava/lang/String;   */
+        public void setDegSourceName(java.lang.String);
+	/*   (Ljava/lang/String;)V   */
+        public java.lang.String getFilename();
+	/*   ()Ljava/lang/String;   */
+        public void setFilename(java.lang.String);
+	/*   (Ljava/lang/String;)V   */
+        public java.lang.String getConditionalFilename();
+	/*   ()Ljava/lang/String;   */
+        public void setConditionalFilename(java.lang.String);
+	/*   (Ljava/lang/String;)V   */
+        public java.lang.String getAmplitudeUnits();
+	/*   ()Ljava/lang/String;   */
+        public void setAmplitudeUnits(java.lang.String);
+	/*   (Ljava/lang/String;)V   */
+        public telesync.qov.QualityOfVoice.FAILCONDITIONS getGreaterThan();
+	/*   ()Ltelesync/qov/QualityOfVoice$FAILCONDITIONS;   */
+        public void setGreaterThan(telesync.qov.QualityOfVoice.FAILCONDITIONS);
+	/*   (Ltelesync/qov/QualityOfVoice$FAILCONDITIONS;)V   */
+        public telesync.qov.QualityOfVoice.FAILCONDITIONS getLessThan();
+	/*   ()Ltelesync/qov/QualityOfVoice$FAILCONDITIONS;   */
+        public void setLessThan(telesync.qov.QualityOfVoice.FAILCONDITIONS);
+	/*   (Ltelesync/qov/QualityOfVoice$FAILCONDITIONS;)V   */
+        public float getResults()[];
+	/*   ()[F   */
+        public void setResults(float[]);
+	/*   ([F)V   */
+        public int getRstOption();
+	/*   ()I   */
+        public void setRstOption(int);
+	/*   (I)V   */
+        public java.lang.String getRstFilename();
+	/*   ()Ljava/lang/String;   */
+        public void setRstFilename(java.lang.String);
+	/*   (Ljava/lang/String;)V   */
+    }
+    class telesync.qov.QualityOfVoice. FAILCONDITIONS extends java.lang.Object 
+    /* ACC_SUPER bit NOT set */
+{
+        float mLE;
+	/*   F   */
+        float mLQ;
+	/*   F   */
+        float mReserved;
+	/*   F   */
+        float mDelay;
+	/*   F   */
+        float mDelayConf;
+	/*   F   */
+        float mDegActiveLevel;
+	/*   F   */
+        float mDegActivity;
+	/*   F   */
+        float mDegNoise;
+	/*   F   */
+        float mDegPeak;
+	/*   F   */
+        float mPESQLQ;
+	/*   F   */
+        float mPESQDelay;
+	/*   F   */
+        float mPESQDelayConf;
+	/*   F   */
+        public telesync.qov.QualityOfVoice.FAILCONDITIONS(telesync.qov.QualityOfVoice);
+	/*   (Ltelesync/qov/QualityOfVoice;)V   */
+        public float getLE();
+	/*   ()F   */
+        public void setLE(float);
+	/*   (F)V   */
+        public float getLQ();
+	/*   ()F   */
+        public void setLQ(float);
+	/*   (F)V   */
+        public float getReserved();
+	/*   ()F   */
+        public void setReserved(float);
+	/*   (F)V   */
+        public float getDelay();
+	/*   ()F   */
+        public void setDelay(float);
+	/*   (F)V   */
+        public float getDelayConf();
+	/*   ()F   */
+        public void setDelayConf(float);
+	/*   (F)V   */
+        public float getDegActiveLevel();
+	/*   ()F   */
+        public void setDegActiveLevel(float);
+	/*   (F)V   */
+        public float getDegActivity();
+	/*   ()F   */
+        public void setDegActivity(float);
+	/*   (F)V   */
+        public float getDegNoise();
+	/*   ()F   */
+        public void setDegNoise(float);
+	/*   (F)V   */
+        public float getDegPeak();
+	/*   ()F   */
+        public void setDegPeak(float);
+	/*   (F)V   */
+        public float getPESQLQ();
+	/*   ()F   */
+        public void setPESQLQ(float);
+	/*   (F)V   */
+        public float getPESQDelay();
+	/*   ()F   */
+        public void setPESQDelay(float);
+	/*   (F)V   */
+        public float getPESQDelayConf();
+	/*   ()F   */
+        public void setPESQDelayConf(float);
+	/*   (F)V   */
+    }
+    class telesync.qov.QualityOfVoice. INPUTDATA extends java.lang.Object 
+    /* ACC_SUPER bit NOT set */
+{
+        java.lang.String mFilename;
+	/*   Ljava/lang/String;   */
+        telesync.qov.QualityOfVoice.WAVEDATA mWaveData;
+	/*   Ltelesync/qov/QualityOfVoice$WAVEDATA;   */
+        int mByteOrder;
+	/*   I   */
+        float mScaling;
+	/*   F   */
+        long mPreviousData;
+	/*   J   */
+        public telesync.qov.QualityOfVoice.INPUTDATA(telesync.qov.QualityOfVoice);
+	/*   (Ltelesync/qov/QualityOfVoice;)V   */
+        public java.lang.String getFilename();
+	/*   ()Ljava/lang/String;   */
+        public void setFilename(java.lang.String);
+	/*   (Ljava/lang/String;)V   */
+        public telesync.qov.QualityOfVoice.WAVEDATA getWaveData();
+	/*   ()Ltelesync/qov/QualityOfVoice$WAVEDATA;   */
+        public void setWaveData(telesync.qov.QualityOfVoice.WAVEDATA);
+	/*   (Ltelesync/qov/QualityOfVoice$WAVEDATA;)V   */
+        public int getByteOrder();
+	/*   ()I   */
+        public void setByteOrder(int);
+	/*   (I)V   */
+        public float getScaling();
+	/*   ()F   */
+        public void setScaling(float);
+	/*   (F)V   */
+        public long getPreviousData();
+	/*   ()J   */
+        public void setPreviousData(long);
+	/*   (J)V   */
+    }
+    class telesync.qov.QualityOfVoice. WAVEDATA extends java.lang.Object 
+    /* ACC_SUPER bit NOT set */
+{
+        telesync.qov.QualityOfVoice.WAVEFORMATEX mWFX;
+	/*   Ltelesync/qov/QualityOfVoice$WAVEFORMATEX;   */
+        int mExtendedData;
+	/*   I   */
+        java.lang.String mList;
+	/*   Ljava/lang/String;   */
+        long mPData;
+	/*   J   */
+        long mSize;
+	/*   J   */
+        public telesync.qov.QualityOfVoice.WAVEDATA(telesync.qov.QualityOfVoice);
+	/*   (Ltelesync/qov/QualityOfVoice;)V   */
+        public telesync.qov.QualityOfVoice.WAVEFORMATEX getWaveFormatEx();
+	/*   ()Ltelesync/qov/QualityOfVoice$WAVEFORMATEX;   */
+        public void setWaveFormatEx(telesync.qov.QualityOfVoice.WAVEFORMATEX);
+	/*   (Ltelesync/qov/QualityOfVoice$WAVEFORMATEX;)V   */
+        public int getExtendedData();
+	/*   ()I   */
+        public void setExtendedData(int);
+	/*   (I)V   */
+        public java.lang.String getList();
+	/*   ()Ljava/lang/String;   */
+        public void setList(java.lang.String);
+	/*   (Ljava/lang/String;)V   */
+        public long getPData();
+	/*   ()J   */
+        public void setPData(long);
+	/*   (J)V   */
+        public long getSize();
+	/*   ()J   */
+        public void setSize(long);
+	/*   (J)V   */
+    }
+    class telesync.qov.QualityOfVoice. WAVEFORMATEX extends java.lang.Object 
+    /* ACC_SUPER bit NOT set */
+{
+        public int mFormatTag;
+	/*   I   */
+        public int mChannels;
+	/*   I   */
+        public long mSamplesPerSec;
+	/*   J   */
+        public long mAvgBytesPerSec;
+	/*   J   */
+        public int mBlockAlign;
+	/*   I   */
+        public int mBitsPerSample;
+	/*   I   */
+        public int mSize;
+	/*   I   */
+        public telesync.qov.QualityOfVoice.WAVEFORMATEX(telesync.qov.QualityOfVoice);
+	/*   (Ltelesync/qov/QualityOfVoice;)V   */
+        public int getFormatTag();
+	/*   ()I   */
+        public void setFormatTag(int);
+	/*   (I)V   */
+        public int getChannels();
+	/*   ()I   */
+        public void setChannels(int);
+	/*   (I)V   */
+        public long getSamplesPerSec();
+	/*   ()J   */
+        public void setSamplesPerSec(long);
+	/*   (J)V   */
+        public long getAvgBytesPerSec();
+	/*   ()J   */
+        public int getBlockAlign();
+	/*   ()I   */
+        public void setBlockAlign(int);
+	/*   (I)V   */
+        public int getBitsPerSample();
+	/*   ()I   */
+        public void setBitsPerSample(int);
+	/*   (I)V   */
+        public int getSize();
+	/*   ()I   */
+        public void setSize(int);
+	/*   (I)V   */
+    }
+}

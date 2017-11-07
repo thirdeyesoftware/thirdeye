@@ -1,0 +1,358 @@
+package telesync.qov;
+
+public class QualityOfVoice {
+	public QualityOfVoice() {
+	}
+	
+	class WAVEFORMATEX {
+		public int mFormatTag;
+		public int mChannels;
+		public long mSamplesPerSec;
+		public long mAvgBytesPerSec;
+		public int mBlockAlign;
+		public int mBitsPerSample;
+		public int mSize;
+		
+		public WAVEFORMATEX() {
+			
+		}
+		
+		
+		public int getFormatTag() {
+			return mFormatTag;
+		}
+		public void setFormatTag( int tag ) {
+			mFormatTag = tag;
+		}
+		public int getChannels() {
+			return mChannels;
+		}
+		public void setChannels( int channels ) {
+			mChannels = channels;
+		}
+		public long getSamplesPerSec() {
+			return mSamplesPerSec;
+		}
+		public void setSamplesPerSec( long samples ) {
+			mSamplesPerSec = samples;
+		}
+		public long getAvgBytesPerSec() {
+			return mAvgBytesPerSec;
+		}
+		public int getBlockAlign() {
+			return mBlockAlign;
+		}
+		public void setBlockAlign( int align ) {
+			mBlockAlign = align;
+		}
+		public int getBitsPerSample() {
+			return mBitsPerSample;
+		}
+		public void setBitsPerSample( int bits ) {
+			mBitsPerSample = bits;
+		}
+		public int getSize() {
+			return mSize;
+		}
+		public void setSize( int size ) {
+			mSize = size;
+		}
+	} //end WAVEFORMATEX
+	
+	class WAVEDATA {
+		QualityOfVoice.WAVEFORMATEX mWFX;
+		int mExtendedData;
+		String mList;
+		long mPData;
+		long mSize;
+		
+		public WAVEDATA() {
+			
+		}
+		public QualityOfVoice.WAVEFORMATEX getWaveFormatEx() {
+			return mWFX;
+		}
+		public void setWaveFormatEx( QualityOfVoice.WAVEFORMATEX wfx ) {
+			mWFX = wfx;
+		}
+		public int getExtendedData() {
+			return mExtendedData;
+		}
+		public void setExtendedData( int data ) {
+			mExtendedData = data;
+		}
+		public String getList() {
+			return mList;
+		}
+		public void setList( String list ) {
+			mList = list;
+		}
+		public long getPData() {
+			return mPData;
+		}
+		public void setPData( long data ) {
+			mPData = data;
+		}
+		public long getSize() {
+			return mSize;
+		}
+		public void setSize( long size ) {
+			mSize = size;
+		}
+	} //end WAVEDATA
+	
+	public class INPUTDATA {
+		String mFilename;
+		QualityOfVoice.WAVEDATA mWaveData;
+		int mByteOrder;
+		float mScaling;
+		long mPreviousData;
+		
+		public INPUTDATA() {
+			
+		}
+		public String getFilename() {
+			return mFilename;
+		}
+		public void setFilename( String filename ) {
+			mFilename = filename;
+		}
+		public QualityOfVoice.WAVEDATA getWaveData() {
+			return mWaveData;
+		}
+		public void setWaveData( QualityOfVoice.WAVEDATA wavedata ) {
+			mWaveData = wavedata;
+		}
+		public int getByteOrder() {
+			return mByteOrder;
+		}
+		public void setByteOrder( int byteorder ) {
+			mByteOrder = byteorder;
+		}
+		public float getScaling() {
+			return mScaling;
+		}
+		public void setScaling( float scaling ) {
+			mScaling = scaling;
+		}
+		public long getPreviousData() {
+			return mPreviousData;
+		}
+		public void setPreviousData( long data ) {
+			mPreviousData = data;
+		}
+	} //end INPUTDATA
+	
+	class FAILCONDITIONS {
+		float mLE;
+		float mLQ;
+		float mReserved;
+		float mDelay;
+		float mDelayConf;
+		float mDegActiveLevel;
+		float mDegActivity;
+		float mDegNoise;
+		float mDegPeak;
+		float mPESQLQ;
+		float mPESQDelay;
+		float mPESQDelayConf;
+		
+		public FAILCONDITIONS() {
+		}
+		public float getLE() {
+			return mLE;
+		}
+		public void setLE( float le ) {
+			mLE = le;
+		}
+		public float getLQ() {
+			return mLQ;
+		}
+		public void setLQ( float lq ) {
+			mLQ = lq;
+		}
+		public float getReserved() {
+			return mReserved;
+		}
+		public void setReserved( float reserved ) {
+			mReserved = reserved;
+		}
+		public float getDelay() {
+			return mDelay;
+		}
+		public void setDelay( float delay ) {
+			mDelay = delay;
+		}
+		public float getDelayConf() {
+			return mDelayConf;
+		}
+		public void setDelayConf( float delayconf ) {
+			mDelayConf = delayconf;
+		}
+		public float getDegActiveLevel() {
+			return mDegActiveLevel;
+		}
+		public void setDegActiveLevel( float val ) {
+			mDegActiveLevel = val;
+		}
+		public float getDegActivity() {
+			return mDegActivity;
+		}
+		public void setDegActivity( float val ) {
+			mDegActivity = val;
+		}
+		public float getDegNoise() {
+			return mDegNoise;
+		}
+		public void setDegNoise( float val ) {
+			mDegNoise = val;
+		}
+		public float getDegPeak() {
+			return mDegPeak;
+		}
+		public void setDegPeak( float val ) {
+			mDegPeak = val;
+		}
+		public float getPESQLQ() {
+			return mPESQLQ;
+		}
+		public void setPESQLQ( float val ) {
+			mPESQLQ = val;
+		}
+		public float getPESQDelay() {
+			return mPESQDelay;
+		}
+		public void setPESQDelay( float val ) {
+			mPESQDelay = val;
+		}
+		public float getPESQDelayConf() {
+			return mPESQDelayConf;
+		} 
+		public void setPESQDelayConf( float val ) {
+			mPESQDelayConf = val;
+		}
+	} // end FAILCONDITIONS
+	
+	class RESULTDATA {
+		String mVersionID;
+		String mCopyright1;
+		String mCopyright2;
+		String mDate;
+		String mTime;
+		String mDescription1;
+		String mDescription2;
+		String mDegSourceName;
+		String mFilename; 														/*file pathname */
+		String mConditionalFilename;									/*file pathname */
+		String mAmplitudeUnits;												/*Units that measurements are made in */
+		float mReserved;
+		QualityOfVoice.FAILCONDITIONS mGreaterThan;		/*pointer to structure containing storage conditions*/
+		QualityOfVoice.FAILCONDITIONS mLessThan;			/*pointer to structure containing storage conditions*/
+		float[] mResults;													/*result values*/
+		int  mRstOption;															/*v4.1 added 0 for none, 1 for store, 2 for store conditionally */
+		String mRstFilename;		
+	
+		public RESULTDATA() {
+			mResults = new float[100];
+			mRstOption = 0;
+		}
+		public String getVersionID() {
+			return mVersionID;
+		}
+		public void setVersionID( String version ) {
+			mVersionID = version;
+		}
+		public String getCopyright1() {
+			return mCopyright1;
+		}
+		public void setCopyright1( String val ) {
+			mCopyright1 = val;
+		}
+		public String getCopyright2() {
+			return mCopyright2;
+		}
+		public void setCopyright2( String val ) {
+			mCopyright2 = val;
+		}
+		public String getDate() {
+			return mDate;
+		}
+		public void setDate( String date ) {
+			mDate = date;
+		}
+		public String getTime() {
+			return mTime;
+		}
+		public void setTime( String time ) {
+			mTime = time;
+		}
+		public String getDescription1() {
+			return mDescription1;
+		}
+		public void setDescription1( String val ) {
+			mDescription1 = val;
+		}
+		public String getDescription2() {
+			return mDescription2;
+		}
+		public void setDescription2( String val ) {
+			mDescription2 = val;
+		}
+		public String getDegSourceName() {
+			return mDegSourceName;
+		}
+		public void setDegSourceName( String val ) {
+			mDegSourceName = val;
+		}
+		public String getFilename() {
+			return mFilename;
+		}
+		public void setFilename( String filename ) {
+			mFilename = filename;
+		}
+		public String getConditionalFilename() {
+			return mConditionalFilename;
+		}
+		public void setConditionalFilename( String val ) {
+			mConditionalFilename = val;
+		}
+		public String getAmplitudeUnits() {
+			return mAmplitudeUnits;
+		}
+		public void setAmplitudeUnits( String units ) {
+			mAmplitudeUnits = units;
+		}
+		public QualityOfVoice.FAILCONDITIONS getGreaterThan() {
+			return mGreaterThan;
+		}
+		public void setGreaterThan( QualityOfVoice.FAILCONDITIONS val ) {
+			mGreaterThan = val;
+		}
+		public QualityOfVoice.FAILCONDITIONS getLessThan() {
+			return mLessThan;
+		}
+		public void setLessThan( QualityOfVoice.FAILCONDITIONS val ) {
+			mLessThan = val;
+		}
+		public float[] getResults() {
+			return mResults;
+		}
+		public void setResults( float[] res ) {
+			mResults = res;
+		}
+		public int getRstOption() {
+			return mRstOption;
+		}
+		public void setRstOption( int val ) {
+			mRstOption = val;
+		}
+		public String getRstFilename() {
+			return mRstFilename;
+		}
+		public void setRstFilename( String file ) {
+			mRstFilename = file;
+		}
+	} //end RESULTDATA
+			
+		
+} //end QualityOfVoice
