@@ -1,0 +1,27 @@
+<table align="center" valign="top" border=0 cellpadding=1 cellspacing=1 width="100%" bgcolor="#FFFFFF">
+<tr>
+	<td align="center" width="20%">
+		<a href="<%=response.encodeURL("/customer/getcustomeraction.do")%>" class="smallmenulink">
+		My Information	
+		</a>
+	</td>
+	<td align="center" width="20%">
+		<a href="<%=response.encodeURL("/account/getaccountsaction.do")%>" class="smallmenulink">
+		Accounts
+		</a>
+	</td>
+	<td align="center" width="15%">
+		<a href="<%=response.encodeURL("/user/getusageaction.do?userid=" +
+		usersession.getUser().getUserPK().getID())%>" class="smallmenulink">
+		Usage	
+		</a>
+	</td>
+	<td align="center" width="15%">
+		<a href="<%=response.encodeURL("/user/signoffuseraction.do")%>" class="smallmenulink">
+		Logoff	
+		</a>
+	</td>
+</tr>
+</table>
+
+

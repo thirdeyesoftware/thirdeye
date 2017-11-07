@@ -1,0 +1,21 @@
+<%
+UserSession usersession = null;
+
+try {
+	usersession = 
+		UserSessionHelper.getUserSession(request.getSession(false));
+	
+}
+catch (Exception ee) {
+	/*response.sendRedirect( 
+		response.encodeRedirectURL(
+		System.getProperty("iobeam.portal.signon.error.url")));
+	*/
+	System.out.println("no session");	
+}
+
+%>
+
+
+
+

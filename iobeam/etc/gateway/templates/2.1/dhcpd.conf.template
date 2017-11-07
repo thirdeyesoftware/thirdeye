@@ -1,0 +1,28 @@
+# dhcpd.conf
+#
+# Sample configuration file for ISC dhcpd
+#
+
+# option definitions common to all supported networks...
+#option domain-name "fugue.com";
+#option domain-name-servers toccata.fugue.com;
+
+option subnet-mask 255.255.255.0;
+default-lease-time 21600;
+max-lease-time 43200;
+
+subnet ${iobeam.gateway.subnet.internal.1.short} netmask ${iobeam.gateway.netmask.internal.1} {
+  range  ${iobeam.gateway.routelease.internal.1.start} ${iobeam.gateway.routelease.internal.1.stop};
+  option broadcast-address ${iobeam.gateway.broadcast.internal.1};
+  option routers ${iobeam.gateway.address.internal.1};
+  option domain-name-servers ${iobeam.gateway.address.dns.1},${iobeam.gateway.address.dns.2};
+}
+
+subnet ${iobeam.gateway.subnet.internal.2.short} netmask ${iobeam.gateway.netmask.internal.2} {
+  range  ${iobeam.gateway.routelease.internal.2.start} ${iobeam.gateway.routelease.internal.2.stop};
+  option broadcast-address ${iobeam.gateway.broadcast.internal.2};
+  option routers ${iobeam.gateway.address.internal.2};
+  option domain-name-servers ${iobeam.gateway.address.dns.1},${iobeam.gateway.address.dns.2};
+}
+
+

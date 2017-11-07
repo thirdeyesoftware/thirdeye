@@ -1,0 +1,20 @@
+products:
+
+Hot Spot Operators:
+
+Iobeam requires that each Iobeam Hot Spot install an Iobeam Service Gateway.
+
+The ISG is a small, speciailized on-premises device that fulfills all the
+necessary requirements to enable wireless access at a hot spot location.  The
+ISG requires an upstream internet connection.  Although no specific kind of 
+connection is required, Iobeam suggests a connection that has at least
+256k of upstream bandwidth.  The ISG can be configured for all 
+network environments using a web browser.
+
+If you have questions about the ISG, send an email to sales@iobeam.com.
+
+To sign up as an Iobeam Hot Spot Venue and purchase an Iobeam Service 
+Gateway, <click here>.
+
+
+

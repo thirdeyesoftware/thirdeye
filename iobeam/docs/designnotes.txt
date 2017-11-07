@@ -1,0 +1,47 @@
+BillableEntity - responsible for billing information and default payment rules.
+
+Customer - a high level entity that represents an individual or company.  A
+customer is a BillableEntity.  Customer may be composed of zero or more
+subordinate customers.  
+
+User - an actor who uses the gateway and/or portal services of Iobeam.
+
+Venue - a location where the iobeam gateway service is
+deployed.
+
+accout - an account is a construct that groups payables for a given BillableEntity.
+an account has one billableEntity.  A billableEntity may have zero or more
+accounts.
+
+subscription - may describe the terms of a service offering or hardware lease.  
+a subscription is a payable.  a subscription is created within an account.
+
+Invoice - created by the Billing System, an invoice captures the outstanding
+payables for an account for the given billing interval.  An invoice is created
+for one account.
+
+Statement - contains details of accounts, the invoices for those accounts and
+the applied payments for those invoices. (may be considered "billing history" 
+for a BillableEntity for an interval of time)
+
+
+
+let customer be kroger.  kroger has 2 locations, A and B.  A and B must be
+billed separately.  A has one service subscription, 'All Users'.  B has two
+service subscriptions, 'All Employees' and 'Management'.  Having two separate
+service subscriptions allows location B administrators to administer each user
+list separately.
+?how many accounts exist?
+?who is the customer for A & B?
+
+now let A be a corporate store and allow B to be a franchise which handles
+it's own billing.  A's billing is handled by corporate.
+? who is the customer for B?
+
+now, make A and B be billed together.  A has two subscriptions, B has two
+subscriptions.  Kroger wishes to track subscriptions by location.
+?how many accounts exist?
+
+is service subscription assigned location by account? may two service
+subscriptions within an account have distinct locations?
+

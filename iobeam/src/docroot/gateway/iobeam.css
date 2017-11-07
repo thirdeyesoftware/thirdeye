@@ -1,0 +1,43 @@
+li.black { color: #000000; font-size: 8pt;}
+li.error { color: #FF0000; font-size: 8pt;}
+
+.newshead { color: #e1953f; font-weight: bold; font-size: 75%; font-family: "Trebuchet MS",arial}
+.newsheadlarge { color: #e1953f; font-weight: bold; font-size: 100%; font-family: "Trebuchet MS",arial }
+.newsbody { color: black; font-size: 75%; font-family: "Trebuchet MS",arial }
+a { color: #e1953f; font-weight: bold; font-size: 75%; font-family: "Trebuchet MS",arial; text-decoration: none }
+a:active { color: #e1953f; font-weight: bold; font-size: 75%; font-family: "Trebuchet MS",arial; text-decoration: underline }
+a:hover { color: #8b0000; font-weight: bold; font-size: 75%; font-family: "Trebuchet MS",arial; text-decoration: underline }
+a:link { color: #e1953f; font-weight: bold; font-size: 75%; font-family: "Trebuchet MS",arial }
+a:vlink { color: #e1953f; font-weight: bold; font-size: 75%; font-family: "Trebuchet MS",arial; text-decoration: none }
+.footer { color: gray; font-size: 65%; font-family: "Trebuchet MS",arial }
+.linkfont { color: #e1953f; font-weight: bold; font-size:9pt; font-family: "Trebuchet MS",arial }
+.bodyheading { color: #e1953f; font-weight: bold; font-size:10pt; font-family: "Trebuchet MS",arial }
+.bodyheadingsmall { color: #e1953f; font-weight: bold; font-size:8pt; font-family: "Trebuchet MS",arial }
+.bodyheadingsmallgrey { color: #86878b; font-weight: bold; font-size:8pt; font-family: "Trebuchet MS",arial }
+
+.forminstructions{ color: #000000; font-weight: bold; font-size:75%; font-family: "Trebuchet MS",arial }
+.formlabel{ color: #e1953f; font-weight: bold; font-size:75%; font-family: "Trebuchet MS",arial }
+
+a.formlink { color: #e1953f; font-weight: bold; font-size: 75%; font-family: "Terbuchet MS",arial; text-decoration: underline }
+
+a.formlink:link { color: #e1953f; font-weight: bold; font-size: 75%; font-family: "Terbuchet MS",arial; text-decoration: underline }
+a.formlink:hover { color: #e1953f; font-weight: bold; font-size: 75%; font-family: "Terbuchet MS",arial; text-decoration: underline }
+a.formlink:vlink { color: #e1953f; font-weight: bold; font-size: 75%; font-family: "Terbuchet MS",arial; text-decoration: underline }
+a.formlink:active { color: #e1953f; font-weight: bold; font-size: 75%; font-family: "Terbuchet MS",arial; text-decoration: underline }
+li { color:#FF0000; font-weight: normal; font-size:75%; font-family: "Trebuchet MS",arial; }
+.adminheadline { color: #f79b36; font-weight: bold; font-size: 110%; font-family: "Trebuchet MS", Arial; }
+.adminreversebold { color: #FFFFFF; font-weight: 700; font-size: 75%; font-family: "Trebuchet MS", Arial; }
+.adminorangebold  { color: #f79b36; font-weight: bold; font-size: 50%; font-family: "Trebuchet MS", Arial; }
+
+a.smallmenulink:hover { color:#000000; font-weight: normal; font-size:.75em; font-family: "Trebuchet MS", arial; text-decoration: underline; }
+a.smallmenulink:vlink { color:#000000; font-weight: normal; font-size:.75em; font-family: "Trebuchet MS", arial; text-decoration: none; }
+a.smallmenulink { color:#000000; font-weight: normal; font-size:.75em; font-family: "Trebuchet MS", arial; text-decoration: none; }
+
+a.menulink:hover { color:#000000; font-weight: normal; font-size:8pt; font-family: "Trebuchet MS", arial; text-decoration: underline; }
+a.menulink:vlink { color:#000000; font-weight: normal; font-size:8pt; font-family: "Trebuchet MS", arial; text-decoration: none; }
+a.menulink { color:#000000; font-weight: normal; font-size:8pt; font-family: "Trebuchet MS", arial; text-decoration: none; }
+.blackdataelementsmall { color:000000; font-family: "Trebuchet MS", arial; font-size:.75em; font-weight: normal; }
+.blackformlabelsmall { color:000000; font-family: "Trebuchet MS", arial; font-size:.75em; font-weight: bold; }
+.blackdataelement { color:000000; font-family: "Trebuchet MS", arial; font-size:.75em; font-weight: normal; }
+.blackformlabel { color:000000; font-family: "Trebuchet MS", arial; font-size:.75em; font-weight: bold; }
+.customernotice { color:000000; font-family: "Trebuchet MS", arial; font-size:75%; font-weight: normal; }

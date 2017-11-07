@@ -1,0 +1,92 @@
+
+<!--
+Automatically created by Tomcat JspC.
+Place this fragement in the web.xml before all icon, display-name,
+description, distributable, and context-param elements.
+-->
+
+	<servlet>
+		<servlet-name>com.iobeam.gateway.web.jsp.index_jsp</servlet-name>
+		<servlet-class>com.iobeam.gateway.web.jsp.index_jsp</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.admin_jsp</servlet-name>
+		<servlet-class>com.iobeam.gateway.web.gwadmin.admin_jsp</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.error_jsp</servlet-name>
+		<servlet-class>com.iobeam.gateway.web.gwadmin.error_jsp</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.index_jsp</servlet-name>
+		<servlet-class>com.iobeam.gateway.web.gwadmin.index_jsp</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.leases_jsp</servlet-name>
+		<servlet-class>com.iobeam.gateway.web.gwadmin.leases_jsp</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.login_jsp</servlet-name>
+		<servlet-class>com.iobeam.gateway.web.gwadmin.login_jsp</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.rebootack_jsp</servlet-name>
+		<servlet-class>com.iobeam.gateway.web.gwadmin.rebootack_jsp</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.tasks_jsp</servlet-name>
+		<servlet-class>com.iobeam.gateway.web.gwadmin.tasks_jsp</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>com.iobeam.gateway.web.jsp.index_jsp</servlet-name>
+		<url-pattern>/jsp/index.jsp</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.admin_jsp</servlet-name>
+		<url-pattern>/gwadmin/admin.jsp</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.error_jsp</servlet-name>
+		<url-pattern>/gwadmin/error.jsp</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.index_jsp</servlet-name>
+		<url-pattern>/gwadmin/index.jsp</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.leases_jsp</servlet-name>
+		<url-pattern>/gwadmin/leases.jsp</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.login_jsp</servlet-name>
+		<url-pattern>/gwadmin/login.jsp</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.rebootack_jsp</servlet-name>
+		<url-pattern>/gwadmin/rebootack.jsp</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.tasks_jsp</servlet-name>
+		<url-pattern>/gwadmin/tasks.jsp</url-pattern>
+	</servlet-mapping>
+
+<!--
+All session-config, mime-mapping, welcome-file-list, error-page, taglib,
+resource-ref, security-constraint, login-config, security-role,
+env-entry, and ejb-ref elements should follow this fragment.
+-->

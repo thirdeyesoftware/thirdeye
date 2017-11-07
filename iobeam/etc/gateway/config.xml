@@ -1,0 +1,583 @@
+ <iobeam>
+		<RouterConfig type="default" name="defaultConfig">
+			<tables>		
+				<table name="mangle">
+					<chains>
+						<chain name="iobeam"/>
+					</chains>
+					<rules>
+						<!-- iptables -t mangle -A PREROUTING -j iobeam -->
+						<rule chain="PREROUTING">
+							<target name="iobeam"/>
+						</rule>
+				
+						<!-- iptables -t mangle -A iobeam -j MARK -set-mark 4 -->
+						<rule chain="iobeam">
+							<target name="MARK" value="4"/>
+						</rule>
+					</rules>
+					
+				</table>
+			
+				<table name="nat">
+					<chains>
+						<chain name="iobeam_capture"/>
+						<chain name="iobeam_nat"/>
+					</chains>
+					<rules>
+							<!-- iptables -t nat -A PREROUTING -j iobeam_capture -->
+						<rule chain="PREROUTING">
+							<target name="iobeam_capture"/>
+						</rule>
+						<!-- iptables -t nat -A iobeam_capture -s ${iobeam.gateway.subnet.internal} -d 172.16.1.1
+										-p tcp -dport 80 -j RETURN -->	
+						<!--
+						<rule chain="iobeam_capture">
+							<target name="RETURN"/>
+							<source>${iobeam.gateway.subnet.internal}</source>
+							<destination>${iobeam.portal.domain}</destination>
+							<protocol>tcp</protocol>
+							<destination_port>80</destination_port>
+
+						</rule>
+						-->
+						<!--iptables -t nat -A iobeam_capture -s ${iobeam.gateway.subnet.internal} -d 172.16.1.1
+										-p tcp -dport 443 -j RETURN 	-->
+						<!--
+						<rule chain="iobeam_capture">
+							<target name="RETURN"/>
+							<source>${iobeam.gateway.subnet.internal}</source>
+							<destination>${iobeam.portal.domain}</destination>
+							<protocol>tcp</protocol>
+							<destination_port>443</destination_port>
+
+						</rule>
+						-->	
+
+						<!-- iptables -t nat -A iobeam_capture -s ${iobeam.gateway.subnet.internal} -m mark 
+									-mark=4 -p tcp -dport 80 -j REDIRECT -to-port 7027 -->
+						<rule chain="iobeam_capture">
+							<target name="REDIRECT" port="${iobeam.gateway.notify.port}"/>
+							<source>${iobeam.gateway.subnet.internal.1}</source>
+							<match type="mark" value="4" protocol="tcp" dport="80"/>
+						</rule>
+
+						<rule chain="iobeam_capture">
+							<target name="REDIRECT" port="${iobeam.gateway.notify.port}"/>
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<match type="mark" value="4" protocol="tcp" dport="80"/>
+						</rule>
+
+						<!-- iptables -t nat -A iobeam_capture -s ${iobeam.gateway.subnet.internal} -m mark 
+									-mark=4 -p tcp -dport 443 -j REDIRECT -to-port 7027 -->
+						<rule chain="iobeam_capture">
+							<target name="REDIRECT" port="${iobeam.gateway.secure.notify.port}"/>
+							<source>${iobeam.gateway.subnet.internal.1}</source>
+							<match type="mark" value="4" protocol="tcp" dport="443"/>
+						</rule>
+
+						<rule chain="iobeam_capture">
+							<target name="REDIRECT" port="${iobeam.gateway.secure.notify.port}"/>
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<match type="mark" value="4" protocol="tcp" dport="443"/>
+						</rule>
+						
+						<rule chain="iobeam_capture">
+							<target name="REDIRECT" port="${iobeam.gateway.notify.port}"/>
+							<source>${iobeam.gateway.subnet.internal.1}</source>
+							<destination except="true">${iobeam.portal.domain}</destination>
+							<match type="mark" value="3" protocol="tcp" dport="80"/>
+						</rule>
+						
+						<rule chain="iobeam_capture">
+							<target name="REDIRECT" port="${iobeam.gateway.notify.port}"/>
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<destination except="true">${iobeam.portal.domain}</destination>
+							<match type="mark" value="3" protocol="tcp" dport="80"/>
+						</rule>
+						
+						<rule chain="iobeam_capture">
+							<target name="REDIRECT" port="${iobeam.gateway.secure.notify.port}"/>
+							<source>${iobeam.gateway.subnet.internal.1}</source>
+							<destination except="true">${iobeam.portal.domain}</destination>
+							<match type="mark" value="3" protocol="tcp" dport="443"/>
+						</rule>
+						<rule chain="iobeam_capture">
+							<target name="REDIRECT" port="${iobeam.gateway.secure.notify.port}"/>
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<destination except="true">${iobeam.portal.domain}</destination>
+							<match type="mark" value="3" protocol="tcp" dport="443"/>
+						</rule>
+
+						<!--<<<  ADD FOR PROXY >>>-->	
+						<!-- iptables -t nat -A iobeam_capture -s
+						${iobeam.gateway.subnet.internal} -p tcp -dport 80 -m mark -mark 2 
+						-j DNAT -to ${iobeam.portal.proxy.address}:${iobeam.portal.proxy.port
+						-->
+						<!--
+						<rule chain="iobeam_capture">
+							<source>${iobeam.gateway.subnet.internal}</source>
+							<protocol>tcp</protocol>
+							<destination_port>80</destination_port>
+							<match type="mark" value="2" protocol="tcp" dport="80"/>
+							<target name="REDIRECT" port="${iobeam.portal.proxy.port}"
+								address="${iobeam.portal.proxy.address}"/>
+						</rule>
+						-->
+						<!-- POSTROUTING -->
+						<!-- iptables -t nat -A POSTROUTING -j iobeam_nat -->
+						<rule chain="POSTROUTING">
+							<target name="iobeam_nat"/>
+						</rule>
+				
+						<!-- iptables -t nat -A iobeam_nat -s ${iobeam.gateway.subnet.internal}
+									-m mark -mark 1 -J MASQUERADE -->
+						<rule chain="iobeam_nat">
+							<source>${iobeam.gateway.subnet.internal.1}</source>
+							<match type="mark" value="1" />
+							<target name="MASQUERADE"/>
+						</rule>
+						<rule chain="iobeam_nat">
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<match type="mark" value="1" />
+							<target name="MASQUERADE"/>
+						</rule>
+				
+				
+						<!-- iptables -t nat -A iobeam_nat -s ${iobeam.gateway.subnet.internal}
+									-m mark -mark 2 -J MASQUERADE -->
+						<rule chain="iobeam_nat">
+							<source>${iobeam.gateway.subnet.internal.1}</source>
+							<match type="mark" value="2" />
+							<target name="MASQUERADE"/>
+						</rule>
+						<rule chain="iobeam_nat">
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<match type="mark" value="2" />
+							<target name="MASQUERADE"/>
+						</rule>
+
+						<rule chain="iobeam_nat">
+							<source>${iobeam.gateway.subnet.internal.1}</source>
+							<match type="mark" value="4" protocol="icmp"/>
+							<target name="MASQUERADE"/>
+						</rule>
+						<rule chain="iobeam_nat">
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<match type="mark" value="4" protocol="icmp"/>
+							<target name="MASQUERADE"/>
+						</rule>
+
+						<!-- iptables -t nat -A iobeam_nat -s ${iobeam.gateway.subnet.internal} -d
+						${iobeam.portal.domain} -m mark -mark 3 -p tcp -J MASQUERADE -->
+						<rule chain="iobeam_nat">
+							<source>${iobeam.gateway.subnet.internal.1}</source>
+							<destination>${iobeam.portal.domain}</destination>
+							<match type="mark" value="3" protocol="tcp" />
+							<target name="MASQUERADE"/>
+						</rule>
+						<rule chain="iobeam_nat">
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<destination>${iobeam.portal.domain}</destination>
+							<match type="mark" value="3" protocol="tcp" />
+							<target name="MASQUERADE"/>
+						</rule>
+						
+						<!-- iptables -t nat -A iobeam_nat -s ${iobeam.gateway.subnet.internal} -d 172.16.1.1 
+									-p tcp -dport 80 -j MASQUERADE -->
+						<rule chain="iobeam_nat">
+							<source>${iobeam.gateway.subnet.internal.1}</source>
+							<destination>${iobeam.gateway.address.internal.1}</destination>
+							<protocol>tcp</protocol>
+							<destination_port>80</destination_port>
+							<target name="MASQUERADE"/>
+						</rule>
+						<rule chain="iobeam_nat">
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<destination>${iobeam.gateway.address.internal.2}</destination>
+							<protocol>tcp</protocol>
+							<destination_port>80</destination_port>
+							<target name="MASQUERADE"/>
+						</rule>
+				
+						<!-- iptables -t nat -A iobeam_nat -s ${iobeam.gateway.subnet.internal} -d 172.16.1.1 
+									-p tcp -dport 443 -j MASQUERADE -->
+						<rule chain="iobeam_nat">
+							<source>${iobeam.gateway.subnet.internal.1}</source>
+							<destination>${iobeam.gateway.address.internal.1}</destination>
+							<protocol>tcp</protocol>
+							<destination_port>443</destination_port>
+							<target name="MASQUERADE"/>
+						</rule>
+						<rule chain="iobeam_nat">
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<destination>${iobeam.gateway.address.internal.2}</destination>
+							<protocol>tcp</protocol>
+							<destination_port>443</destination_port>
+							<target name="MASQUERADE"/>
+						</rule>
+				
+						<!-- iptables -t nat -A iobeam_nat -s ${iobeam.gateway.subnet.internal}
+									-d <dns_server> -p tcp -dport 53 -j MASQUERADE -->
+						<rule chain="iobeam_nat">
+							<source>${iobeam.gateway.subnet.internal.1}</source>
+							<destination>${iobeam.gateway.address.dns.1}</destination>
+							<protocol>tcp</protocol>
+							<destination_port>53</destination_port>
+							<target name="MASQUERADE"/>
+						</rule>
+						<rule chain="iobeam_nat">
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<destination>${iobeam.gateway.address.dns.1}</destination>
+							<protocol>tcp</protocol>
+							<destination_port>53</destination_port>
+							<target name="MASQUERADE"/>
+						</rule>
+						
+						<rule chain="iobeam_nat">
+							<source>${iobeam.gateway.subnet.internal.1}</source>
+							<destination>${iobeam.gateway.address.dns.1}</destination>
+							<protocol>udp</protocol>
+							<destination_port>53</destination_port>
+							<target name="MASQUERADE"/>
+						</rule>
+						<rule chain="iobeam_nat">
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<destination>${iobeam.gateway.address.dns.1}</destination>
+							<protocol>udp</protocol>
+							<destination_port>53</destination_port>
+							<target name="MASQUERADE"/>
+						</rule>
+
+						<!-- iptables -t nat -A iobeam_nat -s ${iobeam.gateway.subnet.internal}
+									-d <dns_server> -p udp -dport 53 -j MASQUERADE -->
+						<rule chain="iobeam_nat">
+							<source>${iobeam.gateway.subnet.internal.1}</source>
+							<destination>${iobeam.gateway.address.dns.2}</destination>
+							<protocol>tcp</protocol>
+							<destination_port>53</destination_port>
+							<target name="MASQUERADE"/>
+						</rule>
+						<rule chain="iobeam_nat">
+							<source>${iobeam.gateway.subnet.internal.1}</source>
+							<destination>${iobeam.gateway.address.dns.2}</destination>
+							<protocol>udp</protocol>
+							<destination_port>53</destination_port>
+							<target name="MASQUERADE"/>
+						</rule>
+						<rule chain="iobeam_nat">
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<destination>${iobeam.gateway.address.dns.2}</destination>
+							<protocol>tcp</protocol>
+							<destination_port>53</destination_port>
+							<target name="MASQUERADE"/>
+						</rule>
+						<rule chain="iobeam_nat">
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<destination>${iobeam.gateway.address.dns.2}</destination>
+							<protocol>udp</protocol>
+							<destination_port>53</destination_port>
+							<target name="MASQUERADE"/>
+						</rule>
+					</rules>
+				</table>
+			
+				<table name="filter">
+					<chains>
+						<chain name="iobeam"/>
+						<chain name="iobeam_ports"/>
+						<chain name="iobeam_inbound"/>
+					</chains>
+					<rules>
+						<!-- iptables -t filter -A FORWARD -j iobeam -->
+						<rule chain="FORWARD">
+							<target name="iobeam"/>
+						</rule>
+
+						<!-- iptables -t filter -A iobeam -j iobeam_ports -->
+						<rule chain="iobeam">
+							<target name="iobeam_ports"/>
+						</rule>
+
+						<!-- iptables -t filter -A iobeam -j iobeam_inbound -->
+						<rule chain="iobeam">
+							<target name="iobeam_inbound"/>
+						</rule>
+
+						<!-- iptables -t filter -A iobeam_ports -m mark -mark 2 -p tcp 
+									-dport 25 -j DROP -->
+						<!--
+						<rule chain="iobeam_ports">
+							<match type="mark" value="2" protocol="tcp" dport="25" />
+							<target name="DROP"/>
+						</rule>
+						-->
+						<!-- iptables -t filter -A iobeam_ports -m mark -mark 2 -p tcp 
+									-dport 25 -j DROP -->
+						<!--
+						<rule chain="iobeam_ports">
+							<match type="mark" value="2" protocol="udp" dport="25" />
+							<target name="DROP"/>
+						</rule> -->
+						<!--
+						<rule chain="iobeam_ports">
+							<source except="true">${iobeam.gateway.subnet.internal}</source>
+							<destination_port>68</destination_port>
+							<protocol>udp</protocol>
+							<target name="DROP"/>
+						</rule>
+						
+						<rule chain="iobeam_ports">
+							<source except="true">${iobeam.gateway.subnet.internal}</source>
+							<destination_port>67</destination_port>
+							<protocol>udp</protocol>
+							<target name="DROP"/>
+						</rule>
+
+						<rule chain="iobeam_ports">
+							<destination except="true">${iobeam.gateway.subnet.internal}</destination>
+							<destination_port>138</destination_port>
+							<protocol>udp</protocol>
+							<target name="DROP"/>
+						</rule>
+						
+						<rule chain="iobeam_ports">
+							<destination except="true">${iobeam.gateway.subnet.internal}</destination>
+							<destination_port>137</destination_port>
+							<protocol>udp</protocol>
+							<target name="DROP"/>
+						</rule>
+						-->	
+						<!-- iptables -t FILTER -A iobeam -s ${iobeam.gateway.subnet.internal} 
+									 -m mark -mark 1 -j ACCEPT -->
+						<rule chain="iobeam">
+							<source>${iobeam.gateway.subnet.internal.1}</source>
+							<match type="mark" value="1"/>
+							<target name="ACCEPT"/>
+						</rule>
+						<rule chain="iobeam">
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<match type="mark" value="1"/>
+							<target name="ACCEPT"/>
+						</rule>
+				
+						<!-- iptables -t FILTER -A iobeam -s ${iobeam.gateway.subnet.internal} 
+									 -m mark -mark 2 -j ACCEPT -->
+						<rule chain="iobeam">
+							<source>${iobeam.gateway.subnet.internal.1}</source>
+							<match type="mark" value="2"/>
+							<target name="ACCEPT"/>
+						</rule>
+						<rule chain="iobeam">
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<match type="mark" value="2"/>
+							<target name="ACCEPT"/>
+						</rule>
+
+						<!-- iptables -t FILTER -A iobeam -s ${iobeam.gateway.subnet.internal} 
+									 -d slashdot.org -m mark -mark 3 -j ACCEPT -->
+						<rule chain="iobeam">
+							<source>${iobeam.gateway.subnet.internal.1}</source>
+							<destination>${iobeam.portal.domain}</destination>
+							<match type="mark" value="3"/>
+							<target name="ACCEPT"/>
+						</rule>
+
+						<rule chain="iobeam">
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<destination>${iobeam.portal.domain}</destination>
+							<match type="mark" value="3"/>
+							<target name="ACCEPT"/>
+						</rule>
+						
+						<rule chain="iobeam">
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<destination>${iobeam.portal.domain}</destination>
+							<match type="mark" value="4"/>
+							<target name="ACCEPT"/>
+						</rule>
+
+
+						<rule chain="iobeam">
+							<source>${iobeam.gateway.subnet.internal.1}</source>
+							<match type="mark" value="4" protocol="icmp"/>
+							<target name="ACCEPT"/>
+						</rule>
+						<rule chain="iobeam">
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<match type="mark" value="4" protocol="icmp"/>
+							<target name="ACCEPT"/>
+						</rule>
+
+						<!-- iptables -t FILTER -A iobeam -s ${iobeam.gateway.subnet.internal}
+										-d 172.16.1.1 -dport 80 -p tcp -j ACCEPT -->
+						<rule chain="iobeam">
+							<source>${iobeam.gateway.subnet.internal.1}</source>
+							<destination>${iobeam.gateway.address.internal.1}</destination>
+							<protocol>tcp</protocol>
+							<destination_port>80</destination_port>
+							<target name="ACCEPT"/>
+						</rule>
+						<rule chain="iobeam">
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<destination>${iobeam.gateway.address.internal.2}</destination>
+							<protocol>tcp</protocol>
+							<destination_port>80</destination_port>
+							<target name="ACCEPT"/>
+						</rule>
+
+						<!-- iptables -t FILTER -A iobeam -d ${iobeam.gateway.subnet.internal}
+										-s 172.16.1.1 -sport 80 -p tcp -j ACCEPT -->
+						<rule chain="iobeam">
+							<source>${iobeam.gateway.address.internal.1}</source>
+							<destination>${iobeam.gateway.subnet.internal.1}</destination>
+							<protocol>tcp</protocol>
+							<source_port>80</source_port>
+							<target name="ACCEPT"/>
+						</rule>
+						<rule chain="iobeam">
+							<source>${iobeam.gateway.address.internal.2}</source>
+							<destination>${iobeam.gateway.subnet.internal.2}</destination>
+							<protocol>tcp</protocol>
+							<source_port>80</source_port>
+							<target name="ACCEPT"/>
+						</rule>
+				
+						<!-- iptables -t FILTER -A iobeam -s ${iobeam.gateway.subnet.internal}
+										-d 172.16.1.1 -dport 443 -p tcp -j ACCEPT -->
+						<rule chain="iobeam">
+							<source>${iobeam.gateway.subnet.internal.1}</source>
+							<destination>${iobeam.portal.domain}</destination>
+							<protocol>tcp</protocol>
+							<destination_port>443</destination_port>
+							<target name="ACCEPT"/>
+						</rule>
+						<rule chain="iobeam">
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<destination>${iobeam.portal.domain}</destination>
+							<protocol>tcp</protocol>
+							<destination_port>443</destination_port>
+							<target name="ACCEPT"/>
+						</rule>
+
+						<!-- iptables -t FILTER -A iobeam -d ${iobeam.gateway.subnet.internal}
+										-s 172.16.1.1 -sport 443 -p tcp -j ACCEPT -->
+						<rule chain="iobeam">
+							<source>${iobeam.portal.domain}</source>
+							<destination>${iobeam.gateway.subnet.internal.1}</destination>
+							<protocol>tcp</protocol>
+							<source_port>443</source_port>
+							<target name="ACCEPT"/>
+						</rule>
+						<rule chain="iobeam">
+							<source>${iobeam.portal.domain}</source>
+							<destination>${iobeam.gateway.subnet.internal.2}</destination>
+							<protocol>tcp</protocol>
+							<source_port>443</source_port>
+							<target name="ACCEPT"/>
+						</rule>
+				
+						<!-- iptables -t FILTER -A iobeam -s ${iobeam.gateway.subnet.internal}
+										-d <dns server> -dport 53 -p tcp -j ACCEPT -->
+						<rule chain="iobeam">
+							<source>${iobeam.gateway.subnet.internal.1}</source>
+							<destination>${iobeam.gateway.address.dns.1}</destination>
+							<protocol>tcp</protocol>
+							<destination_port>53</destination_port>
+							<target name="ACCEPT"/>
+						</rule>
+						<rule chain="iobeam">
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<destination>${iobeam.gateway.address.dns.1}</destination>
+							<protocol>tcp</protocol>
+							<destination_port>53</destination_port>
+							<target name="ACCEPT"/>
+						</rule>
+
+						<!-- iptables -t FILTER -A iobeam -s ${iobeam.gateway.subnet.internal}
+										-d <dns server> -dport 53 -p udp -j ACCEPT -->
+						<rule chain="iobeam">
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<destination>${iobeam.gateway.address.dns.1}</destination>
+							<protocol>udp</protocol>
+							<destination_port>53</destination_port>
+							<target name="ACCEPT"/>
+						</rule>
+						
+						<rule chain="iobeam">
+							<source>${iobeam.gateway.subnet.internal.1}</source>
+							<destination>${iobeam.gateway.address.dns.2}</destination>
+							<protocol>tcp</protocol>
+							<destination_port>53</destination_port>
+							<target name="ACCEPT"/>
+						</rule>
+						<rule chain="iobeam">
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<destination>${iobeam.gateway.address.dns.2}</destination>
+							<protocol>tcp</protocol>
+							<destination_port>53</destination_port>
+							<target name="ACCEPT"/>
+						</rule>
+
+						<!-- iptables -t FILTER -A iobeam -s ${iobeam.gateway.subnet.internal}
+										-d <dns server> -dport 53 -p udp -j ACCEPT -->
+						<rule chain="iobeam">
+							<source>${iobeam.gateway.subnet.internal.1}</source>
+							<destination>${iobeam.gateway.address.dns.2}</destination>
+							<protocol>udp</protocol>
+							<destination_port>53</destination_port>
+							<target name="ACCEPT"/>
+						</rule>
+						<rule chain="iobeam">
+							<source>${iobeam.gateway.subnet.internal.2}</source>
+							<destination>${iobeam.gateway.address.dns.2}</destination>
+							<protocol>udp</protocol>
+							<destination_port>53</destination_port>
+							<target name="ACCEPT"/>
+						</rule>
+				
+						<!-- iptables -t FILTER -A iobeam -s <dns server> -j ACCEPT -->
+						<!--<rule chain="iobeam">
+							<source>${iobeam.gateway.address.dns.1}</source>
+							<target name="ACCEPT"/>
+						</rule>
+						<rule chain="iobeam">
+							<source>${iobeam.gateway.address.dns.2}</source>
+							<target name="ACCEPT"/>
+						</rule>
+						-->
+						
+						<!--<<<  ADD FOR PROXY >>>-->	
+						<!-- iptables -t filter -A iobeam -d ${iobeam.portal.proxy.address}
+						-p tcp -dport ${iobeam.portal.proxy.port} -j ACCEPT -->
+				
+					</rules>
+				</table>
+
+				
+			</tables>
+			
+			<interfaces>
+				<interface type="external">
+					<name>eth0</name>
+					<address>${iobeam.gateway.address.external}</address>
+				</interface>
+				<interface type="internal">
+					<name>eth1</name>
+					<subnet>${iobeam.gateway.subnet.internal.1}</subnet>
+				</interface>
+			</interfaces>
+			
+			<name_servers>
+				<server>${iobeam.gateway.address.dns.1}</server>
+				<server>${iobeam.gateway.address.dns.2}</server>
+			</name_servers>
+			
+			<host_address>${iobeam.gateway.address.internal.1}</host_address>
+			
+    </RouterConfig>
+          
+          
+</iobeam>
+
+			

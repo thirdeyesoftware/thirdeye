@@ -1,0 +1,25 @@
+# Used by ifup(8) and ifdown(8). See the interfaces(5) manpage or
+# /usr/share/doc/ifupdown/examples for more information.
+
+auto lo
+iface lo inet loopback
+
+auto wlan0
+iface wlan0 inet static
+	address ${iobeam.gateway.address.internal.1}
+	netmask ${iobeam.gateway.netmask.internal.1}
+	broadcast ${iobeam.gateway.broadcast.internal.1}
+	up iwconfig wlan0 essid ${iobeam.gateway.radio.ssid} channel ${iobeam.gateway.radio.channel}  ${iobeam.gateway.radio.wep.key.long} 
+auto eth1
+iface eth1 inet static
+	address ${iobeam.gateway.address.internal.2}
+	netmask ${iobeam.gateway.netmask.internal.2}
+	broadcast ${iobeam.gateway.broadcast.internal.2}
+	${iobeam.gateway.defaultgateway.external.long}
+auto eth0
+# type can be static or dhcp
+iface eth0 inet ${iobeam.gateway.external.type}
+	${iobeam.gateway.address.external.long}
+	${iobeam.gateway.netmask.external.long}
+	${iobeam.gateway.broadcast.external.long}
+	${iobeam.gateway.defaultgateway.external.long}

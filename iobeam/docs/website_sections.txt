@@ -1,0 +1,43 @@
+website sections
+
+main
+location finder (hot spots)
+the technology
+services
+products
+contact us
+refer a location 
+iobeam portal logon
+sign up
+
+
+main - a little blurb about iobeam wireless along with a graphic representing
+the service
+
+location finder - search for iobeam enabled locations, including a mapping
+feature.
+
+the technology - a statement about the technology we employ and the
+requirements for use by the wireless user as well as the venue operator.
+
+services - a detailed list of services offered to our user-base.  this section
+includes two subsections, wireless end-user and venue operator
+
+products - a list of products offered by iobeam.  This section also has two
+subsections, wireless end-user and venue operator.
+
+contact us - information on how to contact iobeam via email, telephone or snail
+mail.
+
+refer a location - this section allows someone to suggest a location to
+deploy iobeam's wireless service.  the language here should some information
+about the "gift" we'll give the user if we install the suggested location.
+
+iobeam portal logon - a username/password logon to gain access to the iobeam
+portal. 
+
+sign-up - this section allows wireless users to sign up for iobeam.  we will
+also have a hotspot signup for venue operators wishing to deploy iobeam
+wireless services at their location.
+
+

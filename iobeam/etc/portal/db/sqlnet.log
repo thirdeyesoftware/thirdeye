@@ -1,0 +1,512 @@
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=beq)(PROGRAM=/usr/local/oracle/bin/oracle)(ARGV0=oracle)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')(DETACH=NO))(CONNECT_DATA=(CID=(PROGRAM=)(HOST=pornstar)(USER=jblau))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	Oracle Bequeath NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Development
+  Time: 16-APR-2003 02:32:02
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: Connect failed because target host or object does not exist
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: Connect failed because target host or object does not exist
+    nt secondary err code: 2
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=beq)(PROGRAM=/usr/local/oracle/bin/oracle)(ARGV0=oracle)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')(DETACH=NO))(CONNECT_DATA=(CID=(PROGRAM=)(HOST=pornstar)(USER=jblau))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	Oracle Bequeath NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Development
+  Time: 16-APR-2003 02:32:02
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: Connect failed because target host or object does not exist
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: Connect failed because target host or object does not exist
+    nt secondary err code: 2
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=beq)(PROGRAM=/usr/local/oracle/bin/oracle)(ARGV0=oracle)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')(DETACH=NO))(CONNECT_DATA=(CID=(PROGRAM=)(HOST=pornstar)(USER=jblau))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	Oracle Bequeath NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Development
+	TCP/IP NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Production
+  Time: 16-APR-2003 02:58:07
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: Connect failed because target host or object does not exist
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: Connect failed because target host or object does not exist
+    nt secondary err code: 2
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=beq)(PROGRAM=/usr/local/oracle/bin/oracle)(ARGV0=oracle)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')(DETACH=NO))(CONNECT_DATA=(CID=(PROGRAM=)(HOST=pornstar)(USER=jblau))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	Oracle Bequeath NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Development
+	TCP/IP NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Production
+  Time: 16-APR-2003 02:58:07
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: Connect failed because target host or object does not exist
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: Connect failed because target host or object does not exist
+    nt secondary err code: 2
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12537, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=thirdeye)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=jsn.jewishsinglesnetwork.com)(CID=(PROGRAM=)(HOST=pornstar)(USER=jblau))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	TCP/IP NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Production
+  Time: 16-APR-2003 03:14:04
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12537
+    TNS-12537: TNS:connection closed
+    ns secondary err code: 12560
+    nt main err code: 507
+    TNS-00507: Connection closed
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=beq)(PROGRAM=/usr/local/oracle/bin/oracle)(ARGV0=oracle)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')(DETACH=NO))(CONNECT_DATA=(CID=(PROGRAM=)(HOST=pornstar)(USER=jblau))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	Oracle Bequeath NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Development
+	TCP/IP NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Production
+  Time: 16-APR-2003 03:14:07
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: Connect failed because target host or object does not exist
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: Connect failed because target host or object does not exist
+    nt secondary err code: 2
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=beq)(PROGRAM=/usr/local/oracle/bin/oracle)(ARGV0=oracle)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')(DETACH=NO))(CONNECT_DATA=(CID=(PROGRAM=)(HOST=pornstar)(USER=jblau))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	Oracle Bequeath NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Development
+	TCP/IP NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Production
+  Time: 16-APR-2003 03:14:07
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: Connect failed because target host or object does not exist
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: Connect failed because target host or object does not exist
+    nt secondary err code: 2
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=beq)(PROGRAM=/usr/local/oracle/bin/oracle)(ARGV0=oracle)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')(DETACH=NO))(CONNECT_DATA=(CID=(PROGRAM=)(HOST=pornstar)(USER=jblau))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	Oracle Bequeath NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Development
+	TCP/IP NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Production
+  Time: 16-APR-2003 12:23:37
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: Connect failed because target host or object does not exist
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: Connect failed because target host or object does not exist
+    nt secondary err code: 2
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=208.4.52.250)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=iobeamdb.iobeam.com)(CID=(PROGRAM=)(HOST=pornstar)(USER=jblau))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	TCP/IP NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Production
+  Time: 18-APR-2003 23:11:35
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: Connect failed because target host or object does not exist
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: Connect failed because target host or object does not exist
+    nt secondary err code: 11
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=208.4.52.250)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=iobeamdb.iobeam.com)(CID=(PROGRAM=)(HOST=pornstar)(USER=jblau))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	TCP/IP NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Production
+  Time: 18-APR-2003 23:11:59
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: Connect failed because target host or object does not exist
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: Connect failed because target host or object does not exist
+    nt secondary err code: 11
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=208.4.52.250)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=iobeamdb.iobeam.com)(CID=(PROGRAM=)(HOST=pornstar)(USER=jblau))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	TCP/IP NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Production
+  Time: 18-APR-2003 23:12:36
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: Connect failed because target host or object does not exist
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: Connect failed because target host or object does not exist
+    nt secondary err code: 11
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=beq)(PROGRAM=/usr/local/oracle/bin/oracle)(ARGV0=oracle)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')(DETACH=NO))(CONNECT_DATA=(CID=(PROGRAM=)(HOST=pornstar)(USER=jblau))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	Oracle Bequeath NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Development
+	TCP/IP NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Production
+  Time: 18-APR-2003 23:12:40
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: Connect failed because target host or object does not exist
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: Connect failed because target host or object does not exist
+    nt secondary err code: 2
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=beq)(PROGRAM=/usr/local/oracle/bin/oracle)(ARGV0=oracle)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')(DETACH=NO))(CONNECT_DATA=(CID=(PROGRAM=)(HOST=pornstar)(USER=jblau))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	Oracle Bequeath NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Development
+	TCP/IP NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Production
+  Time: 18-APR-2003 23:12:40
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: Connect failed because target host or object does not exist
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: Connect failed because target host or object does not exist
+    nt secondary err code: 2
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=208.4.52.250)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=iobeamdb.iobeam.com)(CID=(PROGRAM=)(HOST=pornstar)(USER=jblau))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	TCP/IP NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Production
+  Time: 18-APR-2003 23:13:13
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: Connect failed because target host or object does not exist
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: Connect failed because target host or object does not exist
+    nt secondary err code: 11
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=208.4.52.250)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=iobeamdb.iobeam.com)(CID=(PROGRAM=)(HOST=pornstar)(USER=jblau))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	TCP/IP NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Production
+  Time: 18-APR-2003 23:13:47
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: Connect failed because target host or object does not exist
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: Connect failed because target host or object does not exist
+    nt secondary err code: 11
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=beq)(PROGRAM=/usr/local/oracle/bin/oracle)(ARGV0=oracle)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')(DETACH=NO))(CONNECT_DATA=(CID=(PROGRAM=)(HOST=pornstar)(USER=jblau))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	Oracle Bequeath NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Development
+	TCP/IP NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Production
+  Time: 18-APR-2003 23:13:51
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: Connect failed because target host or object does not exist
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: Connect failed because target host or object does not exist
+    nt secondary err code: 2
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=208.4.52.250)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=iobeamdb.iobeam.com)(CID=(PROGRAM=)(HOST=pornstar)(USER=jblau))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	TCP/IP NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Production
+  Time: 18-APR-2003 23:14:25
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: Connect failed because target host or object does not exist
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: Connect failed because target host or object does not exist
+    nt secondary err code: 11
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=beq)(PROGRAM=/usr/local/oracle/bin/oracle)(ARGV0=oracle)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')(DETACH=NO))(CONNECT_DATA=(CID=(PROGRAM=)(HOST=pornstar)(USER=jblau))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	Oracle Bequeath NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Development
+	TCP/IP NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Production
+  Time: 21-APR-2003 01:10:55
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: Connect failed because target host or object does not exist
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: Connect failed because target host or object does not exist
+    nt secondary err code: 2
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=beq)(PROGRAM=/usr/local/oracle/bin/oracle)(ARGV0=oracle)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')(DETACH=NO))(CONNECT_DATA=(CID=(PROGRAM=)(HOST=pornstar)(USER=jblau))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	Oracle Bequeath NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Development
+	TCP/IP NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Production
+  Time: 21-APR-2003 01:10:56
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: Connect failed because target host or object does not exist
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: Connect failed because target host or object does not exist
+    nt secondary err code: 2
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=beq)(PROGRAM=/usr/local/oracle/bin/oracle)(ARGV0=oracle)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')(DETACH=NO))(CONNECT_DATA=(CID=(PROGRAM=)(HOST=pornstar)(USER=jblau))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	Oracle Bequeath NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Development
+	TCP/IP NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Production
+  Time: 02-MAY-2003 15:31:29
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: Connect failed because target host or object does not exist
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: Connect failed because target host or object does not exist
+    nt secondary err code: 2
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=beq)(PROGRAM=/usr/local/oracle/bin/oracle)(ARGV0=oracle)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')(DETACH=NO))(CONNECT_DATA=(CID=(PROGRAM=)(HOST=pornstar)(USER=jblau))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	Oracle Bequeath NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Development
+	TCP/IP NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Production
+  Time: 02-MAY-2003 15:31:29
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: Connect failed because target host or object does not exist
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: Connect failed because target host or object does not exist
+    nt secondary err code: 2
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=beq)(PROGRAM=/usr/local/oracle/bin/oracle)(ARGV0=oracle)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')(DETACH=NO))(CONNECT_DATA=(CID=(PROGRAM=)(HOST=pornstar)(USER=jblau))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	Oracle Bequeath NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Development
+  Time: 06-MAY-2003 16:45:43
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: Connect failed because target host or object does not exist
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: Connect failed because target host or object does not exist
+    nt secondary err code: 2
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=beq)(PROGRAM=/usr/local/oracle/bin/oracle)(ARGV0=oracle)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')(DETACH=NO))(CONNECT_DATA=(CID=(PROGRAM=)(HOST=pornstar)(USER=root))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	Oracle Bequeath NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Development
+  Time: 30-JUN-2003 16:43:56
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: Connect failed because target host or object does not exist
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: Connect failed because target host or object does not exist
+    nt secondary err code: 2
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=beq)(PROGRAM=/usr/local/oracle/bin/oracle)(ARGV0=oracle)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')(DETACH=NO))(CONNECT_DATA=(CID=(PROGRAM=)(HOST=pornstar)(USER=root))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	Oracle Bequeath NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Development
+  Time: 30-JUN-2003 16:43:56
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: Connect failed because target host or object does not exist
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: Connect failed because target host or object does not exist
+    nt secondary err code: 2
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.1.199)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=iobeamdb.thirdeyesoftware.com)(CID=(PROGRAM=)(HOST=pornstar)(USER=root))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 8.1.7.0.0 - Development
+	TCP/IP NT Protocol Adapter for Linux: Version 8.1.7.0.0 - Production
+  Time: 30-JUN-2003 16:47:23
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operation timed out
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operation timed out
+    nt secondary err code: 110
+    nt OS err code: 0

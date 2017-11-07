@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.0//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+
+  <!-- ========== Form Bean Definitions =================================== -->
+  <form-beans>
+
+    <!-- Logon form bean -->
+    <form-bean      name="SignonForm"
+                    type="com.iobeam.portal.ui.web.user.signon.SignonUserForm"/>
+
+		<form-bean	name="SignupUserForm"
+								type="com.iobeam.portal.ui.web.user.signup.SignupUserForm"/>
+		
+		<form-bean	name="CustomerForm"
+								type="com.iobeam.portal.ui.web.customer.CustomerForm"/>
+		
+		<form-bean	name="BillablePartyForm"
+								type="com.iobeam.portal.ui.web.account.BillablePartyForm"/>
+		
+		<form-bean	name="ChangePasswordForm"
+								type="com.iobeam.portal.ui.web.user.password.ChangePasswordForm"/>
+
+		<form-bean	name="PasswordReminderForm"
+								type="com.iobeam.portal.ui.web.user.password.PasswordReminderForm"/>
+
+  </form-beans>
+
+
+  <!-- ========== Global Forward Definitions ============================== -->
+  <global-forwards>
+		<forward	name="error"					path="/jsp/error.jsp"/>
+		<forward	name="venuewelcome"		path="/jsp/signonsuccess.jsp"/>
+		<forward	name="portalwelcome"	path="/jsp/portalwelcome.jsp"/>
+		<forward	name="signup"					path="/user/signup.jsp"/>
+		<forward	name="portalsignon"					path="/index.jsp"/>
+  </global-forwards>
+
+
+  <!-- ========== Action Mapping Definitions ============================== -->
+  <action-mappings>
+
+
+
+		<!-- ==== USER ACTIONS ================================================ -->	
+		
+		<action    path="/user/portalsignonuseraction"
+               type="com.iobeam.portal.ui.web.user.signon.PortalSignonUserAction"
+              scope="request"
+           validate="true">
+      <forward name="failure"              path="/jsp/signonerror.jsp"/>
+      <forward name="success"              path="/jsp/portalwelcome.jsp"/>
+    </action>
+		
+		<action    path="/user/signonuseraction"
+               type="com.iobeam.portal.ui.web.user.signon.SignonUserAction"
+          name="SignonForm"
+              scope="request"
+           validate="true">
+      <forward name="failure"              path="/jsp/signonerror.jsp"/>
+      <forward name="success"              path="/jsp/signonsuccess.jsp"/>
+    </action>
+		
+		<action    path="/user/signoffuseraction"
+               type="com.iobeam.portal.ui.web.user.signoff.SignoffUserAction"
+              scope="request"
+           validate="true">
+      <forward name="success"              path="/jsp/signoffsuccess.jsp"/>
+    </action>
+    
+		<action    path="/user/signupuseraction"
+               type="com.iobeam.portal.ui.web.user.signup.SignupUserAction"
+          name="SignupUserForm"
+              scope="request"
+							input="/user/signup.jsp"
+           validate="true">
+      <forward name="failure"              path="/user/error.jsp"/>
+      <forward name="success"              path="/user/signupsuccess.jsp"/>
+    </action>
+		
+		<action    path="/user/changepasswordaction"
+               type="com.iobeam.portal.ui.web.user.password.ChangePasswordAction"
+              scope="request"
+							name="ChangePasswordForm"
+							input="/user/changepassword.jsp"
+           validate="true">
+      <forward name="failure"              path="/user/error.jsp"/>
+      <forward name="success"              path="/jsp/updatesuccess.jsp"/>
+		</action>
+		
+		<action    path="/user/passwordreminderaction"
+               type="com.iobeam.portal.ui.web.user.password.PasswordReminderAction"
+              scope="request"
+							name="PasswordReminderForm"
+							input="/user/passwordreminder.jsp"
+           validate="true">
+      <forward name="failure"              path="/user/error.jsp"/>
+      <forward name="success" path="/user/passwordremindersuccess.jsp"/>
+		</action>
+		<action    path="/user/getusageaction"
+               type="com.iobeam.portal.ui.web.user.contact.GetUserContactAction"
+              scope="request"
+							input="/jsp/portalwelcome.jsp"
+           validate="true">
+      <forward name="failure"              path="/user/error.jsp"/>
+      <forward name="success"              path="/user/usage.jsp"/>
+		</action>
+		
+		<!-- ==== ACCOUNT ACTIONS ================================================ -->	
+    
+		<action    path="/account/getaccountsaction"
+               type="com.iobeam.portal.ui.web.account.GetAccountsAction"
+              scope="request"
+							input="/jsp/portalwelcome.jsp"
+           validate="true">
+      <forward name="failure"              path="/user/error.jsp"/>
+      <forward name="success"
+				path="/account/getaccountdetailaction.do"/>
+    </action>
+
+		<action    path="/account/getaccountdetailaction"
+               type="com.iobeam.portal.ui.web.account.GetAccountDetailAction"
+              scope="request"
+							input="/account/accountdetail.jsp"
+           validate="true">
+      <forward name="failure"              path="/user/error.jsp"/>
+      <forward name="success"              path="/account/accountdetail.jsp"/>
+    </action>
+		
+		<action    path="/account/getbillablepartydetailaction"
+               type="com.iobeam.portal.ui.web.account.GetBillablePartyDetailAction"
+              scope="request"
+							input="/account/accountdetail.jsp"
+           validate="true">
+      <forward name="failure"              path="/user/error.jsp"/>
+      <forward name="success"              path="/account/billingdetail.jsp"/>
+    </action>
+		
+		<action    path="/account/updatebillablepartydetailaction"
+               type="com.iobeam.portal.ui.web.account.UpdateBillablePartyDetailAction"
+              scope="request"
+				  name="BillablePartyForm"
+							input="/account/billingdetail.jsp"
+           validate="true">
+      <forward name="failure"              path="/user/error.jsp"/>
+      <forward name="success"              path="/jsp/updatesuccess.jsp"/>
+    </action>
+
+		<action    path="/account/getsubscriptiondetailaction"
+               type="com.iobeam.portal.ui.web.subscription.GetSubscriptionDetailAction"
+              scope="request"
+							input="/account/accountdetail.jsp"
+           validate="true">
+      <forward name="failure"              path="/user/error.jsp"/>
+      <forward name="success"              path="/account/subscriptiondetail.jsp"/>
+		</action>
+		
+		<!-- ==== BILLING ACTIONS ================================================ -->	
+
+		<action    path="/billing/getinvoicesaction"
+               type="com.iobeam.portal.ui.web.billing.invoice.GetInvoicesAction"
+              scope="request"
+							input="/account/accountdetail.jsp"
+           validate="false">
+      <forward name="failure"              path="/user/error.jsp"/>
+      <forward name="success"              path="/billing/invoices.jsp"/>
+		</action>
+		
+		<action    path="/billing/getinvoicedetailaction"
+               type="com.iobeam.portal.ui.web.billing.invoice.GetInvoiceDetailAction"
+              scope="request"
+							input="/billing/invoices.jsp"
+           validate="true">
+      <forward name="failure"              path="/user/error.jsp"/>
+      <forward name="success"              path="/billing/invoicedetail.jsp"/>
+		</action>
+
+		
+		<!-- ==== CUSTOMER ACTIONS ================================================ -->	
+
+		<action    path="/customer/getcustomeraction"
+               type="com.iobeam.portal.ui.web.customer.GetCustomerAction"
+              scope="request"
+							input="/jsp/portalwelcome.jsp"
+           validate="true">
+      <forward name="failure"              path="/user/error.jsp"/>
+      <forward name="success"              path="/customer/customerdetail.jsp"/>
+		</action>
+
+		<action    path="/customer/updatecustomeraction"
+               type="com.iobeam.portal.ui.web.customer.UpdateCustomerAction"
+              scope="request"
+							input="/customer/customerdetail.jsp"
+           validate="true"
+					name="CustomerForm">
+      <forward name="failure"              path="/user/error.jsp"/>
+      <forward name="success"              path="/jsp/updatesuccess.jsp"/>
+		</action>
+  </action-mappings>
+
+
+</struts-config>

@@ -1,0 +1,61 @@
+marina brochure should answer the following questions
+-----------------------------------------------------
+what is the service we want to sell to the marina?
+-wireless internet service to marina slipowners and incidental visitors
+
+how does the service work?
+-wireless internet access up to x distance without expensive hardware & cable
+deployments or right-of-way issues.
+-client access using any capable 802.11b(g) device
+-dsl/cable required (cheaper than other WISPs) - no static IP address needed
+
+how will it benefit the marina?
+-subscription cards
+-wireless network management
+-security
+-support 24 hour / 7 day a week network monitoring / tollfree hotline(?)
+-revenue sharing for sign-ups and retail purchases
+
+what hardware is required to install the marina?
+-ISG
+-antennas
+-cabling
+-(possible)multiple aps
+
+what subscriptions are available to the marina?
+# user subscription
+fractional time subscription cards
+
+second sheet
+------------
+costs associated with hardware & install
+subscription prices
+revenue sharing model
+
+
+wireless end-user brochure should answer the following questions
+----------------------------------------------------------------
+what is the service we want the wireless end-user to use?
+-wireless internet access from any mobile device
+
+what differentiates our service from other WISP offerings?
+-our service is available where they need it most
+-we do not require CPE software installed on their mobile devices
+-client platform ubiquity
+-outstanding support and service
+
+what hardware is required to use our service?
+-wireless 802.11b(g) cards for laptops and PDAs.
+
+what subscription plans are available?
+-monthly subscriptions
+-subscription cards / pay as you go
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+/AutomaticPaymentInstrument.java/1.3/Fri May 30 20:21:50 2003//
+/BillableParty.java/1.2/Wed Apr 30 21:53:39 2003//
+/BillingDeliveryType.java/1.2/Mon May 19 20:48:10 2003//
+/BillingDocument.java/1.1/Thu May 22 05:36:50 2003//
+/BillingException.java/1.3/Sat Jun 14 20:55:43 2003//
+/BillingPeriod.java/1.6/Thu Jul 31 05:28:18 2003//
+/Check.java/1.4/Mon Jul  7 20:49:14 2003//
+/Commissionable.java/1.1.1.1/Mon Apr 21 17:11:07 2003//
+/CreditCard.java/1.7/Mon Jul  7 20:49:14 2003//
+/PaymentInstrument.java/1.3/Thu May 29 03:27:23 2003//
+/PaymentInstrumentDAO.java/1.3/Mon Jul  7 20:49:14 2003//
+/PaymentInstrumentPK.java/1.1/Thu May 29 03:27:23 2003//
+/PaymentInstrumentType.java/1.4/Fri May 30 20:21:50 2003//
+/Statement.java/1.4/Mon May 19 20:52:26 2003//
+/StatementFormat.java/1.2/Sat May 31 04:19:37 2003//
+/Vendible.java/1.5/Tue May 20 21:38:30 2003//
+D

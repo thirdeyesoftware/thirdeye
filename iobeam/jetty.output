@@ -1,0 +1,1735 @@
+23:49:35.450 EVENT  Checking Resource aliases
+23:50:09.281 EVENT  Statistics on = false for org.mortbay.jetty.Server@1de3f2d
+23:50:09.343 EVENT  Starting Jetty/4.2.18
+23:50:09.523 EVENT  Started org.mortbay.http.NCSARequestLog@1faba46
+23:50:09.909 EVENT  Extract jar:file:/usr/local/jetty/webapps/iobeam_gw.war!/ to /tmp/Jetty__7027__/webapp
+23:50:17.884 EVENT  Started WebApplicationContext[/,ioBeam Gateway Services]
+BootServlet.init:
+BootService.<init>: 
+Jun 2, 2005 11:50:22 PM com.iobeam.boot.BootService boot
+INFO: boot
+GatewayBootService.getBootables:
+GatewayConfiguration.<init>
+default config
+java.vendor=Sun Microsystems Inc.
+iobeam.gateway.dhcpdLeasesPath=/usr/local/dhcp/dhcpd.leases
+iobeam.gateway.mac.external=00:00:24:c3:9e:a4
+com.iobeam.boot.isBooted.com.iobeam.gateway.boot.GatewayBootService=true
+os.name=Linux
+iobeam.gateway.address.internal.3=192.168.91.1
+sun.boot.class.path=/usr/local/j2re1.4.2_03/lib/rt.jar:/usr/local/j2re1.4.2_03/lib/i18n.jar:/usr/local/j2re1.4.2_03/lib/sunrsasign.jar:/usr/local/j2re1.4.2_03/lib/jsse.jar:/usr/local/j2re1.4.2_03/lib/jce.jar:/usr/local/j2re1.4.2_03/lib/charsets.jar:/usr/local/j2re1.4.2_03/classes
+java.util.logging.config.file=/usr/local/jetty/logging.properties
+iobeam.gateway.address.internal.2=172.16.2.1
+iobeam.gateway.external.type=dhcp
+iobeam.gateway.address.internal.1=172.16.1.1
+iobeam.gateway.routelease.duration=6
+sun.java2d.fontpath=
+java.vm.specification.vendor=Sun Microsystems Inc.
+iobeam.gateway.routelease.internal.2.duration=12
+java.runtime.version=1.4.2_03-b02
+user.name=root
+iobeam.gateway.radio.ssid=iobeam
+iobeam.gateway.schedule.start=00:00:00
+iobeam.gateway.lease.history.file=/var/log/leases.log
+iobeam.portal.signon.url=/signonuser
+iobeam.gateway.registered=false
+iobeam.portal.proxy.port=8080
+user.language=en
+iobeam.gateway.radio.wep.key=
+sun.boot.library.path=/usr/local/j2re1.4.2_03/lib/i386
+iobeam.portal.signon.type=secure
+iobeam.gateway.routelease.internal.1.stop=172.16.1.253
+iobeam.gateway.broadcast.external=@iobeam.gateway.broadcast.external@
+java.version=1.4.2_03
+user.timezone=US/Eastern
+sun.arch.data.model=32
+iobeam.portal.contactListener.url=/contactListener
+java.endorsed.dirs=/usr/local/j2re1.4.2_03/lib/endorsed
+sun.cpu.isalist=
+file.encoding.pkg=sun.io
+file.separator=/
+java.specification.name=Java Platform API Specification
+java.class.version=48.0
+user.country=US
+iobeam.gateway.RouterFactoryProvider.class=com.iobeam.gateway.router.DefaultRouterFactoryProvider
+java.home=/usr/local/j2re1.4.2_03
+java.vm.info=mixed mode
+iobeam.gateway.filtering=false
+iobeam.gateway.routelease.internal.2.stop=172.16.2.253
+os.version=2.4.22-pebble
+iobeam.portal.noservice.url=/noservice.jsp
+iobeam.gateway.address.dns.2=208.185.249.250
+iobeam.gateway.address.dns.1=172.16.1.1
+path.separator=:
+iobeam.gateway.netmask.internal.3=255.255.255.0
+java.vm.version=1.4.2_03-b02
+iobeam.portal.secure.port=443
+iobeam.gateway.netmask.internal.2=255.255.255.0
+iobeam.gateway.netmask.internal.1=255.255.255.0
+java.util.prefs.PreferencesFactory=java.util.prefs.FileSystemPreferencesFactory
+java.protocol.handler.pkgs=sun.net.www.protocol
+iobeam.gateway.subnet.internal.3=192.168.91.0/24
+iobeam.gateway.subnet.internal.2=172.16.2.0/24
+iobeam.portal.registerGateway.url=/registerGateway
+iobeam.gateway.subnet.internal.1=172.16.1.0/24
+iobeam.gateway.timezone=GMT
+iobeam.gateway.routerConfig=/etc/config.xml
+java.awt.printerjob=sun.print.PSPrinterJob
+iobeam.gateway.configuration.file=/usr/local/iobeam/gateway.properties
+sun.io.unicode.encoding=UnicodeLittle
+iobeam.gateway.configuration.template.class=com.iobeam.gateway.util.PebbleTemplate
+user.home=/root
+iobeam.gateway.venue.id=125
+java.specification.vendor=Sun Microsystems Inc.
+iobeam.gateway.routelease.internal.1.duration=12
+java.library.path=/usr/local/j2re1.4.2_03/lib/i386/client:/usr/local/j2re1.4.2_03/lib/i386:/usr/local/j2re1.4.2_03/../lib/i386
+java.vendor.url=http://java.sun.com/
+iobeam.gateway.routerConfig.filtering=/etc/config_filtering.xml
+iobeam.portal.port=80
+iobeam.portal.timeservice.url=/getservertime.jsp
+java.vm.vendor=Sun Microsystems Inc.
+java.runtime.name=Java(TM) 2 Runtime Environment, Standard Edition
+java.class.path=/usr/local/jetty/ext/ant.jar:/usr/local/jetty/lib/org.mortbay.jetty.jar:/usr/local/jetty/lib/javax.servlet.jar:/usr/local/jetty/ext/jasper-runtime.jar:/usr/local/jetty/ext/jasper-compiler.jar:/usr/local/jetty/ext/xercesImpl.jar:/usr/local/jetty/ext/jcert.jar:/usr/local/jetty/ext/jsse.jar:/usr/local/jetty/ext/xml-apis.jar:/usr/local/jetty/lib/logging.jar
+iobeam.gateway.admin.password=02cb4c278ff9d8e379f7156aec6cf662
+iobeam.gateway.version=2
+iobeam.gateway.mode=test
+java.vm.specification.name=Java Virtual Machine Specification
+java.vm.specification.version=1.0
+iobeam.gateway.address.external=@iobeam.gateway.address.external@
+iobeam.portal.domain=www.iobeam.com
+sun.cpu.endian=little
+sun.os.patch.level=unknown
+iobeam.gateway.admin.username=admin
+java.io.tmpdir=/tmp
+iobeam.gateway.secure.notify.port=8443
+java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi
+iobeam.gateway.notify.port=7027
+os.arch=i386
+java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+java.ext.dirs=/usr/local/j2re1.4.2_03/lib/ext
+java.util.logging.config.class=com.iobeam.util.logging.LogConfig
+user.dir=/
+iobeam.gateway.routelease.internal.2.start=172.16.2.3
+iobeam.portal.registerGateway.type=secure
+iobeam.gateway.radio.channel=1
+line.separator=
+
+java.vm.name=Java HotSpot(TM) Client VM
+iobeam.portal.signon.success.url=/jsp/signonsuccess.jsp
+iobeam.portal.contactListener.type=secure
+iobeam.gateway.broadcast.internal.3=192.168.91.255
+iobeam.gateway.broadcast.internal.2=172.16.2.255
+file.encoding=ANSI_X3.4-1968
+iobeam.gateway.broadcast.internal.1=172.16.1.255
+iobeam.gateway.access.enabled=true
+iobeam.gateway.venue.name=demo unit
+iobeam.gateway.routelease.internal.1.start=172.16.1.2
+jetty.class.path=/usr/local/jetty/ext/ant.jar:/usr/local/jetty/lib/org.mortbay.jetty.jar:/usr/local/jetty/lib/javax.servlet.jar:/usr/local/jetty/ext/jasper-runtime.jar:/usr/local/jetty/ext/jasper-compiler.jar:/usr/local/jetty/ext/xercesImpl.jar:/usr/local/jetty/ext/jcert.jar:/usr/local/jetty/ext/jsse.jar:/usr/local/jetty/ext/xml-apis.jar:/usr/local/jetty/lib/logging.jar
+iobeam.portal.proxy.address=66.184.143.82
+java.specification.version=1.4
+iobeam.gateway.schedule.stop=23:59:59
+iobeam.gateway.defaultgateway.external=@iobeam.gateway.defaultgateway.external@
+iobeam.gateway.netmask.external=@iobeam.gateway.netmask.external@
+jetty.home=/usr/local/jetty
+GatewayBootService.Bootable: init logger
+GatewayConfiguration.<init>
+default config
+java.vendor=Sun Microsystems Inc.
+iobeam.gateway.dhcpdLeasesPath=/usr/local/dhcp/dhcpd.leases
+iobeam.gateway.mac.external=00:00:24:c3:9e:a4
+com.iobeam.boot.isBooted.com.iobeam.gateway.boot.GatewayBootService=true
+os.name=Linux
+iobeam.gateway.address.internal.3=192.168.91.1
+sun.boot.class.path=/usr/local/j2re1.4.2_03/lib/rt.jar:/usr/local/j2re1.4.2_03/lib/i18n.jar:/usr/local/j2re1.4.2_03/lib/sunrsasign.jar:/usr/local/j2re1.4.2_03/lib/jsse.jar:/usr/local/j2re1.4.2_03/lib/jce.jar:/usr/local/j2re1.4.2_03/lib/charsets.jar:/usr/local/j2re1.4.2_03/classes
+java.util.logging.config.file=/usr/local/jetty/logging.properties
+iobeam.gateway.address.internal.2=172.16.2.1
+iobeam.gateway.external.type=dhcp
+iobeam.gateway.address.internal.1=172.16.1.1
+iobeam.gateway.routelease.duration=6
+sun.java2d.fontpath=
+java.vm.specification.vendor=Sun Microsystems Inc.
+iobeam.gateway.routelease.internal.2.duration=12
+java.runtime.version=1.4.2_03-b02
+user.name=root
+iobeam.gateway.radio.ssid=iobeam
+iobeam.gateway.schedule.start=00:00:00
+iobeam.gateway.lease.history.file=/var/log/leases.log
+iobeam.portal.signon.url=/signonuser
+iobeam.gateway.registered=false
+iobeam.portal.proxy.port=8080
+user.language=en
+iobeam.gateway.radio.wep.key=
+sun.boot.library.path=/usr/local/j2re1.4.2_03/lib/i386
+iobeam.portal.signon.type=secure
+iobeam.gateway.routelease.internal.1.stop=172.16.1.253
+iobeam.gateway.broadcast.external=@iobeam.gateway.broadcast.external@
+java.version=1.4.2_03
+user.timezone=US/Eastern
+sun.arch.data.model=32
+iobeam.portal.contactListener.url=/contactListener
+java.endorsed.dirs=/usr/local/j2re1.4.2_03/lib/endorsed
+sun.cpu.isalist=
+file.encoding.pkg=sun.io
+file.separator=/
+java.specification.name=Java Platform API Specification
+java.class.version=48.0
+user.country=US
+iobeam.gateway.RouterFactoryProvider.class=com.iobeam.gateway.router.DefaultRouterFactoryProvider
+java.home=/usr/local/j2re1.4.2_03
+java.vm.info=mixed mode
+iobeam.gateway.filtering=false
+iobeam.gateway.routelease.internal.2.stop=172.16.2.253
+os.version=2.4.22-pebble
+iobeam.portal.noservice.url=/noservice.jsp
+iobeam.gateway.address.dns.2=208.185.249.250
+iobeam.gateway.address.dns.1=172.16.1.1
+path.separator=:
+iobeam.gateway.netmask.internal.3=255.255.255.0
+java.vm.version=1.4.2_03-b02
+iobeam.portal.secure.port=443
+iobeam.gateway.netmask.internal.2=255.255.255.0
+iobeam.gateway.netmask.internal.1=255.255.255.0
+java.util.prefs.PreferencesFactory=java.util.prefs.FileSystemPreferencesFactory
+java.protocol.handler.pkgs=sun.net.www.protocol
+iobeam.gateway.subnet.internal.3=192.168.91.0/24
+iobeam.gateway.subnet.internal.2=172.16.2.0/24
+iobeam.portal.registerGateway.url=/registerGateway
+iobeam.gateway.subnet.internal.1=172.16.1.0/24
+iobeam.gateway.timezone=GMT
+iobeam.gateway.routerConfig=/etc/config.xml
+java.awt.printerjob=sun.print.PSPrinterJob
+iobeam.gateway.configuration.file=/usr/local/iobeam/gateway.properties
+sun.io.unicode.encoding=UnicodeLittle
+iobeam.gateway.configuration.template.class=com.iobeam.gateway.util.PebbleTemplate
+user.home=/root
+iobeam.gateway.venue.id=125
+java.specification.vendor=Sun Microsystems Inc.
+iobeam.gateway.routelease.internal.1.duration=12
+java.library.path=/usr/local/j2re1.4.2_03/lib/i386/client:/usr/local/j2re1.4.2_03/lib/i386:/usr/local/j2re1.4.2_03/../lib/i386
+java.vendor.url=http://java.sun.com/
+iobeam.gateway.routerConfig.filtering=/etc/config_filtering.xml
+iobeam.portal.port=80
+iobeam.portal.timeservice.url=/getservertime.jsp
+java.vm.vendor=Sun Microsystems Inc.
+java.runtime.name=Java(TM) 2 Runtime Environment, Standard Edition
+java.class.path=/usr/local/jetty/ext/ant.jar:/usr/local/jetty/lib/org.mortbay.jetty.jar:/usr/local/jetty/lib/javax.servlet.jar:/usr/local/jetty/ext/jasper-runtime.jar:/usr/local/jetty/ext/jasper-compiler.jar:/usr/local/jetty/ext/xercesImpl.jar:/usr/local/jetty/ext/jcert.jar:/usr/local/jetty/ext/jsse.jar:/usr/local/jetty/ext/xml-apis.jar:/usr/local/jetty/lib/logging.jar
+iobeam.gateway.admin.password=02cb4c278ff9d8e379f7156aec6cf662
+iobeam.gateway.version=2
+iobeam.gateway.mode=test
+java.vm.specification.name=Java Virtual Machine Specification
+java.vm.specification.version=1.0
+iobeam.gateway.address.external=@iobeam.gateway.address.external@
+iobeam.portal.domain=www.iobeam.com
+sun.cpu.endian=little
+sun.os.patch.level=unknown
+iobeam.gateway.admin.username=admin
+java.io.tmpdir=/tmp
+iobeam.gateway.secure.notify.port=8443
+java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi
+iobeam.gateway.notify.port=7027
+os.arch=i386
+java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+java.ext.dirs=/usr/local/j2re1.4.2_03/lib/ext
+java.util.logging.config.class=com.iobeam.util.logging.LogConfig
+user.dir=/
+iobeam.gateway.routelease.internal.2.start=172.16.2.3
+iobeam.portal.registerGateway.type=secure
+iobeam.gateway.radio.channel=1
+line.separator=
+
+java.vm.name=Java HotSpot(TM) Client VM
+iobeam.portal.signon.success.url=/jsp/signonsuccess.jsp
+iobeam.portal.contactListener.type=secure
+iobeam.gateway.broadcast.internal.3=192.168.91.255
+iobeam.gateway.broadcast.internal.2=172.16.2.255
+file.encoding=ANSI_X3.4-1968
+iobeam.gateway.broadcast.internal.1=172.16.1.255
+iobeam.gateway.access.enabled=true
+iobeam.gateway.venue.name=demo unit
+iobeam.gateway.routelease.internal.1.start=172.16.1.2
+jetty.class.path=/usr/local/jetty/ext/ant.jar:/usr/local/jetty/lib/org.mortbay.jetty.jar:/usr/local/jetty/lib/javax.servlet.jar:/usr/local/jetty/ext/jasper-runtime.jar:/usr/local/jetty/ext/jasper-compiler.jar:/usr/local/jetty/ext/xercesImpl.jar:/usr/local/jetty/ext/jcert.jar:/usr/local/jetty/ext/jsse.jar:/usr/local/jetty/ext/xml-apis.jar:/usr/local/jetty/lib/logging.jar
+iobeam.portal.proxy.address=66.184.143.82
+java.specification.version=1.4
+iobeam.gateway.schedule.stop=23:59:59
+iobeam.gateway.defaultgateway.external=@iobeam.gateway.defaultgateway.external@
+iobeam.gateway.netmask.external=@iobeam.gateway.netmask.external@
+jetty.home=/usr/local/jetty
+<<<<< url = https://www.iobeam.com:443/registerGateway >>>>>
+reg url = https://www.iobeam.com:443/registerGateway?vid=125&mac=00:00:24:c3:9e:a4&notifyPort=7027&privateip=172.16.1.1
+connecting...
+javax.net.ssl.SSLException: Unrecognized SSL message, plaintext connection?
+	at com.sun.net.ssl.internal.ssl.InputRecord.b(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.InputRecord.read(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.a(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.j(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(Unknown Source)
+	at com.iobeam.gateway.boot.GatewayBootService$1.boot(GatewayBootService.java:110)
+	at com.iobeam.boot.BootService.boot(BootService.java:49)
+	at com.iobeam.gateway.boot.BootServlet.init(BootServlet.java:40)
+	at org.mortbay.jetty.servlet.ServletHolder.start(ServletHolder.java:220)
+	at org.mortbay.jetty.servlet.ServletHandler.initializeServlets(ServletHandler.java:445)
+	at org.mortbay.jetty.servlet.WebApplicationHandler.initializeServlets(WebApplicationHandler.java:150)
+	at org.mortbay.jetty.servlet.WebApplicationContext.start(WebApplicationContext.java:458)
+	at org.mortbay.http.HttpServer.start(HttpServer.java:663)
+	at org.mortbay.jetty.Server.main(Server.java:429)
+com.iobeam.boot.BootException: could not connect, javax.net.ssl.SSLException: Unrecognized SSL message, plaintext connection?
+	at com.iobeam.gateway.boot.GatewayBootService$1.boot(GatewayBootService.java:160)
+	at com.iobeam.boot.BootService.boot(BootService.java:49)
+	at com.iobeam.gateway.boot.BootServlet.init(BootServlet.java:40)
+	at org.mortbay.jetty.servlet.ServletHolder.start(ServletHolder.java:220)
+	at org.mortbay.jetty.servlet.ServletHandler.initializeServlets(ServletHandler.java:445)
+	at org.mortbay.jetty.servlet.WebApplicationHandler.initializeServlets(WebApplicationHandler.java:150)
+	at org.mortbay.jetty.servlet.WebApplicationContext.start(WebApplicationContext.java:458)
+	at org.mortbay.http.HttpServer.start(HttpServer.java:663)
+	at org.mortbay.jetty.Server.main(Server.java:429)
+23:50:28.413 EVENT  Started SocketListener on 0.0.0.0:7027
+23:50:28.421 EVENT  jetty.ssl.keystore=/usr/local/jetty/etc/gwkeystore
+23:50:28.427 EVENT  jetty.ssl.password=********
+23:50:28.432 EVENT  jetty.ssl.keypassword=********
+23:50:28.437 EVENT  jetty.ssl.keystore.type=jks
+23:50:28.445 EVENT  jetty.ssl.keystore.provider.name=[DEFAULT]
+23:50:29.115 EVENT  SSLServerSocketFactory=com.sun.net.ssl.internal.ssl.SSLServerSocketFactoryImpl@88e2dd
+23:50:29.135 EVENT  JsseListener.needClientAuth=false
+23:50:29.161 EVENT  Started SocketListener on 0.0.0.0:8443
+23:50:29.194 WARN!! 
+org.mortbay.util.MultiException[javax.servlet.ServletException: could not connect, javax.net.ssl.SSLException: Unrecognized SSL message, plaintext connection?]
+	at org.mortbay.http.HttpServer.start(HttpServer.java:640)
+	at org.mortbay.jetty.Server.main(Server.java:429)
+[0]=javax.servlet.ServletException: could not connect, javax.net.ssl.SSLException: Unrecognized SSL message, plaintext connection?
+	at com.iobeam.gateway.boot.BootServlet.init(BootServlet.java:44)
+	at org.mortbay.jetty.servlet.ServletHolder.start(ServletHolder.java:220)
+	at org.mortbay.jetty.servlet.ServletHandler.initializeServlets(ServletHandler.java:445)
+	at org.mortbay.jetty.servlet.WebApplicationHandler.initializeServlets(WebApplicationHandler.java:150)
+	at org.mortbay.jetty.servlet.WebApplicationContext.start(WebApplicationContext.java:458)
+	at org.mortbay.http.HttpServer.start(HttpServer.java:663)
+	at org.mortbay.jetty.Server.main(Server.java:429)
+getRootCause():
+com.iobeam.boot.BootException: could not connect, javax.net.ssl.SSLException: Unrecognized SSL message, plaintext connection?
+	at com.iobeam.gateway.boot.GatewayBootService$1.boot(GatewayBootService.java:160)
+	at com.iobeam.boot.BootService.boot(BootService.java:49)
+	at com.iobeam.gateway.boot.BootServlet.init(BootServlet.java:40)
+	at org.mortbay.jetty.servlet.ServletHolder.start(ServletHolder.java:220)
+	at org.mortbay.jetty.servlet.ServletHandler.initializeServlets(ServletHandler.java:445)
+	at org.mortbay.jetty.servlet.WebApplicationHandler.initializeServlets(WebApplicationHandler.java:150)
+	at org.mortbay.jetty.servlet.WebApplicationContext.start(WebApplicationContext.java:458)
+	at org.mortbay.http.HttpServer.start(HttpServer.java:663)
+	at org.mortbay.jetty.Server.main(Server.java:429)
+
+23:52:11.231 EVENT  Checking Resource aliases
+23:52:41.669 EVENT  Statistics on = false for org.mortbay.jetty.Server@1de3f2d
+23:52:41.727 EVENT  Starting Jetty/4.2.18
+23:52:41.944 EVENT  Started org.mortbay.http.NCSARequestLog@1faba46
+23:52:42.274 WARN!! Delete existing temp dir /tmp/Jetty__7027__ for WebApplicationContext[/,jar:file:/usr/local/jetty/webapps/iobeam_gw.war!/]
+23:52:43.330 EVENT  Extract jar:file:/usr/local/jetty/webapps/iobeam_gw.war!/ to /tmp/Jetty__7027__/webapp
+23:52:51.002 EVENT  Started WebApplicationContext[/,ioBeam Gateway Services]
+BootServlet.init:
+BootService.<init>: 
+Jun 2, 2005 11:52:55 PM com.iobeam.boot.BootService boot
+INFO: boot
+GatewayBootService.getBootables:
+GatewayConfiguration.<init>
+default config
+java.vendor=Sun Microsystems Inc.
+iobeam.gateway.dhcpdLeasesPath=/usr/local/dhcp/dhcpd.leases
+iobeam.gateway.mac.external=00:00:24:c3:9e:a4
+com.iobeam.boot.isBooted.com.iobeam.gateway.boot.GatewayBootService=true
+os.name=Linux
+iobeam.gateway.address.internal.3=192.168.91.1
+sun.boot.class.path=/usr/local/j2re1.4.2_03/lib/rt.jar:/usr/local/j2re1.4.2_03/lib/i18n.jar:/usr/local/j2re1.4.2_03/lib/sunrsasign.jar:/usr/local/j2re1.4.2_03/lib/jsse.jar:/usr/local/j2re1.4.2_03/lib/jce.jar:/usr/local/j2re1.4.2_03/lib/charsets.jar:/usr/local/j2re1.4.2_03/classes
+java.util.logging.config.file=/usr/local/jetty/logging.properties
+iobeam.gateway.address.internal.2=172.16.2.1
+iobeam.gateway.external.type=dhcp
+iobeam.gateway.address.internal.1=172.16.1.1
+iobeam.gateway.routelease.duration=6
+sun.java2d.fontpath=
+java.vm.specification.vendor=Sun Microsystems Inc.
+iobeam.gateway.routelease.internal.2.duration=12
+java.runtime.version=1.4.2_03-b02
+user.name=root
+iobeam.gateway.radio.ssid=iobeam
+iobeam.gateway.schedule.start=00:00:00
+iobeam.gateway.lease.history.file=/var/log/leases.log
+iobeam.portal.signon.url=/signonuser
+iobeam.gateway.registered=false
+iobeam.portal.proxy.port=8080
+user.language=en
+iobeam.gateway.radio.wep.key=
+sun.boot.library.path=/usr/local/j2re1.4.2_03/lib/i386
+iobeam.portal.signon.type=secure
+iobeam.gateway.routelease.internal.1.stop=172.16.1.253
+iobeam.gateway.broadcast.external=@iobeam.gateway.broadcast.external@
+java.version=1.4.2_03
+user.timezone=US/Eastern
+sun.arch.data.model=32
+iobeam.portal.contactListener.url=/contactListener
+java.endorsed.dirs=/usr/local/j2re1.4.2_03/lib/endorsed
+sun.cpu.isalist=
+file.encoding.pkg=sun.io
+file.separator=/
+java.specification.name=Java Platform API Specification
+java.class.version=48.0
+user.country=US
+iobeam.gateway.RouterFactoryProvider.class=com.iobeam.gateway.router.DefaultRouterFactoryProvider
+java.home=/usr/local/j2re1.4.2_03
+java.vm.info=mixed mode
+iobeam.gateway.filtering=false
+iobeam.gateway.routelease.internal.2.stop=172.16.2.253
+os.version=2.4.22-pebble
+iobeam.portal.noservice.url=/noservice.jsp
+iobeam.gateway.address.dns.2=208.185.249.250
+iobeam.gateway.address.dns.1=172.16.1.1
+path.separator=:
+iobeam.gateway.netmask.internal.3=255.255.255.0
+java.vm.version=1.4.2_03-b02
+iobeam.portal.secure.port=7002
+iobeam.gateway.netmask.internal.2=255.255.255.0
+iobeam.gateway.netmask.internal.1=255.255.255.0
+java.util.prefs.PreferencesFactory=java.util.prefs.FileSystemPreferencesFactory
+java.protocol.handler.pkgs=sun.net.www.protocol
+iobeam.gateway.subnet.internal.3=192.168.91.0/24
+iobeam.gateway.subnet.internal.2=172.16.2.0/24
+iobeam.portal.registerGateway.url=/registerGateway
+iobeam.gateway.subnet.internal.1=172.16.1.0/24
+iobeam.gateway.timezone=GMT
+iobeam.gateway.routerConfig=/etc/config.xml
+java.awt.printerjob=sun.print.PSPrinterJob
+iobeam.gateway.configuration.file=/usr/local/iobeam/gateway.properties
+sun.io.unicode.encoding=UnicodeLittle
+iobeam.gateway.configuration.template.class=com.iobeam.gateway.util.PebbleTemplate
+user.home=/root
+iobeam.gateway.venue.id=125
+java.specification.vendor=Sun Microsystems Inc.
+iobeam.gateway.routelease.internal.1.duration=12
+java.library.path=/usr/local/j2re1.4.2_03/lib/i386/client:/usr/local/j2re1.4.2_03/lib/i386:/usr/local/j2re1.4.2_03/../lib/i386
+java.vendor.url=http://java.sun.com/
+iobeam.gateway.routerConfig.filtering=/etc/config_filtering.xml
+iobeam.portal.port=7001
+iobeam.portal.timeservice.url=/getservertime.jsp
+java.vm.vendor=Sun Microsystems Inc.
+java.runtime.name=Java(TM) 2 Runtime Environment, Standard Edition
+java.class.path=/usr/local/jetty/ext/ant.jar:/usr/local/jetty/lib/org.mortbay.jetty.jar:/usr/local/jetty/lib/javax.servlet.jar:/usr/local/jetty/ext/jasper-runtime.jar:/usr/local/jetty/ext/jasper-compiler.jar:/usr/local/jetty/ext/xercesImpl.jar:/usr/local/jetty/ext/jcert.jar:/usr/local/jetty/ext/jsse.jar:/usr/local/jetty/ext/xml-apis.jar:/usr/local/jetty/lib/logging.jar
+iobeam.gateway.admin.password=02cb4c278ff9d8e379f7156aec6cf662
+iobeam.gateway.version=2
+iobeam.gateway.mode=test
+java.vm.specification.name=Java Virtual Machine Specification
+java.vm.specification.version=1.0
+iobeam.gateway.address.external=@iobeam.gateway.address.external@
+iobeam.portal.domain=www.iobeam.com
+sun.cpu.endian=little
+sun.os.patch.level=unknown
+iobeam.gateway.admin.username=admin
+java.io.tmpdir=/tmp
+iobeam.gateway.secure.notify.port=8443
+java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi
+iobeam.gateway.notify.port=7027
+os.arch=i386
+java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+java.ext.dirs=/usr/local/j2re1.4.2_03/lib/ext
+java.util.logging.config.class=com.iobeam.util.logging.LogConfig
+user.dir=/usr/local/jetty
+iobeam.gateway.routelease.internal.2.start=172.16.2.3
+iobeam.portal.registerGateway.type=secure
+iobeam.gateway.radio.channel=1
+line.separator=
+
+java.vm.name=Java HotSpot(TM) Client VM
+iobeam.portal.signon.success.url=/jsp/signonsuccess.jsp
+iobeam.portal.contactListener.type=secure
+iobeam.gateway.broadcast.internal.3=192.168.91.255
+iobeam.gateway.broadcast.internal.2=172.16.2.255
+file.encoding=ANSI_X3.4-1968
+iobeam.gateway.broadcast.internal.1=172.16.1.255
+iobeam.gateway.access.enabled=true
+iobeam.gateway.venue.name=demo unit
+iobeam.gateway.routelease.internal.1.start=172.16.1.2
+jetty.class.path=/usr/local/jetty/ext/ant.jar:/usr/local/jetty/lib/org.mortbay.jetty.jar:/usr/local/jetty/lib/javax.servlet.jar:/usr/local/jetty/ext/jasper-runtime.jar:/usr/local/jetty/ext/jasper-compiler.jar:/usr/local/jetty/ext/xercesImpl.jar:/usr/local/jetty/ext/jcert.jar:/usr/local/jetty/ext/jsse.jar:/usr/local/jetty/ext/xml-apis.jar:/usr/local/jetty/lib/logging.jar
+iobeam.portal.proxy.address=66.184.143.82
+java.specification.version=1.4
+iobeam.gateway.schedule.stop=23:59:59
+iobeam.gateway.defaultgateway.external=@iobeam.gateway.defaultgateway.external@
+iobeam.gateway.netmask.external=@iobeam.gateway.netmask.external@
+jetty.home=/usr/local/jetty
+GatewayBootService.Bootable: init logger
+GatewayConfiguration.<init>
+default config
+java.vendor=Sun Microsystems Inc.
+iobeam.gateway.dhcpdLeasesPath=/usr/local/dhcp/dhcpd.leases
+iobeam.gateway.mac.external=00:00:24:c3:9e:a4
+com.iobeam.boot.isBooted.com.iobeam.gateway.boot.GatewayBootService=true
+os.name=Linux
+iobeam.gateway.address.internal.3=192.168.91.1
+sun.boot.class.path=/usr/local/j2re1.4.2_03/lib/rt.jar:/usr/local/j2re1.4.2_03/lib/i18n.jar:/usr/local/j2re1.4.2_03/lib/sunrsasign.jar:/usr/local/j2re1.4.2_03/lib/jsse.jar:/usr/local/j2re1.4.2_03/lib/jce.jar:/usr/local/j2re1.4.2_03/lib/charsets.jar:/usr/local/j2re1.4.2_03/classes
+java.util.logging.config.file=/usr/local/jetty/logging.properties
+iobeam.gateway.address.internal.2=172.16.2.1
+iobeam.gateway.external.type=dhcp
+iobeam.gateway.address.internal.1=172.16.1.1
+iobeam.gateway.routelease.duration=6
+sun.java2d.fontpath=
+java.vm.specification.vendor=Sun Microsystems Inc.
+iobeam.gateway.routelease.internal.2.duration=12
+java.runtime.version=1.4.2_03-b02
+user.name=root
+iobeam.gateway.radio.ssid=iobeam
+iobeam.gateway.schedule.start=00:00:00
+iobeam.gateway.lease.history.file=/var/log/leases.log
+iobeam.portal.signon.url=/signonuser
+iobeam.gateway.registered=false
+iobeam.portal.proxy.port=8080
+user.language=en
+iobeam.gateway.radio.wep.key=
+sun.boot.library.path=/usr/local/j2re1.4.2_03/lib/i386
+iobeam.portal.signon.type=secure
+iobeam.gateway.routelease.internal.1.stop=172.16.1.253
+iobeam.gateway.broadcast.external=@iobeam.gateway.broadcast.external@
+java.version=1.4.2_03
+user.timezone=US/Eastern
+sun.arch.data.model=32
+iobeam.portal.contactListener.url=/contactListener
+java.endorsed.dirs=/usr/local/j2re1.4.2_03/lib/endorsed
+sun.cpu.isalist=
+file.encoding.pkg=sun.io
+file.separator=/
+java.specification.name=Java Platform API Specification
+java.class.version=48.0
+user.country=US
+iobeam.gateway.RouterFactoryProvider.class=com.iobeam.gateway.router.DefaultRouterFactoryProvider
+java.home=/usr/local/j2re1.4.2_03
+java.vm.info=mixed mode
+iobeam.gateway.filtering=false
+iobeam.gateway.routelease.internal.2.stop=172.16.2.253
+os.version=2.4.22-pebble
+iobeam.portal.noservice.url=/noservice.jsp
+iobeam.gateway.address.dns.2=208.185.249.250
+iobeam.gateway.address.dns.1=172.16.1.1
+path.separator=:
+iobeam.gateway.netmask.internal.3=255.255.255.0
+java.vm.version=1.4.2_03-b02
+iobeam.portal.secure.port=7002
+iobeam.gateway.netmask.internal.2=255.255.255.0
+iobeam.gateway.netmask.internal.1=255.255.255.0
+java.util.prefs.PreferencesFactory=java.util.prefs.FileSystemPreferencesFactory
+java.protocol.handler.pkgs=sun.net.www.protocol
+iobeam.gateway.subnet.internal.3=192.168.91.0/24
+iobeam.gateway.subnet.internal.2=172.16.2.0/24
+iobeam.portal.registerGateway.url=/registerGateway
+iobeam.gateway.subnet.internal.1=172.16.1.0/24
+iobeam.gateway.timezone=GMT
+iobeam.gateway.routerConfig=/etc/config.xml
+java.awt.printerjob=sun.print.PSPrinterJob
+iobeam.gateway.configuration.file=/usr/local/iobeam/gateway.properties
+sun.io.unicode.encoding=UnicodeLittle
+iobeam.gateway.configuration.template.class=com.iobeam.gateway.util.PebbleTemplate
+user.home=/root
+iobeam.gateway.venue.id=125
+java.specification.vendor=Sun Microsystems Inc.
+iobeam.gateway.routelease.internal.1.duration=12
+java.library.path=/usr/local/j2re1.4.2_03/lib/i386/client:/usr/local/j2re1.4.2_03/lib/i386:/usr/local/j2re1.4.2_03/../lib/i386
+java.vendor.url=http://java.sun.com/
+iobeam.gateway.routerConfig.filtering=/etc/config_filtering.xml
+iobeam.portal.port=7001
+iobeam.portal.timeservice.url=/getservertime.jsp
+java.vm.vendor=Sun Microsystems Inc.
+java.runtime.name=Java(TM) 2 Runtime Environment, Standard Edition
+java.class.path=/usr/local/jetty/ext/ant.jar:/usr/local/jetty/lib/org.mortbay.jetty.jar:/usr/local/jetty/lib/javax.servlet.jar:/usr/local/jetty/ext/jasper-runtime.jar:/usr/local/jetty/ext/jasper-compiler.jar:/usr/local/jetty/ext/xercesImpl.jar:/usr/local/jetty/ext/jcert.jar:/usr/local/jetty/ext/jsse.jar:/usr/local/jetty/ext/xml-apis.jar:/usr/local/jetty/lib/logging.jar
+iobeam.gateway.admin.password=02cb4c278ff9d8e379f7156aec6cf662
+iobeam.gateway.version=2
+iobeam.gateway.mode=test
+java.vm.specification.name=Java Virtual Machine Specification
+java.vm.specification.version=1.0
+iobeam.gateway.address.external=@iobeam.gateway.address.external@
+iobeam.portal.domain=www.iobeam.com
+sun.cpu.endian=little
+sun.os.patch.level=unknown
+iobeam.gateway.admin.username=admin
+java.io.tmpdir=/tmp
+iobeam.gateway.secure.notify.port=8443
+java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi
+iobeam.gateway.notify.port=7027
+os.arch=i386
+java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+java.ext.dirs=/usr/local/j2re1.4.2_03/lib/ext
+java.util.logging.config.class=com.iobeam.util.logging.LogConfig
+user.dir=/usr/local/jetty
+iobeam.gateway.routelease.internal.2.start=172.16.2.3
+iobeam.portal.registerGateway.type=secure
+iobeam.gateway.radio.channel=1
+line.separator=
+
+java.vm.name=Java HotSpot(TM) Client VM
+iobeam.portal.signon.success.url=/jsp/signonsuccess.jsp
+iobeam.portal.contactListener.type=secure
+iobeam.gateway.broadcast.internal.3=192.168.91.255
+iobeam.gateway.broadcast.internal.2=172.16.2.255
+file.encoding=ANSI_X3.4-1968
+iobeam.gateway.broadcast.internal.1=172.16.1.255
+iobeam.gateway.access.enabled=true
+iobeam.gateway.venue.name=demo unit
+iobeam.gateway.routelease.internal.1.start=172.16.1.2
+jetty.class.path=/usr/local/jetty/ext/ant.jar:/usr/local/jetty/lib/org.mortbay.jetty.jar:/usr/local/jetty/lib/javax.servlet.jar:/usr/local/jetty/ext/jasper-runtime.jar:/usr/local/jetty/ext/jasper-compiler.jar:/usr/local/jetty/ext/xercesImpl.jar:/usr/local/jetty/ext/jcert.jar:/usr/local/jetty/ext/jsse.jar:/usr/local/jetty/ext/xml-apis.jar:/usr/local/jetty/lib/logging.jar
+iobeam.portal.proxy.address=66.184.143.82
+java.specification.version=1.4
+iobeam.gateway.schedule.stop=23:59:59
+iobeam.gateway.defaultgateway.external=@iobeam.gateway.defaultgateway.external@
+iobeam.gateway.netmask.external=@iobeam.gateway.netmask.external@
+jetty.home=/usr/local/jetty
+<<<<< url = https://www.iobeam.com:7002/registerGateway >>>>>
+reg url = https://www.iobeam.com:7002/registerGateway?vid=125&mac=00:00:24:c3:9e:a4&notifyPort=7027&privateip=172.16.1.1
+connecting...
+done connecting...
+gw registered
+DefaultRouterFactoryProvider.<init>:
+/etc/config.xml
+RuleExerciser.applyConfiguration: iptables -t mangle -N iobeam
+RuleExerciser.applyConfiguration: iptables -t mangle -A  PREROUTING  -j iobeam
+RuleExerciser.applyConfiguration: iptables -t mangle -A  iobeam  -j MARK --set-mark 4
+RuleExerciser.applyConfiguration: iptables -t nat -N iobeam_capture
+RuleExerciser.applyConfiguration: iptables -t nat -N iobeam_nat
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_capture -s 172.16.1.0/24 -m  mark --mark 4 -p tcp --dport 80   -j REDIRECT --to-port 7027
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_capture -s 172.16.2.0/24 -m  mark --mark 4 -p tcp --dport 80   -j REDIRECT --to-port 7027
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_capture -s 172.16.1.0/24 -m  mark --mark 4 -p tcp --dport 443   -j REDIRECT --to-port 8443
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_capture -s 172.16.2.0/24 -m  mark --mark 4 -p tcp --dport 443   -j REDIRECT --to-port 8443
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_capture -s 172.16.1.0/24 -d ! www.iobeam.com -m  mark --mark 3 -p tcp --dport 80   -j REDIRECT --to-port 7027
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_capture -s 172.16.2.0/24 -d ! www.iobeam.com -m  mark --mark 3 -p tcp --dport 80   -j REDIRECT --to-port 7027
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_capture -s 172.16.1.0/24 -d ! www.iobeam.com -m  mark --mark 3 -p tcp --dport 443   -j REDIRECT --to-port 8443
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_capture -s 172.16.2.0/24 -d ! www.iobeam.com -m  mark --mark 3 -p tcp --dport 443   -j REDIRECT --to-port 8443
+RuleExerciser.applyConfiguration: iptables -t nat -A  PREROUTING  -j iobeam_capture
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.1.0/24 -m  mark --mark 1   -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.2.0/24 -m  mark --mark 1   -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.1.0/24 -m  mark --mark 2   -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.2.0/24 -m  mark --mark 2   -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.1.0/24 -m  mark --mark 4 -p icmp   -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.2.0/24 -m  mark --mark 4 -p icmp   -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.1.0/24 -d www.iobeam.com -m  mark --mark 3 -p tcp   -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.2.0/24 -d www.iobeam.com -m  mark --mark 3 -p tcp   -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.1.0/24 -d 172.16.1.1 -p tcp --dport 80  -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.2.0/24 -d 172.16.2.1 -p tcp --dport 80  -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.1.0/24 -d 172.16.1.1 -p tcp --dport 443  -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.2.0/24 -d 172.16.2.1 -p tcp --dport 443  -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.1.0/24 -d 172.16.1.1 -p tcp --dport 53  -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.2.0/24 -d 172.16.1.1 -p tcp --dport 53  -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.1.0/24 -d 172.16.1.1 -p udp --dport 53  -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.2.0/24 -d 172.16.1.1 -p udp --dport 53  -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.1.0/24 -d 208.185.249.250 -p tcp --dport 53  -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.1.0/24 -d 208.185.249.250 -p udp --dport 53  -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.2.0/24 -d 208.185.249.250 -p tcp --dport 53  -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.2.0/24 -d 208.185.249.250 -p udp --dport 53  -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  POSTROUTING  -j iobeam_nat
+RuleExerciser.applyConfiguration: iptables -t filter -N iobeam_ports
+RuleExerciser.applyConfiguration: iptables -t filter -N iobeam_inbound
+RuleExerciser.applyConfiguration: iptables -t filter -N iobeam
+RuleExerciser.applyConfiguration: iptables -t filter -A  FORWARD  -j iobeam
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam  -j iobeam_ports
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam  -j iobeam_inbound
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.1.0/24 -m  mark --mark 1   -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.2.0/24 -m  mark --mark 1   -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.1.0/24 -m  mark --mark 2   -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.2.0/24 -m  mark --mark 2   -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.1.0/24 -d www.iobeam.com -m  mark --mark 3   -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.2.0/24 -d www.iobeam.com -m  mark --mark 3   -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.2.0/24 -d www.iobeam.com -m  mark --mark 4   -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.1.0/24 -m  mark --mark 4 -p icmp   -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.2.0/24 -m  mark --mark 4 -p icmp   -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.1.0/24 -d 172.16.1.1 -p tcp --dport 80  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.2.0/24 -d 172.16.2.1 -p tcp --dport 80  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.1.1 -d 172.16.1.0/24 -p tcp --sport 80  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.2.1 -d 172.16.2.0/24 -p tcp --sport 80  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.1.0/24 -d www.iobeam.com -p tcp --dport 443  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.2.0/24 -d www.iobeam.com -p tcp --dport 443  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s www.iobeam.com -d 172.16.1.0/24 -p tcp --sport 443  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s www.iobeam.com -d 172.16.2.0/24 -p tcp --sport 443  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.1.0/24 -d 172.16.1.1 -p tcp --dport 53  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.2.0/24 -d 172.16.1.1 -p tcp --dport 53  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.2.0/24 -d 172.16.1.1 -p udp --dport 53  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.1.0/24 -d 208.185.249.250 -p tcp --dport 53  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.2.0/24 -d 208.185.249.250 -p tcp --dport 53  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.1.0/24 -d 208.185.249.250 -p udp --dport 53  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.2.0/24 -d 208.185.249.250 -p udp --dport 53  -j ACCEPT
+addEvent():event=ScheduledEvent(0,06/02/05 23:53:20,com.iobeam.gateway.boot.TimeService$TimeServiceTask@10d593e)
+23:53:22.756 EVENT  BootServlet.init: done
+TimeServiceTask:doTask()
+23:53:23.049 EVENT  Started SocketListener on 0.0.0.0:7027
+23:53:23.056 EVENT  jetty.ssl.keystore=/usr/local/jetty/etc/gwkeystore
+23:53:23.062 EVENT  jetty.ssl.password=********
+23:53:23.067 EVENT  jetty.ssl.keypassword=********
+23:53:23.072 EVENT  jetty.ssl.keystore.type=jks
+23:53:23.079 EVENT  jetty.ssl.keystore.provider.name=[DEFAULT]
+/usr/bin/changedate.sh 06/02/2005 23:53:23 -0400
+23:53:23.555 EVENT  SSLServerSocketFactory=com.sun.net.ssl.internal.ssl.SSLServerSocketFactoryImpl@7f5580
+23:53:23.028 EVENT  JsseListener.needClientAuth=false
+23:53:23.067 EVENT  Started SocketListener on 0.0.0.0:8443
+23:53:23.071 EVENT  Started org.mortbay.jetty.Server@1de3f2d
+MainController.init: 06/02 23:54:21
+<<request uri == />>
+MainController.doGet: 06/02 23:54:21 uri=/ remotehost=172.16.1.3 remoteIP=172.16.1.3 path=/ pathInfo=null
+--http headers--
+Accept:*/*
+Accept-Language:en
+Accept-Encoding:gzip, deflate
+Cookie:JSESSIONID=ckaape094iqgp
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/412 (KHTML, like Gecko) Safari/412
+If-Modified-Since:Thu, 02 Jun 2005 23:53:36 GMT
+Connection:keep-alive
+Host:www.nws.noaa.gov
+
+MainController.getMACAddress: 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+allowSchedule = true
+global_access_allowed = true
+routelease.duration=6
+MainController.getContactID: 172.16.1.3 00:0a:95:f4:f5:a8
+<<<<< url = https://www.iobeam.com:7002/contactListener >>>>>
+MainController.getContactID: done 06/02 23:54:28 contactID=1006 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+DefaultRouter.initializeRouteLease: RouteLease(ClientState(Member, Restricted, 3),/172.16.1.3,00:0a:95:f4:f5:a8,contact=1006,06/03/05 05:54:27)
+DefaultRouter.setRouteLease: RouteLease(ClientState(Member, Restricted, 3),/172.16.1.3,00:0a:95:f4:f5:a8,contact=1006,06/03/05 05:54:27)
+RuleExerciser.applyRule: iptables -t mangle -A  iobeam -s 172.16.1.3 -m  mac --mac-source 00:0a:95:f4:f5:a8   -j MARK --set-mark 3
+addEvent():event=ScheduledEvent(1,06/03/05 05:54:27,RouteLeaseRemovalTask(RouteLease(ClientState(Member, Restricted, 3),/172.16.1.3,00:0a:95:f4:f5:a8,contact=1006,06/03/05 05:54:27)))
+DefaultRouter.addActiveLease: 00:0a:95:f4:f5:a8 RouteLease(ClientState(Member, Restricted, 3),/172.16.1.3,00:0a:95:f4:f5:a8,contact=1006,06/03/05 05:54:27)  count = 1
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.buildRedirectURL: http://www.nws.noaa.gov/
+MainController.buildRedirectURL: alt http://www.nws.noaa.gov/
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.doGet: 06/02 23:54:28 new contact redirect to https://www.iobeam.com:7002/signonuser?cid=1006&redirect=http%3A%2F%2Fwww.nws.noaa.gov%2F
+RouteLeaseListener.init: 06/02 23:54:30
+accessendtime=Thu Jun 02 23:59:59 EDT 2005
+RouteLeaseListener.doGet: enabled = true
+RouteLeaseListener.doGet: user ip = /172.16.1.3
+RouteLeaseListener.doGet: user mac = 00:0a:95:f4:f5:a8
+RouteLeaseListener.doGet: expiration = 06/03/05 00:04:32
+RouteLeaseListener.doGet: accessEndTime = 06/02/05 23:59:59
+RouteLeaseListener.doGet: signature = CrkpH1LiIx3XC7ehi5GVx1d0ACV1bntiwHF3+/tcMTydtVud+J42ULd2lpvxA+VFBs4kfbqbP7DH
+G47cOgJuBQ==
+
+RouteLeaseListener.doGet: 06/02 23:54:30 expiration=1117771472371, signature=CrkpH1LiIx3XC7ehi5GVx1d0ACV1bntiwHF3+/tcMTydtVud+J42ULd2lpvxA+VFBs4kfbqbP7DH
+G47cOgJuBQ==
+, enabled=true, userInetAddress=172.16.1.3, cid=1006, userMACAddress=00:0a:95:f4:f5:a8
+signedText=true172.16.1.300:0a:95:f4:f5:a810061117771472371
+signaturetext=CrkpH1LiIx3XC7ehi5GVx1d0ACV1bntiwHF3+/tcMTydtVud+J42ULd2lpvxA+VFBs4kfbqbP7DH
+G47cOgJuBQ==
+
+cert = [
+[
+  Version: V3
+  Subject: CN=www.iobeam.com, OU=InstantSSL, OU=Portal Services, O="iobeam, Inc.", STREET=6035 Magnolia Walk, L=Roswell, ST=GA, OID.2.5.4.17=30075, C=US
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  SunJSSE RSA public key:
+  public exponent:
+    010001
+  modulus:
+    c50265da 6d382aee 1ba3d842 916c507b 9d6af11f 51c3b7ea 5128beb4 9bdea126
+    52463731 92149937 8928795e 9880d3c5 a5b9e91d 0b47e6a7 282628ca 4fd8e397
+    a1806cb2 c7d6598b 906a9dc2 c58eac36 ce9970d7 0b8bd949 5df3d2f3 4d0b3027
+    3a155c78 f9e81622 0f5a38e9 5d09dbd5 04546727 61d7aacb 18b11266 c7554277
+  Validity: [From: Mon May 03 20:00:00 EDT 2004,
+               To: Fri Jul 29 19:59:59 EDT 2005]
+  Issuer: CN=Comodo Class 3 Security Services CA, OU=(c)2002 Comodo Limited, OU=Terms and Conditions of use: http://www.comodo.net/repository, OU=Comodo Trust Network, O=Comodo Limited, C=GB
+  SerialNumber: [    ef1657cd a8f0a157 29419315 33943e2a]
+
+Certificate Extensions: 8
+[1]: ObjectId: 2.16.840.1.113730.1.1 Criticality=false
+NetscapeCertType [
+   SSL client
+   SSL server
+]
+
+[2]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: ED 13 D8 33 A9 19 5D DA   18 F0 30 5B 21 4C EA 18  ...3..]...0[!L..
+0010: 18 1E AF 4E                                        ...N
+]
+]
+
+[3]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: F6 52 22 17 15 13 08 03   59 BF 18 95 9F 48 B4 B9  .R".....Y....H..
+0010: E9 FE F8 66                                        ...f
+]
+
+]
+
+[4]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://crl.comodo.net/Class3SecurityServices_2.crl]
+, DistributionPoint:
+     [URIName: http://crl.comodoca.com/Class3SecurityServices_2.crl]
+, DistributionPoint:
+     [RFC822Name: Class3SecurityServices_2@crl.comodo.net]
+]]
+
+[5]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [1.3.6.1.4.1.6449.1.2.1.3.4]
+[PolicyQualifierInfo: [
+  qualifierID: 1.3.6.1.5.5.7.2.1
+  qualifier: 0000: 16 1D 68 74 74 70 73 3A   2F 2F 73 65 63 75 72 65  ..https://secure
+0010: 2E 63 6F 6D 6F 64 6F 2E   6E 65 74 2F 43 50 53     .comodo.net/CPS
+
+]]  ]
+]
+
+[6]: ObjectId: 2.5.29.37 Criticality=false
+ExtendedKeyUsages [
+[1.3.6.1.5.5.7.3.1, 1.3.6.1.5.5.7.3.2]]
+
+[7]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  DigitalSignature
+  Key_Encipherment
+]
+
+[8]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+CA:false
+PathLen: undefined
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 98 D5 6E F4 FD 22 11 27   6D 77 83 92 7D 8C 6E DB  ..n..".'mw....n.
+0010: BA 56 27 BB 72 E5 EF 1B   08 12 E5 36 50 46 B5 DE  .V'.r......6PF..
+0020: 15 F3 95 62 9D 90 74 DF   3E 30 16 C0 D3 F4 8C 61  ...b..t.>0.....a
+0030: 55 14 6C B1 37 B4 2F 53   4B 2D 0B 47 39 C9 40 0B  U.l.7./SK-.G9.@.
+0040: 03 B9 F3 BC CA 9C FC 62   A0 19 D1 31 92 62 A2 F5  .......b...1.b..
+0050: A6 FC 7E 37 41 7B 8A 61   32 FA 0B 60 85 1C 23 0F  ...7A..a2..`..#.
+0060: F8 CD 8E 41 E2 5E 57 70   66 00 80 C0 1F 33 FF 18  ...A.^Wpf....3..
+0070: 39 EE 36 DA E8 B6 3B C8   65 4A 54 3B 52 47 FC 8E  9.6...;.eJT;RG..
+0080: 8D 15 99 D6 EA A9 06 01   A1 DA 86 0C 5D D6 71 08  ............].q.
+0090: DA 97 0B 11 95 CF 84 37   9F 17 06 24 DE 47 4C 08  .......7...$.GL.
+00A0: 7C 92 64 EB 40 EE EF 8F   1E 8D 75 D9 45 C1 15 DE  ..d.@.....u.E...
+00B0: AD 72 00 6A 12 0B 66 7C   EA AF C0 03 FC D2 1B 4B  .r.j..f........K
+00C0: 72 14 8F 78 41 6C 54 F3   B0 79 6F D5 64 07 6B DC  r..xAlT..yo.d.k.
+00D0: 96 8F 32 17 33 40 52 D3   10 13 DF 27 1C 59 EA BE  ..2.3@R....'.Y..
+00E0: 46 CB 57 1F 92 12 3A 70   03 8F DD C3 05 4D 46 ED  F.W...:p.....MF.
+00F0: 02 8C 4F BC EE 1D 00 5C   CC 07 03 DD 39 AC 0E D6  ..O....\....9...
+
+]
+RouteLeaseListener.doGet: invalid signature
+<<request uri == />>
+MainController.doGet: 06/02 23:57:52 uri=/ remotehost=172.16.1.3 remoteIP=172.16.1.3 path=/ pathInfo=null
+--http headers--
+Accept:*/*
+Accept-Language:en
+Accept-Encoding:gzip, deflate
+Cookie:JSESSIONID=472k6w2mf8m22
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/412 (KHTML, like Gecko) Safari/412
+Connection:keep-alive
+Host:www.nws.noaa.gov
+
+MainController.getMACAddress: 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+allowSchedule = true
+global_access_allowed = true
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.buildRedirectURL: http://www.nws.noaa.gov/
+MainController.buildRedirectURL: alt http://www.nws.noaa.gov/
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.doGet: 06/02 23:57:54 existing contact 1006 redirect to https://www.iobeam.com:7002/signonuser?cid=1006&redirect=http%3A%2F%2Fwww.nws.noaa.gov%2F
+<<request uri == /cgi-bin/webbbs_config.pl>>
+MainController.doGet: 06/02 23:58:08 uri=/cgi-bin/webbbs_config.pl remotehost=172.16.1.3 remoteIP=172.16.1.3 path=/cgi-bin/webbbs_config.pl pathInfo=null
+--http headers--
+Accept:*/*
+Accept-Language:en
+Accept-Encoding:gzip, deflate
+Cookie:ProductMTB.com=name%3A%3ASquirrely%2BMcRash%26email%3A%3A%26listtype%3A%3A%26listtime%3A%3A%26lastmessage%3A%3A12907%26lastvisit%3A%3A1117753180%26thismessage%3A%3A12915%26thisvisit%3A%3A1117768300%26timestamp%3A%3A1117768300%26wantnotice%3A%3Ano%26password%3A%3A
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/412 (KHTML, like Gecko) Safari/412
+If-Modified-Since:Fri, 03 Jun 2005 03:11:39 GMT
+Connection:keep-alive
+Host:www.productmtb.com
+
+MainController.getMACAddress: 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+allowSchedule = true
+global_access_allowed = true
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.buildRedirectURL: http://www.productmtb.com/cgi-bin/webbbs_config.pl
+MainController.buildRedirectURL: alt http://www.productmtb.com/cgi-bin/webbbs_config.pl
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.doGet: 06/02 23:58:12 existing contact 1006 redirect to https://www.iobeam.com:7002/signonuser?cid=1006&redirect=http%3A%2F%2Fwww.productmtb.com%2Fcgi-bin%2Fwebbbs_config.pl
+<<request uri == />>
+MainController.doGet: 06/02 23:58:31 uri=/ remotehost=172.16.1.3 remoteIP=172.16.1.3 path=/ pathInfo=null
+--http headers--
+Accept:*/*
+Accept-Language:en
+Accept-Encoding:gzip, deflate
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/412 (KHTML, like Gecko) Safari/412
+If-Modified-Since:Thu, 02 Jun 2005 23:53:36 GMT
+Connection:keep-alive
+Host:www.nws.noaa.gov
+
+MainController.getMACAddress: 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+allowSchedule = true
+global_access_allowed = true
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.buildRedirectURL: http://www.nws.noaa.gov/
+MainController.buildRedirectURL: alt http://www.nws.noaa.gov/
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.doGet: 06/02 23:58:32 existing contact 1006 redirect to https://www.iobeam.com:7002/signonuser?cid=1006&redirect=http%3A%2F%2Fwww.nws.noaa.gov%2F
+<<request uri == /2547-1_3-0-5.xml>>
+MainController.doGet: 06/03 00:01:08 uri=/2547-1_3-0-5.xml remotehost=172.16.1.3 remoteIP=172.16.1.3 path=/2547-1_3-0-5.xml pathInfo=null
+--http headers--
+Accept:*/*
+Accept-Language:en
+Accept-Encoding:gzip, deflate
+Cookie:XCLGFbrowser=zhAAX0C11CA5AAAAH5I; XCLGFcgversion=1; MADCAPP=052ar; u_srv_0_0=%28928%29; ZZFLSH=29
+User-Agent:AppleSyndication/38
+Connection:keep-alive
+Host:news.com.com
+
+<<request uri == /rss/newarrivals.rss>>
+MainController.doGet: 06/03 00:01:08 uri=/rss/newarrivals.rss remotehost=172.16.1.3 remoteIP=172.16.1.3 path=/rss/newarrivals.rss pathInfo=null
+--http headers--
+Accept:*/*
+Accept-Language:en
+Accept-Encoding:gzip, deflate
+Cookie:AppleID=Jeff~US~EN~60817414; PostalCode=30030; affiliate=3Z3nHdR4IjU-4suhFE6OssO4yMntsE4T4Q~20040623_211945; higherEdSchool=918130; s_vi_hyyelafdl=[CS]v4|410B22C400002D39-A000AB000000001|41EF38CC[CE]; s_vi_hyyelx60yfm=[CS]v4|4154F12000001612-A000A9C00000001|41862BFA[CE]; s_vi_ixxxxdmgx7Bp=[CS]v4|41147C440000326D-A000B5300000001|41DA03C0[CE]; s_vi_jx7Bx7Bgnbx7Fx7Eenxx=[CS]v4|4128969B000034A4-A000B1F00000001|41DA03C0[CE]; s_vi_jx7Bx7Bgnlgdijg=[CS]v4|410B22C400002D39-A000AB000000001|41F1DE0A[CE]; s_vi_kzzfox7Fyzxxe=[CS]v4|41B77CA100003A5D-A000B4700000001|41EF38CC[CE]; s_vi_lx7Dx7Dahelx7Fizlx7Fh=[CS]v4|413BD2AF00007B9D-A000A9A00000001|41A3330B[CE]; s_vi_mx7Cx7Cx60ix7Fyx7Cx7Ccx7Exx=[CS]v4|41C26D39000002E4-A000B8A00000001|41E81ED7[CE]; s_vi_mx7Cx7Cx60iyx7Fex60eji=[CS]v4|41CCEC9F00000785-A000A7B00000001|41CCEC9D[CE]; s_vi_mx7Cx7Cx60iyx7Fex7Bcx7Eg=[CS]v4|41EF38D6000028F4-A000B2C00000001|41EF38CC[CE]; s_vi_paax7Dtdbiux7Efx7Fx7Dx7Epub=[CS]v4|41E612A60000047C-A000A8E00000001|41F1DE0A[CE]; s_vi_qx60x60x7Cuectufux7Cx7Fx60ub=[CS]v4|41B77CA400007CED-A000A8C00000001|41D08874[CE]; s_vi_qx60x60x7Cucex60ubwx7Cx7Frqx7C=[CS]v4|42798C1B00000550-A000B1000000001|429F620D[CE]
+User-Agent:AppleSyndication/38
+If-Modified-Since:Tue, 31 May 2005 22:44:09 GMT
+Connection:keep-alive
+Host:guide.apple.com
+
+MainController.getMACAddress: 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+allowSchedule = true
+global_access_allowed = true
+MainController.getMACAddress: 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.buildRedirectURL: http://guide.apple.com/rss/newarrivals.rss
+MainController.buildRedirectURL: alt http://guide.apple.com/rss/newarrivals.rss
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.doGet: 06/03 00:01:12 existing contact 1006 redirect to https://www.iobeam.com:7002/signonuser?cid=1006&redirect=http%3A%2F%2Fguide.apple.com%2Frss%2Fnewarrivals.rss
+allowSchedule = true
+global_access_allowed = true
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.buildRedirectURL: http://news.com.com/2547-1_3-0-5.xml
+MainController.buildRedirectURL: alt http://news.com.com/2547-1_3-0-5.xml
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.doGet: 06/03 00:01:12 existing contact 1006 redirect to https://www.iobeam.com:7002/signonuser?cid=1006&redirect=http%3A%2F%2Fnews.com.com%2F2547-1_3-0-5.xml
+<<request uri == /services/xml/rss/nyt/HomePage.xml>>
+MainController.doGet: 06/03 00:01:21 uri=/services/xml/rss/nyt/HomePage.xml remotehost=172.16.1.3 remoteIP=172.16.1.3 path=/services/xml/rss/nyt/HomePage.xml pathInfo=null
+--http headers--
+Accept:*/*
+Accept-Language:en
+Accept-Encoding:gzip, deflate
+Cookie:RMID=808ab440022540fdb19bce4b; s_vsn_nytimesglobal_1=7661748001194; s_vnum1=1117520573897%7C1
+User-Agent:AppleSyndication/38
+If-Modified-Since:Fri, 03 Jun 2005 01:00:18 GMT
+Connection:keep-alive
+Host:www.nytimes.com
+
+<<request uri == /main/rss/downloads/downloads.rss>>
+MainController.doGet: 06/03 00:01:21 uri=/main/rss/downloads/downloads.rss remotehost=172.16.1.3 remoteIP=172.16.1.3 path=/main/rss/downloads/downloads.rss pathInfo=null
+--http headers--
+Accept:*/*
+Accept-Language:en
+Accept-Encoding:gzip, deflate
+Cookie:AppleID=Jeff~US~EN~60817414; PostalCode=30030; affiliate=3Z3nHdR4IjU-4suhFE6OssO4yMntsE4T4Q~20040623_211945; higherEdSchool=918130; s_vi_hyyelafdl=[CS]v4|410B22C400002D39-A000AB000000001|41EF38CC[CE]; s_vi_hyyelx60yfm=[CS]v4|4154F12000001612-A000A9C00000001|41862BFA[CE]; s_vi_ixxxxdmgx7Bp=[CS]v4|41147C440000326D-A000B5300000001|41DA03C0[CE]; s_vi_jx7Bx7Bgnbx7Fx7Eenxx=[CS]v4|4128969B000034A4-A000B1F00000001|41DA03C0[CE]; s_vi_jx7Bx7Bgnlgdijg=[CS]v4|410B22C400002D39-A000AB000000001|41F1DE0A[CE]; s_vi_kzzfox7Fyzxxe=[CS]v4|41B77CA100003A5D-A000B4700000001|41EF38CC[CE]; s_vi_lx7Dx7Dahelx7Fizlx7Fh=[CS]v4|413BD2AF00007B9D-A000A9A00000001|41A3330B[CE]; s_vi_mx7Cx7Cx60ix7Fyx7Cx7Ccx7Exx=[CS]v4|41C26D39000002E4-A000B8A00000001|41E81ED7[CE]; s_vi_mx7Cx7Cx60iyx7Fex60eji=[CS]v4|41CCEC9F00000785-A000A7B00000001|41CCEC9D[CE]; s_vi_mx7Cx7Cx60iyx7Fex7Bcx7Eg=[CS]v4|41EF38D6000028F4-A000B2C00000001|41EF38CC[CE]; s_vi_paax7Dtdbiux7Efx7Fx7Dx7Epub=[CS]v4|41E612A60000047C-A000A8E00000001|41F1DE0A[CE]; s_vi_qx60x60x7Cuectufux7Cx7Fx60ub=[CS]v4|41B77CA400007CED-A000A8C00000001|41D08874[CE]; s_vi_qx60x60x7Cucex60ubwx7Cx7Frqx7C=[CS]v4|42798C1B00000550-A000B1000000001|429F620D[CE]
+User-Agent:AppleSyndication/38
+If-Modified-Since:Fri, 03 Jun 2005 00:16:54 GMT
+Connection:keep-alive
+Host:www.apple.com
+
+MainController.getMACAddress: 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+allowSchedule = true
+global_access_allowed = true
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.buildRedirectURL: http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml
+MainController.buildRedirectURL: alt http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.doGet: 06/03 00:01:23 existing contact 1006 redirect to https://www.iobeam.com:7002/signonuser?cid=1006&redirect=http%3A%2F%2Fwww.nytimes.com%2Fservices%2Fxml%2Frss%2Fnyt%2FHomePage.xml
+MainController.getMACAddress: 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+allowSchedule = true
+global_access_allowed = true
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.buildRedirectURL: http://www.apple.com/main/rss/downloads/downloads.rss
+MainController.buildRedirectURL: alt http://www.apple.com/main/rss/downloads/downloads.rss
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.doGet: 06/03 00:01:23 existing contact 1006 redirect to https://www.iobeam.com:7002/signonuser?cid=1006&redirect=http%3A%2F%2Fwww.apple.com%2Fmain%2Frss%2Fdownloads%2Fdownloads.rss
+<<request uri == /reviews/rss.xml>>
+MainController.doGet: 06/03 00:01:24 uri=/reviews/rss.xml remotehost=172.16.1.3 remoteIP=172.16.1.3 path=/reviews/rss.xml pathInfo=null
+<<request uri == /news/feeds/rss2/0,2610,3,00.xml>>
+MainController.doGet: 06/03 00:01:24 uri=/news/feeds/rss2/0,2610,3,00.xml remotehost=172.16.1.3 remoteIP=172.16.1.3 path=/news/feeds/rss2/0,2610,3,00.xml pathInfo=null
+--http headers--
+Accept:*/*
+Accept-Language:en
+Accept-Encoding:gzip, deflate
+Cookie:ifr=y
+User-Agent:AppleSyndication/38
+If-Modified-Since:Thu, 02 Jun 2005 19:48:25 GMT
+Connection:keep-alive
+Host:wired.com
+
+--http headers--
+Accept:*/*
+Accept-Language:en
+Accept-Encoding:gzip, deflate
+Cookie:SBID=E97DEDCF0BB9F0FB&S=1588A8C0&L=41E686A0&G=M1:E3:472:2E8B:20C:3; MPexitpopup=1; ASLTRG3=18#26#.net#2918#27011#.clients.speedfactory.net#66.23.201.182#en##-556#26876#14658#524#0; BSUID=1; Dmacworld.comKIDYMD=#41349:EFBU#48296:EFBU#47887:EFBL#41572:EFBD#53412:EFBU#41708:EFBU#41698:EFBU#41697:EFBU#41696:EFBU#52057:EFBI#56894:EFBJ#57199:EFBH#45941:EFBK#52058:EFBU#54322:EFBA#51582:EFAL#53923:EE`C#41348:EE`U#57123:EE`C#53934:EE`B#57126:EE_I#54285:EE[U#57129:EE[C#56219:EE[B#55580:EEXP#52070:EEXS#42171:EEXM#55905:EEWC#47571:EEWB#54313:EEWB#53879:EERA#55506:EERA#48488:EERB#47406:EEPC#47916:EEPC#55932:EEMA#53172:EEMA#47402:EEMB#53975:EEMA#48498:EELA#53884:EEKA#55520:EEJA#55517:EEIA#55514:EEIA#46863:EEGC#54055:EEFB#41702:EEFE#54316:EEFC#48499:EEFB#53166:EEFE#46867:EEEC#48479:EEEA#51007:EEEB#54499:EEDA#; Dmacworld.comWIDYMD=#7664:EFB#7733:EFB#; Dmacworld.comFRQSTR=18629047,18629047,18629047,18629047,18629047; CP=null*
+User-Agent:AppleSyndication/38
+If-Modified-Since:Fri, 03 Jun 2005 00:31:12 GMT
+Connection:keep-alive
+Host:www.macworld.com
+
+MainController.getMACAddress: 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+allowSchedule = true
+global_access_allowed = true
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.buildRedirectURL: http://www.macworld.com/reviews/rss.xml
+MainController.buildRedirectURL: alt http://www.macworld.com/reviews/rss.xml
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.doGet: 06/03 00:01:25 existing contact 1006 redirect to https://www.iobeam.com:7002/signonuser?cid=1006&redirect=http%3A%2F%2Fwww.macworld.com%2Freviews%2Frss.xml
+MainController.getMACAddress: 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+allowSchedule = true
+global_access_allowed = true
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.buildRedirectURL: http://wired.com/news/feeds/rss2/0,2610,3,00.xml
+MainController.buildRedirectURL: alt http://wired.com/news/feeds/rss2/0,2610,3,00.xml
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.doGet: 06/03 00:01:26 existing contact 1006 redirect to https://www.iobeam.com:7002/signonuser?cid=1006&redirect=http%3A%2F%2Fwired.com%2Fnews%2Ffeeds%2Frss2%2F0%2C2610%2C3%2C00.xml
+<<request uri == /main/rss/hotnews/pr.rss>>
+MainController.doGet: 06/03 00:01:26 uri=/main/rss/hotnews/pr.rss remotehost=172.16.1.3 remoteIP=172.16.1.3 path=/main/rss/hotnews/pr.rss pathInfo=null
+<<request uri == /main/rss/downloads/hot_downloads.rss>>
+MainController.doGet: 06/03 00:01:26 uri=/main/rss/downloads/hot_downloads.rss remotehost=172.16.1.3 remoteIP=172.16.1.3 path=/main/rss/downloads/hot_downloads.rss pathInfo=null
+--http headers--
+Accept:*/*
+Accept-Language:en
+Accept-Encoding:gzip, deflate
+Cookie:AppleID=Jeff~US~EN~60817414; PostalCode=30030; affiliate=3Z3nHdR4IjU-4suhFE6OssO4yMntsE4T4Q~20040623_211945; higherEdSchool=918130; s_vi_hyyelafdl=[CS]v4|410B22C400002D39-A000AB000000001|41EF38CC[CE]; s_vi_hyyelx60yfm=[CS]v4|4154F12000001612-A000A9C00000001|41862BFA[CE]; s_vi_ixxxxdmgx7Bp=[CS]v4|41147C440000326D-A000B5300000001|41DA03C0[CE]; s_vi_jx7Bx7Bgnbx7Fx7Eenxx=[CS]v4|4128969B000034A4-A000B1F00000001|41DA03C0[CE]; s_vi_jx7Bx7Bgnlgdijg=[CS]v4|410B22C400002D39-A000AB000000001|41F1DE0A[CE]; s_vi_kzzfox7Fyzxxe=[CS]v4|41B77CA100003A5D-A000B4700000001|41EF38CC[CE]; s_vi_lx7Dx7Dahelx7Fizlx7Fh=[CS]v4|413BD2AF00007B9D-A000A9A00000001|41A3330B[CE]; s_vi_mx7Cx7Cx60ix7Fyx7Cx7Ccx7Exx=[CS]v4|41C26D39000002E4-A000B8A00000001|41E81ED7[CE]; s_vi_mx7Cx7Cx60iyx7Fex60eji=[CS]v4|41CCEC9F00000785-A000A7B00000001|41CCEC9D[CE]; s_vi_mx7Cx7Cx60iyx7Fex7Bcx7Eg=[CS]v4|41EF38D6000028F4-A000B2C00000001|41EF38CC[CE]; s_vi_paax7Dtdbiux7Efx7Fx7Dx7Epub=[CS]v4|41E612A60000047C-A000A8E00000001|41F1DE0A[CE]; s_vi_qx60x60x7Cuectufux7Cx7Fx60ub=[CS]v4|41B77CA400007CED-A000A8C00000001|41D08874[CE]; JSESSIONID=hc2fhtocpu9v; s_vi_qx60x60x7Cucex60ubwx7Cx7Frqx7C=[CS]v4|42798C1B00000550-A000B1000000001|429F620D[CE]
+User-Agent:AppleSyndication/38
+If-Modified-Since:Fri, 03 Jun 2005 00:16:57 GMT
+Connection:keep-alive
+Host:www.apple.com
+
+--http headers--
+Accept:*/*
+Accept-Language:en
+Accept-Encoding:gzip, deflate
+Cookie:AppleID=Jeff~US~EN~60817414; PostalCode=30030; affiliate=3Z3nHdR4IjU-4suhFE6OssO4yMntsE4T4Q~20040623_211945; higherEdSchool=918130; s_vi_hyyelafdl=[CS]v4|410B22C400002D39-A000AB000000001|41EF38CC[CE]; s_vi_hyyelx60yfm=[CS]v4|4154F12000001612-A000A9C00000001|41862BFA[CE]; s_vi_ixxxxdmgx7Bp=[CS]v4|41147C440000326D-A000B5300000001|41DA03C0[CE]; s_vi_jx7Bx7Bgnbx7Fx7Eenxx=[CS]v4|4128969B000034A4-A000B1F00000001|41DA03C0[CE]; s_vi_jx7Bx7Bgnlgdijg=[CS]v4|410B22C400002D39-A000AB000000001|41F1DE0A[CE]; s_vi_kzzfox7Fyzxxe=[CS]v4|41B77CA100003A5D-A000B4700000001|41EF38CC[CE]; s_vi_lx7Dx7Dahelx7Fizlx7Fh=[CS]v4|413BD2AF00007B9D-A000A9A00000001|41A3330B[CE]; s_vi_mx7Cx7Cx60ix7Fyx7Cx7Ccx7Exx=[CS]v4|41C26D39000002E4-A000B8A00000001|41E81ED7[CE]; s_vi_mx7Cx7Cx60iyx7Fex60eji=[CS]v4|41CCEC9F00000785-A000A7B00000001|41CCEC9D[CE]; s_vi_mx7Cx7Cx60iyx7Fex7Bcx7Eg=[CS]v4|41EF38D6000028F4-A000B2C00000001|41EF38CC[CE]; s_vi_paax7Dtdbiux7Efx7Fx7Dx7Epub=[CS]v4|41E612A60000047C-A000A8E00000001|41F1DE0A[CE]; s_vi_qx60x60x7Cuectufux7Cx7Fx60ub=[CS]v4|41B77CA400007CED-A000A8C00000001|41D08874[CE]; JSESSIONID=hc2fhtocpu9v; s_vi_qx60x60x7Cucex60ubwx7Cx7Frqx7C=[CS]v4|42798C1B00000550-A000B1000000001|429F620D[CE]
+User-Agent:AppleSyndication/38
+If-Modified-Since:Fri, 03 Jun 2005 00:15:00 GMT
+Connection:keep-alive
+Host:www.apple.com
+
+MainController.getMACAddress: 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+allowSchedule = true
+global_access_allowed = true
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.buildRedirectURL: http://www.apple.com/main/rss/downloads/hot_downloads.rss
+MainController.buildRedirectURL: alt http://www.apple.com/main/rss/downloads/hot_downloads.rss
+MainController.getMACAddress: 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+allowSchedule = true
+global_access_allowed = true
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.buildRedirectURL: http://www.apple.com/main/rss/hotnews/pr.rss
+MainController.buildRedirectURL: alt http://www.apple.com/main/rss/hotnews/pr.rss
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.doGet: 06/03 00:01:28 existing contact 1006 redirect to https://www.iobeam.com:7002/signonuser?cid=1006&redirect=http%3A%2F%2Fwww.apple.com%2Fmain%2Frss%2Fhotnews%2Fpr.rss
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.doGet: 06/03 00:01:28 existing contact 1006 redirect to https://www.iobeam.com:7002/signonuser?cid=1006&redirect=http%3A%2F%2Fwww.apple.com%2Fmain%2Frss%2Fdownloads%2Fhot_downloads.rss
+<<request uri == /rss/macosx.rss>>
+MainController.doGet: 06/03 00:01:28 uri=/rss/macosx.rss remotehost=172.16.1.3 remoteIP=172.16.1.3 path=/rss/macosx.rss pathInfo=null
+--http headers--
+Accept:*/*
+Accept-Language:en
+Accept-Encoding:gzip, deflate
+Cookie:AppleID=Jeff~US~EN~60817414; PostalCode=30030; affiliate=3Z3nHdR4IjU-4suhFE6OssO4yMntsE4T4Q~20040623_211945; higherEdSchool=918130; s_vi_hyyelafdl=[CS]v4|410B22C400002D39-A000AB000000001|41EF38CC[CE]; s_vi_hyyelx60yfm=[CS]v4|4154F12000001612-A000A9C00000001|41862BFA[CE]; s_vi_ixxxxdmgx7Bp=[CS]v4|41147C440000326D-A000B5300000001|41DA03C0[CE]; s_vi_jx7Bx7Bgnbx7Fx7Eenxx=[CS]v4|4128969B000034A4-A000B1F00000001|41DA03C0[CE]; s_vi_jx7Bx7Bgnlgdijg=[CS]v4|410B22C400002D39-A000AB000000001|41F1DE0A[CE]; s_vi_kzzfox7Fyzxxe=[CS]v4|41B77CA100003A5D-A000B4700000001|41EF38CC[CE]; s_vi_lx7Dx7Dahelx7Fizlx7Fh=[CS]v4|413BD2AF00007B9D-A000A9A00000001|41A3330B[CE]; s_vi_mx7Cx7Cx60ix7Fyx7Cx7Ccx7Exx=[CS]v4|41C26D39000002E4-A000B8A00000001|41E81ED7[CE]; s_vi_mx7Cx7Cx60iyx7Fex60eji=[CS]v4|41CCEC9F00000785-A000A7B00000001|41CCEC9D[CE]; s_vi_mx7Cx7Cx60iyx7Fex7Bcx7Eg=[CS]v4|41EF38D6000028F4-A000B2C00000001|41EF38CC[CE]; s_vi_paax7Dtdbiux7Efx7Fx7Dx7Epub=[CS]v4|41E612A60000047C-A000A8E00000001|41F1DE0A[CE]; s_vi_qx60x60x7Cuectufux7Cx7Fx60ub=[CS]v4|41B77CA400007CED-A000A8C00000001|41D08874[CE]; __utma=141406570.269220094.1088831812.1088831812.1094439640.2; style=internal; s_vi_qx60x60x7Cucex60ubwx7Cx7Frqx7C=[CS]v4|42798C1B00000550-A000B1000000001|429F620D[CE]
+User-Agent:AppleSyndication/38
+Connection:keep-alive
+Host:docs.info.apple.com
+
+<<request uri == /eweekmac.xml>>
+MainController.doGet: 06/03 00:01:28 uri=/eweekmac.xml remotehost=172.16.1.3 remoteIP=172.16.1.3 path=/eweekmac.xml pathInfo=null
+--http headers--
+Accept:*/*
+Accept-Language:en
+Accept-Encoding:gzip, deflate
+User-Agent:AppleSyndication/38
+If-Modified-Since:Thu, 02 Jun 2005 23:50:22 GMT
+Connection:keep-alive
+Host:rssnewsapps.ziffdavis.com
+
+MainController.getMACAddress: 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+MainController.getMACAddress: 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+allowSchedule = true
+global_access_allowed = true
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.buildRedirectURL: http://rssnewsapps.ziffdavis.com/eweekmac.xml
+MainController.buildRedirectURL: alt http://rssnewsapps.ziffdavis.com/eweekmac.xml
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.doGet: 06/03 00:01:30 existing contact 1006 redirect to https://www.iobeam.com:7002/signonuser?cid=1006&redirect=http%3A%2F%2Frssnewsapps.ziffdavis.com%2Feweekmac.xml
+allowSchedule = false
+global_access_allowed = true
+<<<<< url = http://www.iobeam.com:7001/noservice.jsp >>>>>
+<<request uri == /WebObjects/MZStore.woa/wpa/MRSS/newreleases/limit=25/rss.xml>>
+<<request uri == /news/feeds/rss2/0,2610,76,00.xml>>
+MainController.doGet: 06/03 00:01:30 uri=/news/feeds/rss2/0,2610,76,00.xml remotehost=172.16.1.3 remoteIP=172.16.1.3 path=/news/feeds/rss2/0,2610,76,00.xml pathInfo=null
+--http headers--
+Accept:*/*
+Accept-Language:en
+Accept-Encoding:gzip, deflate
+Cookie:ifr=y; JSESSIONID=3dao94trvbb0u
+User-Agent:AppleSyndication/38
+If-Modified-Since:Thu, 02 Jun 2005 19:48:25 GMT
+Connection:keep-alive
+Host:wired.com
+
+MainController.doGet: 06/03 00:01:30 uri=/WebObjects/MZStore.woa/wpa/MRSS/newreleases/limit=25/rss.xml remotehost=172.16.1.3 remoteIP=172.16.1.3 path=/WebObjects/MZStore.woa/wpa/MRSS/newreleases/limit=25/rss.xml pathInfo=null
+--http headers--
+Accept:*/*
+Accept-Language:en
+Accept-Encoding:gzip, deflate
+User-Agent:AppleSyndication/38
+If-Modified-Since:Thu, 02 Jun 2005 18:36:52 GMT
+Connection:keep-alive
+Host:ax.phobos.apple.com.edgesuite.net
+
+MainController.getMACAddress: 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+allowSchedule = true
+global_access_allowed = true
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.buildRedirectURL: http://ax.phobos.apple.com.edgesuite.net/WebObjects/MZStore.woa/wpa/MRSS/newreleases/limit=25/rss.xml
+MainController.buildRedirectURL: alt http://ax.phobos.apple.com.edgesuite.net/WebObjects/MZStore.woa/wpa/MRSS/newreleases/limit=25/rss.xml
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.doGet: 06/03 00:01:34 existing contact 1006 redirect to https://www.iobeam.com:7002/signonuser?cid=1006&redirect=http%3A%2F%2Fax.phobos.apple.com.edgesuite.net%2FWebObjects%2FMZStore.woa%2Fwpa%2FMRSS%2Fnewreleases%2Flimit%3D25%2Frss.xml
+MainController.getMACAddress: 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+allowSchedule = true
+global_access_allowed = true
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.buildRedirectURL: http://wired.com/news/feeds/rss2/0,2610,76,00.xml
+MainController.buildRedirectURL: alt http://wired.com/news/feeds/rss2/0,2610,76,00.xml
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.doGet: 06/03 00:01:34 existing contact 1006 redirect to https://www.iobeam.com:7002/signonuser?cid=1006&redirect=http%3A%2F%2Fwired.com%2Fnews%2Ffeeds%2Frss2%2F0%2C2610%2C76%2C00.xml
+<<request uri == /main/rss/hotnews/hotnews.rss>>
+MainController.doGet: 06/03 00:01:34 uri=/main/rss/hotnews/hotnews.rss remotehost=172.16.1.3 remoteIP=172.16.1.3 path=/main/rss/hotnews/hotnews.rss pathInfo=null
+--http headers--
+Accept:*/*
+Accept-Language:en
+Accept-Encoding:gzip, deflate
+Cookie:AppleID=Jeff~US~EN~60817414; PostalCode=30030; affiliate=3Z3nHdR4IjU-4suhFE6OssO4yMntsE4T4Q~20040623_211945; higherEdSchool=918130; s_vi_hyyelafdl=[CS]v4|410B22C400002D39-A000AB000000001|41EF38CC[CE]; s_vi_hyyelx60yfm=[CS]v4|4154F12000001612-A000A9C00000001|41862BFA[CE]; s_vi_ixxxxdmgx7Bp=[CS]v4|41147C440000326D-A000B5300000001|41DA03C0[CE]; s_vi_jx7Bx7Bgnbx7Fx7Eenxx=[CS]v4|4128969B000034A4-A000B1F00000001|41DA03C0[CE]; s_vi_jx7Bx7Bgnlgdijg=[CS]v4|410B22C400002D39-A000AB000000001|41F1DE0A[CE]; s_vi_kzzfox7Fyzxxe=[CS]v4|41B77CA100003A5D-A000B4700000001|41EF38CC[CE]; s_vi_lx7Dx7Dahelx7Fizlx7Fh=[CS]v4|413BD2AF00007B9D-A000A9A00000001|41A3330B[CE]; s_vi_mx7Cx7Cx60ix7Fyx7Cx7Ccx7Exx=[CS]v4|41C26D39000002E4-A000B8A00000001|41E81ED7[CE]; s_vi_mx7Cx7Cx60iyx7Fex60eji=[CS]v4|41CCEC9F00000785-A000A7B00000001|41CCEC9D[CE]; s_vi_mx7Cx7Cx60iyx7Fex7Bcx7Eg=[CS]v4|41EF38D6000028F4-A000B2C00000001|41EF38CC[CE]; s_vi_paax7Dtdbiux7Efx7Fx7Dx7Epub=[CS]v4|41E612A60000047C-A000A8E00000001|41F1DE0A[CE]; s_vi_qx60x60x7Cuectufux7Cx7Fx60ub=[CS]v4|41B77CA400007CED-A000A8C00000001|41D08874[CE]; JSESSIONID=hc2fhtocpu9v; s_vi_qx60x60x7Cucex60ubwx7Cx7Frqx7C=[CS]v4|42798C1B00000550-A000B1000000001|429F620D[CE]
+User-Agent:AppleSyndication/38
+If-Modified-Since:Fri, 03 Jun 2005 00:15:00 GMT
+Connection:keep-alive
+Host:www.apple.com
+
+<<request uri == /news/rss.xml>>
+MainController.doGet: 06/03 00:01:35 uri=/news/rss.xml remotehost=172.16.1.3 remoteIP=172.16.1.3 path=/news/rss.xml pathInfo=null
+--http headers--
+Accept:*/*
+Accept-Language:en
+Accept-Encoding:gzip, deflate
+Cookie:SBID=E97DEDCF0BB9F0FB&S=1588A8C0&L=41E686A0&G=M1:E3:472:2E8B:20C:3; MPexitpopup=1; ASLTRG3=18#26#.net#2918#27011#.clients.speedfactory.net#66.23.201.182#en##-556#26876#14658#524#0; JSESSIONID=2trof0m1qcf9i; BSUID=1; Dmacworld.comKIDYMD=#41349:EFBU#48296:EFBU#47887:EFBL#41572:EFBD#53412:EFBU#41708:EFBU#41698:EFBU#41697:EFBU#41696:EFBU#52057:EFBI#56894:EFBJ#57199:EFBH#45941:EFBK#52058:EFBU#54322:EFBA#51582:EFAL#53923:EE`C#41348:EE`U#57123:EE`C#53934:EE`B#57126:EE_I#54285:EE[U#57129:EE[C#56219:EE[B#55580:EEXP#52070:EEXS#42171:EEXM#55905:EEWC#47571:EEWB#54313:EEWB#53879:EERA#55506:EERA#48488:EERB#47406:EEPC#47916:EEPC#55932:EEMA#53172:EEMA#47402:EEMB#53975:EEMA#48498:EELA#53884:EEKA#55520:EEJA#55517:EEIA#55514:EEIA#46863:EEGC#54055:EEFB#41702:EEFE#54316:EEFC#48499:EEFB#53166:EEFE#46867:EEEC#48479:EEEA#51007:EEEB#54499:EEDA#; Dmacworld.comWIDYMD=#7664:EFB#7733:EFB#; Dmacworld.comFRQSTR=18629047,18629047,18629047,18629047,18629047; CP=null*
+User-Agent:AppleSyndication/38
+If-Modified-Since:Fri, 03 Jun 2005 00:32:03 GMT
+Connection:keep-alive
+Host:www.macworld.com
+
+MainController.getMACAddress: 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+allowSchedule = true
+global_access_allowed = true
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.buildRedirectURL: http://www.apple.com/main/rss/hotnews/hotnews.rss
+MainController.buildRedirectURL: alt http://www.apple.com/main/rss/hotnews/hotnews.rss
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.doGet: 06/03 00:01:35 existing contact 1006 redirect to https://www.iobeam.com:7002/signonuser?cid=1006&redirect=http%3A%2F%2Fwww.apple.com%2Fmain%2Frss%2Fhotnews%2Fhotnews.rss
+<<request uri == /wp-srv/print/a1/rssheadlines.xml>>
+MainController.doGet: 06/03 00:01:36 uri=/wp-srv/print/a1/rssheadlines.xml remotehost=172.16.1.3 remoteIP=172.16.1.3 path=/wp-srv/print/a1/rssheadlines.xml pathInfo=null
+--http headers--
+Accept:*/*
+Accept-Language:en
+Accept-Encoding:gzip, deflate
+User-Agent:AppleSyndication/38
+If-Modified-Since:Thu, 02 Jun 2005 11:25:06 GMT
+Connection:keep-alive
+Host:www.washingtonpost.com
+
+MainController.getMACAddress: 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+allowSchedule = true
+global_access_allowed = true
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.buildRedirectURL: http://www.macworld.com/news/rss.xml
+MainController.buildRedirectURL: alt http://www.macworld.com/news/rss.xml
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.doGet: 06/03 00:01:36 existing contact 1006 redirect to https://www.iobeam.com:7002/signonuser?cid=1006&redirect=http%3A%2F%2Fwww.macworld.com%2Fnews%2Frss.xml
+MainController.getMACAddress: 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+allowSchedule = true
+global_access_allowed = true
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.buildRedirectURL: http://www.washingtonpost.com/wp-srv/print/a1/rssheadlines.xml
+MainController.buildRedirectURL: alt http://www.washingtonpost.com/wp-srv/print/a1/rssheadlines.xml
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.doGet: 06/03 00:01:37 existing contact 1006 redirect to https://www.iobeam.com:7002/signonuser?cid=1006&redirect=http%3A%2F%2Fwww.washingtonpost.com%2Fwp-srv%2Fprint%2Fa1%2Frssheadlines.xml
+<<request uri == />>
+MainController.doGet: 06/03 00:02:46 uri=/ remotehost=172.16.1.3 remoteIP=172.16.1.3 path=/ pathInfo=null
+--http headers--
+Accept:*/*
+Accept-Language:en
+Accept-Encoding:gzip, deflate
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/412 (KHTML, like Gecko) Safari/412
+If-Modified-Since:Thu, 02 Jun 2005 23:53:36 GMT
+Connection:keep-alive
+Host:www.nws.noaa.gov
+
+MainController.getMACAddress: 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+allowSchedule = true
+global_access_allowed = true
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.buildRedirectURL: http://www.nws.noaa.gov/
+MainController.buildRedirectURL: alt http://www.nws.noaa.gov/
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.doGet: 06/03 00:02:47 existing contact 1006 redirect to https://www.iobeam.com:7002/signonuser?cid=1006&redirect=http%3A%2F%2Fwww.nws.noaa.gov%2F
+<<request uri == /firefox>>
+MainController.doGet: 06/03 00:04:02 uri=/firefox remotehost=172.16.1.3 remoteIP=172.16.1.3 path=/firefox pathInfo=null
+--http headers--
+Host:www.google.com
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.7.7) Gecko/20050414 Firefox/1.0.3
+Accept:text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language:en-us,en;q=0.5
+Accept-Encoding:gzip,deflate
+Accept-Charset:ISO-8859-1,utf-8;q=0.7,*;q=0.7
+keep-alive:300
+Connection:keep-alive
+Cookie:PREF=ID=7e57cc589cadb180:TM=1114021326:LM=1114032382:GM=1:S=Qr7tSASOjXImzXca; rememberme=true; SID=DQAAAGMAAABspDLwZZcnhrA2Str_Nqs0zPdwRN9acp91OKLMnULD1b1CcoLAlJJCa1VrZq_fVkqyOtkOvYQ37V-RE_QX9EnhbYDKVcROfQq47reWNH6KNbTHvXI8PfKC-uH2RoeM20mWsU1sJhiHZPiSPpeGpQjb
+
+MainController.getMACAddress: 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+allowSchedule = true
+global_access_allowed = true
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.buildRedirectURL: http://www.google.com/firefox?client=firefox-a&rls=org.mozilla:en-US:official
+MainController.buildRedirectURL: alt http://www.google.com/firefox?client=firefox-a&rls=org.mozilla:en-US:official
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.doGet: 06/03 00:04:03 existing contact 1006 redirect to https://www.iobeam.com:7002/signonuser?cid=1006&redirect=http%3A%2F%2Fwww.google.com%2Ffirefox%3Fclient%3Dfirefox-a%26rls%3Dorg.mozilla%3Aen-US%3Aofficial
+<<request uri == /cms/>>
+MainController.doGet: 06/03 00:06:59 uri=/cms/ remotehost=172.16.1.3 remoteIP=172.16.1.3 path=/cms/ pathInfo=null
+--http headers--
+Accept:*/*
+Accept-Language:en
+Accept-Encoding:gzip, deflate
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/412 (KHTML, like Gecko) Safari/412
+Connection:keep-alive
+Host:www.view.net
+
+MainController.getMACAddress: 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+allowSchedule = true
+global_access_allowed = true
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.buildRedirectURL: http://www.view.net/cms/
+MainController.buildRedirectURL: alt http://www.view.net/cms/
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.doGet: 06/03 00:06:59 existing contact 1006 redirect to https://www.iobeam.com:7002/signonuser?cid=1006&redirect=http%3A%2F%2Fwww.view.net%2Fcms%2F
+00:07:38.454 EVENT  Checking Resource aliases
+00:08:08.729 EVENT  Statistics on = false for org.mortbay.jetty.Server@1de3f2d
+00:08:08.789 EVENT  Starting Jetty/4.2.18
+00:08:08.991 EVENT  Started org.mortbay.http.NCSARequestLog@1faba46
+00:08:09.335 WARN!! Delete existing temp dir /tmp/Jetty__7027__ for WebApplicationContext[/,jar:file:/usr/local/jetty/webapps/iobeam_gw.war!/]
+00:08:10.396 EVENT  Extract jar:file:/usr/local/jetty/webapps/iobeam_gw.war!/ to /tmp/Jetty__7027__/webapp
+00:08:18.048 EVENT  Started WebApplicationContext[/,ioBeam Gateway Services]
+BootServlet.init:
+BootService.<init>: 
+Jun 3, 2005 12:08:22 AM com.iobeam.boot.BootService boot
+INFO: boot
+GatewayBootService.getBootables:
+GatewayConfiguration.<init>
+default config
+java.vendor=Sun Microsystems Inc.
+iobeam.gateway.dhcpdLeasesPath=/usr/local/dhcp/dhcpd.leases
+iobeam.gateway.mac.external=00:00:24:c3:9e:a4
+com.iobeam.boot.isBooted.com.iobeam.gateway.boot.GatewayBootService=true
+os.name=Linux
+iobeam.gateway.address.internal.3=192.168.91.1
+sun.boot.class.path=/usr/local/j2re1.4.2_03/lib/rt.jar:/usr/local/j2re1.4.2_03/lib/i18n.jar:/usr/local/j2re1.4.2_03/lib/sunrsasign.jar:/usr/local/j2re1.4.2_03/lib/jsse.jar:/usr/local/j2re1.4.2_03/lib/jce.jar:/usr/local/j2re1.4.2_03/lib/charsets.jar:/usr/local/j2re1.4.2_03/classes
+java.util.logging.config.file=/usr/local/jetty/logging.properties
+iobeam.gateway.address.internal.2=172.16.2.1
+iobeam.gateway.external.type=dhcp
+iobeam.gateway.address.internal.1=172.16.1.1
+iobeam.gateway.routelease.duration=6
+sun.java2d.fontpath=
+java.vm.specification.vendor=Sun Microsystems Inc.
+iobeam.gateway.routelease.internal.2.duration=12
+java.runtime.version=1.4.2_03-b02
+user.name=root
+iobeam.gateway.radio.ssid=iobeam
+iobeam.gateway.schedule.start=00:00:00
+iobeam.gateway.lease.history.file=/var/log/leases.log
+iobeam.portal.signon.url=/signonuser
+iobeam.gateway.registered=false
+iobeam.portal.proxy.port=8080
+user.language=en
+iobeam.gateway.radio.wep.key=
+sun.boot.library.path=/usr/local/j2re1.4.2_03/lib/i386
+iobeam.portal.signon.type=secure
+iobeam.gateway.routelease.internal.1.stop=172.16.1.253
+iobeam.gateway.broadcast.external=@iobeam.gateway.broadcast.external@
+java.version=1.4.2_03
+user.timezone=US/Eastern
+sun.arch.data.model=32
+iobeam.portal.contactListener.url=/contactListener
+java.endorsed.dirs=/usr/local/j2re1.4.2_03/lib/endorsed
+sun.cpu.isalist=
+file.encoding.pkg=sun.io
+file.separator=/
+java.specification.name=Java Platform API Specification
+java.class.version=48.0
+user.country=US
+iobeam.gateway.RouterFactoryProvider.class=com.iobeam.gateway.router.DefaultRouterFactoryProvider
+java.home=/usr/local/j2re1.4.2_03
+java.vm.info=mixed mode
+iobeam.gateway.filtering=false
+iobeam.gateway.routelease.internal.2.stop=172.16.2.253
+os.version=2.4.22-pebble
+iobeam.portal.noservice.url=/noservice.jsp
+iobeam.gateway.address.dns.2=208.185.249.250
+iobeam.gateway.address.dns.1=172.16.1.1
+path.separator=:
+iobeam.gateway.netmask.internal.3=255.255.255.0
+java.vm.version=1.4.2_03-b02
+iobeam.portal.secure.port=7002
+iobeam.gateway.netmask.internal.2=255.255.255.0
+iobeam.gateway.netmask.internal.1=255.255.255.0
+java.util.prefs.PreferencesFactory=java.util.prefs.FileSystemPreferencesFactory
+java.protocol.handler.pkgs=sun.net.www.protocol
+iobeam.gateway.subnet.internal.3=192.168.91.0/24
+iobeam.gateway.subnet.internal.2=172.16.2.0/24
+iobeam.portal.registerGateway.url=/registerGateway
+iobeam.gateway.subnet.internal.1=172.16.1.0/24
+iobeam.gateway.timezone=GMT
+iobeam.gateway.routerConfig=/etc/config.xml
+java.awt.printerjob=sun.print.PSPrinterJob
+iobeam.gateway.configuration.file=/usr/local/iobeam/gateway.properties
+sun.io.unicode.encoding=UnicodeLittle
+iobeam.gateway.configuration.template.class=com.iobeam.gateway.util.PebbleTemplate
+user.home=/root
+iobeam.gateway.venue.id=125
+java.specification.vendor=Sun Microsystems Inc.
+iobeam.gateway.routelease.internal.1.duration=12
+java.library.path=/usr/local/j2re1.4.2_03/lib/i386/client:/usr/local/j2re1.4.2_03/lib/i386:/usr/local/j2re1.4.2_03/../lib/i386
+java.vendor.url=http://java.sun.com/
+iobeam.gateway.routerConfig.filtering=/etc/config_filtering.xml
+iobeam.portal.port=7001
+iobeam.portal.timeservice.url=/getservertime.jsp
+java.vm.vendor=Sun Microsystems Inc.
+java.runtime.name=Java(TM) 2 Runtime Environment, Standard Edition
+java.class.path=/usr/local/jetty/ext/ant.jar:/usr/local/jetty/lib/org.mortbay.jetty.jar:/usr/local/jetty/lib/javax.servlet.jar:/usr/local/jetty/ext/jasper-runtime.jar:/usr/local/jetty/ext/jasper-compiler.jar:/usr/local/jetty/ext/xercesImpl.jar:/usr/local/jetty/ext/jcert.jar:/usr/local/jetty/ext/jsse.jar:/usr/local/jetty/ext/xml-apis.jar:/usr/local/jetty/lib/logging.jar
+iobeam.gateway.admin.password=02cb4c278ff9d8e379f7156aec6cf662
+iobeam.gateway.version=2
+iobeam.gateway.mode=test
+java.vm.specification.name=Java Virtual Machine Specification
+java.vm.specification.version=1.0
+iobeam.gateway.address.external=@iobeam.gateway.address.external@
+iobeam.portal.domain=www.iobeam.com
+sun.cpu.endian=little
+sun.os.patch.level=unknown
+iobeam.gateway.admin.username=admin
+java.io.tmpdir=/tmp
+iobeam.gateway.secure.notify.port=8443
+java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi
+iobeam.gateway.notify.port=7027
+os.arch=i386
+java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+java.ext.dirs=/usr/local/j2re1.4.2_03/lib/ext
+java.util.logging.config.class=com.iobeam.util.logging.LogConfig
+user.dir=/rw/root
+iobeam.gateway.routelease.internal.2.start=172.16.2.3
+iobeam.portal.registerGateway.type=secure
+iobeam.gateway.radio.channel=1
+line.separator=
+
+java.vm.name=Java HotSpot(TM) Client VM
+iobeam.portal.signon.success.url=/jsp/signonsuccess.jsp
+iobeam.portal.contactListener.type=secure
+iobeam.gateway.broadcast.internal.3=192.168.91.255
+iobeam.gateway.broadcast.internal.2=172.16.2.255
+file.encoding=ANSI_X3.4-1968
+iobeam.gateway.broadcast.internal.1=172.16.1.255
+iobeam.gateway.access.enabled=true
+iobeam.gateway.venue.name=demo unit
+iobeam.gateway.routelease.internal.1.start=172.16.1.2
+jetty.class.path=/usr/local/jetty/ext/ant.jar:/usr/local/jetty/lib/org.mortbay.jetty.jar:/usr/local/jetty/lib/javax.servlet.jar:/usr/local/jetty/ext/jasper-runtime.jar:/usr/local/jetty/ext/jasper-compiler.jar:/usr/local/jetty/ext/xercesImpl.jar:/usr/local/jetty/ext/jcert.jar:/usr/local/jetty/ext/jsse.jar:/usr/local/jetty/ext/xml-apis.jar:/usr/local/jetty/lib/logging.jar
+iobeam.portal.proxy.address=66.184.143.82
+java.specification.version=1.4
+iobeam.gateway.schedule.stop=23:59:59
+iobeam.gateway.defaultgateway.external=@iobeam.gateway.defaultgateway.external@
+iobeam.gateway.netmask.external=@iobeam.gateway.netmask.external@
+jetty.home=/usr/local/jetty
+GatewayBootService.Bootable: init logger
+GatewayConfiguration.<init>
+default config
+java.vendor=Sun Microsystems Inc.
+iobeam.gateway.dhcpdLeasesPath=/usr/local/dhcp/dhcpd.leases
+iobeam.gateway.mac.external=00:00:24:c3:9e:a4
+com.iobeam.boot.isBooted.com.iobeam.gateway.boot.GatewayBootService=true
+os.name=Linux
+iobeam.gateway.address.internal.3=192.168.91.1
+sun.boot.class.path=/usr/local/j2re1.4.2_03/lib/rt.jar:/usr/local/j2re1.4.2_03/lib/i18n.jar:/usr/local/j2re1.4.2_03/lib/sunrsasign.jar:/usr/local/j2re1.4.2_03/lib/jsse.jar:/usr/local/j2re1.4.2_03/lib/jce.jar:/usr/local/j2re1.4.2_03/lib/charsets.jar:/usr/local/j2re1.4.2_03/classes
+java.util.logging.config.file=/usr/local/jetty/logging.properties
+iobeam.gateway.address.internal.2=172.16.2.1
+iobeam.gateway.external.type=dhcp
+iobeam.gateway.address.internal.1=172.16.1.1
+iobeam.gateway.routelease.duration=6
+sun.java2d.fontpath=
+java.vm.specification.vendor=Sun Microsystems Inc.
+iobeam.gateway.routelease.internal.2.duration=12
+java.runtime.version=1.4.2_03-b02
+user.name=root
+iobeam.gateway.radio.ssid=iobeam
+iobeam.gateway.schedule.start=00:00:00
+iobeam.gateway.lease.history.file=/var/log/leases.log
+iobeam.portal.signon.url=/signonuser
+iobeam.gateway.registered=false
+iobeam.portal.proxy.port=8080
+user.language=en
+iobeam.gateway.radio.wep.key=
+sun.boot.library.path=/usr/local/j2re1.4.2_03/lib/i386
+iobeam.portal.signon.type=secure
+iobeam.gateway.routelease.internal.1.stop=172.16.1.253
+iobeam.gateway.broadcast.external=@iobeam.gateway.broadcast.external@
+java.version=1.4.2_03
+user.timezone=US/Eastern
+sun.arch.data.model=32
+iobeam.portal.contactListener.url=/contactListener
+java.endorsed.dirs=/usr/local/j2re1.4.2_03/lib/endorsed
+sun.cpu.isalist=
+file.encoding.pkg=sun.io
+file.separator=/
+java.specification.name=Java Platform API Specification
+java.class.version=48.0
+user.country=US
+iobeam.gateway.RouterFactoryProvider.class=com.iobeam.gateway.router.DefaultRouterFactoryProvider
+java.home=/usr/local/j2re1.4.2_03
+java.vm.info=mixed mode
+iobeam.gateway.filtering=false
+iobeam.gateway.routelease.internal.2.stop=172.16.2.253
+os.version=2.4.22-pebble
+iobeam.portal.noservice.url=/noservice.jsp
+iobeam.gateway.address.dns.2=208.185.249.250
+iobeam.gateway.address.dns.1=172.16.1.1
+path.separator=:
+iobeam.gateway.netmask.internal.3=255.255.255.0
+java.vm.version=1.4.2_03-b02
+iobeam.portal.secure.port=7002
+iobeam.gateway.netmask.internal.2=255.255.255.0
+iobeam.gateway.netmask.internal.1=255.255.255.0
+java.util.prefs.PreferencesFactory=java.util.prefs.FileSystemPreferencesFactory
+java.protocol.handler.pkgs=sun.net.www.protocol
+iobeam.gateway.subnet.internal.3=192.168.91.0/24
+iobeam.gateway.subnet.internal.2=172.16.2.0/24
+iobeam.portal.registerGateway.url=/registerGateway
+iobeam.gateway.subnet.internal.1=172.16.1.0/24
+iobeam.gateway.timezone=GMT
+iobeam.gateway.routerConfig=/etc/config.xml
+java.awt.printerjob=sun.print.PSPrinterJob
+iobeam.gateway.configuration.file=/usr/local/iobeam/gateway.properties
+sun.io.unicode.encoding=UnicodeLittle
+iobeam.gateway.configuration.template.class=com.iobeam.gateway.util.PebbleTemplate
+user.home=/root
+iobeam.gateway.venue.id=125
+java.specification.vendor=Sun Microsystems Inc.
+iobeam.gateway.routelease.internal.1.duration=12
+java.library.path=/usr/local/j2re1.4.2_03/lib/i386/client:/usr/local/j2re1.4.2_03/lib/i386:/usr/local/j2re1.4.2_03/../lib/i386
+java.vendor.url=http://java.sun.com/
+iobeam.gateway.routerConfig.filtering=/etc/config_filtering.xml
+iobeam.portal.port=7001
+iobeam.portal.timeservice.url=/getservertime.jsp
+java.vm.vendor=Sun Microsystems Inc.
+java.runtime.name=Java(TM) 2 Runtime Environment, Standard Edition
+java.class.path=/usr/local/jetty/ext/ant.jar:/usr/local/jetty/lib/org.mortbay.jetty.jar:/usr/local/jetty/lib/javax.servlet.jar:/usr/local/jetty/ext/jasper-runtime.jar:/usr/local/jetty/ext/jasper-compiler.jar:/usr/local/jetty/ext/xercesImpl.jar:/usr/local/jetty/ext/jcert.jar:/usr/local/jetty/ext/jsse.jar:/usr/local/jetty/ext/xml-apis.jar:/usr/local/jetty/lib/logging.jar
+iobeam.gateway.admin.password=02cb4c278ff9d8e379f7156aec6cf662
+iobeam.gateway.version=2
+iobeam.gateway.mode=test
+java.vm.specification.name=Java Virtual Machine Specification
+java.vm.specification.version=1.0
+iobeam.gateway.address.external=@iobeam.gateway.address.external@
+iobeam.portal.domain=www.iobeam.com
+sun.cpu.endian=little
+sun.os.patch.level=unknown
+iobeam.gateway.admin.username=admin
+java.io.tmpdir=/tmp
+iobeam.gateway.secure.notify.port=8443
+java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi
+iobeam.gateway.notify.port=7027
+os.arch=i386
+java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+java.ext.dirs=/usr/local/j2re1.4.2_03/lib/ext
+java.util.logging.config.class=com.iobeam.util.logging.LogConfig
+user.dir=/rw/root
+iobeam.gateway.routelease.internal.2.start=172.16.2.3
+iobeam.portal.registerGateway.type=secure
+iobeam.gateway.radio.channel=1
+line.separator=
+
+java.vm.name=Java HotSpot(TM) Client VM
+iobeam.portal.signon.success.url=/jsp/signonsuccess.jsp
+iobeam.portal.contactListener.type=secure
+iobeam.gateway.broadcast.internal.3=192.168.91.255
+iobeam.gateway.broadcast.internal.2=172.16.2.255
+file.encoding=ANSI_X3.4-1968
+iobeam.gateway.broadcast.internal.1=172.16.1.255
+iobeam.gateway.access.enabled=true
+iobeam.gateway.venue.name=demo unit
+iobeam.gateway.routelease.internal.1.start=172.16.1.2
+jetty.class.path=/usr/local/jetty/ext/ant.jar:/usr/local/jetty/lib/org.mortbay.jetty.jar:/usr/local/jetty/lib/javax.servlet.jar:/usr/local/jetty/ext/jasper-runtime.jar:/usr/local/jetty/ext/jasper-compiler.jar:/usr/local/jetty/ext/xercesImpl.jar:/usr/local/jetty/ext/jcert.jar:/usr/local/jetty/ext/jsse.jar:/usr/local/jetty/ext/xml-apis.jar:/usr/local/jetty/lib/logging.jar
+iobeam.portal.proxy.address=66.184.143.82
+java.specification.version=1.4
+iobeam.gateway.schedule.stop=23:59:59
+iobeam.gateway.defaultgateway.external=@iobeam.gateway.defaultgateway.external@
+iobeam.gateway.netmask.external=@iobeam.gateway.netmask.external@
+jetty.home=/usr/local/jetty
+<<<<< url = https://www.iobeam.com:7002/registerGateway >>>>>
+reg url = https://www.iobeam.com:7002/registerGateway?vid=125&mac=00:00:24:c3:9e:a4&notifyPort=7027&privateip=172.16.1.1
+connecting...
+done connecting...
+gw registered
+DefaultRouterFactoryProvider.<init>:
+/etc/config.xml
+RuleExerciser.applyConfiguration: iptables -t mangle -N iobeam
+RuleExerciser.applyConfiguration: iptables -t mangle -A  PREROUTING  -j iobeam
+RuleExerciser.applyConfiguration: iptables -t mangle -A  iobeam  -j MARK --set-mark 4
+RuleExerciser.applyConfiguration: iptables -t nat -N iobeam_capture
+RuleExerciser.applyConfiguration: iptables -t nat -N iobeam_nat
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_capture -s 172.16.1.0/24 -m  mark --mark 4 -p tcp --dport 80   -j REDIRECT --to-port 7027
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_capture -s 172.16.2.0/24 -m  mark --mark 4 -p tcp --dport 80   -j REDIRECT --to-port 7027
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_capture -s 172.16.1.0/24 -m  mark --mark 4 -p tcp --dport 443   -j REDIRECT --to-port 8443
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_capture -s 172.16.2.0/24 -m  mark --mark 4 -p tcp --dport 443   -j REDIRECT --to-port 8443
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_capture -s 172.16.1.0/24 -d ! www.iobeam.com -m  mark --mark 3 -p tcp --dport 80   -j REDIRECT --to-port 7027
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_capture -s 172.16.2.0/24 -d ! www.iobeam.com -m  mark --mark 3 -p tcp --dport 80   -j REDIRECT --to-port 7027
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_capture -s 172.16.1.0/24 -d ! www.iobeam.com -m  mark --mark 3 -p tcp --dport 443   -j REDIRECT --to-port 8443
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_capture -s 172.16.2.0/24 -d ! www.iobeam.com -m  mark --mark 3 -p tcp --dport 443   -j REDIRECT --to-port 8443
+RuleExerciser.applyConfiguration: iptables -t nat -A  PREROUTING  -j iobeam_capture
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.1.0/24 -m  mark --mark 1   -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.2.0/24 -m  mark --mark 1   -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.1.0/24 -m  mark --mark 2   -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.2.0/24 -m  mark --mark 2   -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.1.0/24 -m  mark --mark 4 -p icmp   -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.2.0/24 -m  mark --mark 4 -p icmp   -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.1.0/24 -d www.iobeam.com -m  mark --mark 3 -p tcp   -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.2.0/24 -d www.iobeam.com -m  mark --mark 3 -p tcp   -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.1.0/24 -d 172.16.1.1 -p tcp --dport 80  -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.2.0/24 -d 172.16.2.1 -p tcp --dport 80  -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.1.0/24 -d 172.16.1.1 -p tcp --dport 443  -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.2.0/24 -d 172.16.2.1 -p tcp --dport 443  -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.1.0/24 -d 172.16.1.1 -p tcp --dport 53  -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.2.0/24 -d 172.16.1.1 -p tcp --dport 53  -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.1.0/24 -d 172.16.1.1 -p udp --dport 53  -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.2.0/24 -d 172.16.1.1 -p udp --dport 53  -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.1.0/24 -d 208.185.249.250 -p tcp --dport 53  -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.1.0/24 -d 208.185.249.250 -p udp --dport 53  -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.2.0/24 -d 208.185.249.250 -p tcp --dport 53  -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  iobeam_nat -s 172.16.2.0/24 -d 208.185.249.250 -p udp --dport 53  -j MASQUERADE
+RuleExerciser.applyConfiguration: iptables -t nat -A  POSTROUTING  -j iobeam_nat
+RuleExerciser.applyConfiguration: iptables -t filter -N iobeam_ports
+RuleExerciser.applyConfiguration: iptables -t filter -N iobeam_inbound
+RuleExerciser.applyConfiguration: iptables -t filter -N iobeam
+RuleExerciser.applyConfiguration: iptables -t filter -A  FORWARD  -j iobeam
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam  -j iobeam_ports
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam  -j iobeam_inbound
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.1.0/24 -m  mark --mark 1   -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.2.0/24 -m  mark --mark 1   -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.1.0/24 -m  mark --mark 2   -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.2.0/24 -m  mark --mark 2   -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.1.0/24 -d www.iobeam.com -m  mark --mark 3   -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.2.0/24 -d www.iobeam.com -m  mark --mark 3   -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.2.0/24 -d www.iobeam.com -m  mark --mark 4   -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.1.0/24 -m  mark --mark 4 -p icmp   -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.2.0/24 -m  mark --mark 4 -p icmp   -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.1.0/24 -d 172.16.1.1 -p tcp --dport 80  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.2.0/24 -d 172.16.2.1 -p tcp --dport 80  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.1.1 -d 172.16.1.0/24 -p tcp --sport 80  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.2.1 -d 172.16.2.0/24 -p tcp --sport 80  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.1.0/24 -d www.iobeam.com -p tcp --dport 443  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.2.0/24 -d www.iobeam.com -p tcp --dport 443  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s www.iobeam.com -d 172.16.1.0/24 -p tcp --sport 443  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s www.iobeam.com -d 172.16.2.0/24 -p tcp --sport 443  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.1.0/24 -d 172.16.1.1 -p tcp --dport 53  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.2.0/24 -d 172.16.1.1 -p tcp --dport 53  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.2.0/24 -d 172.16.1.1 -p udp --dport 53  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.1.0/24 -d 208.185.249.250 -p tcp --dport 53  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.2.0/24 -d 208.185.249.250 -p tcp --dport 53  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.1.0/24 -d 208.185.249.250 -p udp --dport 53  -j ACCEPT
+RuleExerciser.applyConfiguration: iptables -t filter -A  iobeam -s 172.16.2.0/24 -d 208.185.249.250 -p udp --dport 53  -j ACCEPT
+addEvent():event=ScheduledEvent(0,06/03/05 00:08:46,com.iobeam.gateway.boot.TimeService$TimeServiceTask@10d593e)
+00:08:48.746 EVENT  BootServlet.init: done
+TimeServiceTask:doTask()
+/usr/bin/changedate.sh 06/03/2005 00:08:49 -0400
+00:08:49.068 EVENT  Started SocketListener on 0.0.0.0:7027
+00:08:49.075 EVENT  jetty.ssl.keystore=/usr/local/jetty/etc/gwkeystore
+00:08:49.081 EVENT  jetty.ssl.password=********
+00:08:49.086 EVENT  jetty.ssl.keypassword=********
+00:08:49.093 EVENT  jetty.ssl.keystore.type=jks
+00:08:49.100 EVENT  jetty.ssl.keystore.provider.name=[DEFAULT]
+00:08:49.298 EVENT  SSLServerSocketFactory=com.sun.net.ssl.internal.ssl.SSLServerSocketFactoryImpl@7f5580
+00:08:49.319 EVENT  JsseListener.needClientAuth=false
+00:08:49.343 EVENT  Started SocketListener on 0.0.0.0:8443
+00:08:49.347 EVENT  Started org.mortbay.jetty.Server@1de3f2d
+MainController.init: 06/03 00:11:06
+<<request uri == />>
+MainController.doGet: 06/03 00:11:06 uri=/ remotehost=172.16.1.3 remoteIP=172.16.1.3 path=/ pathInfo=null
+--http headers--
+Accept:*/*
+Accept-Language:en
+Accept-Encoding:gzip, deflate
+User-Agent:Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/412 (KHTML, like Gecko) Safari/412
+If-Modified-Since:Thu, 02 Jun 2005 23:53:36 GMT
+Connection:keep-alive
+Host:www.nws.noaa.gov
+
+MainController.getMACAddress: 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+allowSchedule = true
+global_access_allowed = true
+routelease.duration=6
+MainController.getContactID: 172.16.1.3 00:0a:95:f4:f5:a8
+<<<<< url = https://www.iobeam.com:7002/contactListener >>>>>
+MainController.getContactID: done 06/03 00:11:14 contactID=1007 172.16.1.3 00:0a:95:f4:f5:a8
+DefaultRouterFactoryProvider.getRouter:
+DefaultRouter.initializeRouteLease: RouteLease(ClientState(Member, Restricted, 3),/172.16.1.3,00:0a:95:f4:f5:a8,contact=1007,06/03/05 06:11:12)
+DefaultRouter.setRouteLease: RouteLease(ClientState(Member, Restricted, 3),/172.16.1.3,00:0a:95:f4:f5:a8,contact=1007,06/03/05 06:11:12)
+RuleExerciser.applyRule: iptables -t mangle -A  iobeam -s 172.16.1.3 -m  mac --mac-source 00:0a:95:f4:f5:a8   -j MARK --set-mark 3
+addEvent():event=ScheduledEvent(1,06/03/05 06:11:12,RouteLeaseRemovalTask(RouteLease(ClientState(Member, Restricted, 3),/172.16.1.3,00:0a:95:f4:f5:a8,contact=1007,06/03/05 06:11:12)))
+DefaultRouter.addActiveLease: 00:0a:95:f4:f5:a8 RouteLease(ClientState(Member, Restricted, 3),/172.16.1.3,00:0a:95:f4:f5:a8,contact=1007,06/03/05 06:11:12)  count = 1
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.buildRedirectURL: http://www.nws.noaa.gov/
+MainController.buildRedirectURL: alt http://www.nws.noaa.gov/
+<<<<< url = https://www.iobeam.com:7002/signonuser >>>>>
+MainController.doGet: 06/03 00:11:14 new contact redirect to https://www.iobeam.com:7002/signonuser?cid=1007&redirect=http%3A%2F%2Fwww.nws.noaa.gov%2F
+RouteLeaseListener.init: 06/03 00:11:15
+accessendtime=Fri Jun 03 23:59:59 EDT 2005
+RouteLeaseListener.doGet: enabled = true
+RouteLeaseListener.doGet: user ip = /172.16.1.3
+RouteLeaseListener.doGet: user mac = 00:0a:95:f4:f5:a8
+RouteLeaseListener.doGet: expiration = 06/03/05 00:21:21
+RouteLeaseListener.doGet: accessEndTime = 06/03/05 23:59:59
+RouteLeaseListener.doGet: signature = IbE+RX1uFd81sudeAIrr1p30SQ8rOt00Z3ayuRayhlXI3NAaf0L2l4nF2LLqetYwO6Oomvo56RCG
+3p8dvQcOiw==
+
+RouteLeaseListener.doGet: 06/03 00:11:16 expiration=1117772481354, signature=IbE+RX1uFd81sudeAIrr1p30SQ8rOt00Z3ayuRayhlXI3NAaf0L2l4nF2LLqetYwO6Oomvo56RCG
+3p8dvQcOiw==
+, enabled=true, userInetAddress=172.16.1.3, cid=1007, userMACAddress=00:0a:95:f4:f5:a8
+signedText=true172.16.1.300:0a:95:f4:f5:a810071117772481354
+signaturetext=IbE+RX1uFd81sudeAIrr1p30SQ8rOt00Z3ayuRayhlXI3NAaf0L2l4nF2LLqetYwO6Oomvo56RCG
+3p8dvQcOiw==
+
+cert = [
+[
+  Version: V3
+  Subject: CN=www.iobeam.com, OU=InstantSSL, OU=Portal Services, O="iobeam, Inc.", STREET=6035 Magnolia Walk, L=Roswell, ST=GA, OID.2.5.4.17=30075, C=US
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  SunJSSE RSA public key:
+  public exponent:
+    010001
+  modulus:
+    c50265da 6d382aee 1ba3d842 916c507b 9d6af11f 51c3b7ea 5128beb4 9bdea126
+    52463731 92149937 8928795e 9880d3c5 a5b9e91d 0b47e6a7 282628ca 4fd8e397
+    a1806cb2 c7d6598b 906a9dc2 c58eac36 ce9970d7 0b8bd949 5df3d2f3 4d0b3027
+    3a155c78 f9e81622 0f5a38e9 5d09dbd5 04546727 61d7aacb 18b11266 c7554277
+  Validity: [From: Mon May 03 20:00:00 EDT 2004,
+               To: Fri Jul 29 19:59:59 EDT 2005]
+  Issuer: CN=Comodo Class 3 Security Services CA, OU=(c)2002 Comodo Limited, OU=Terms and Conditions of use: http://www.comodo.net/repository, OU=Comodo Trust Network, O=Comodo Limited, C=GB
+  SerialNumber: [    ef1657cd a8f0a157 29419315 33943e2a]
+
+Certificate Extensions: 8
+[1]: ObjectId: 2.16.840.1.113730.1.1 Criticality=false
+NetscapeCertType [
+   SSL client
+   SSL server
+]
+
+[2]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: ED 13 D8 33 A9 19 5D DA   18 F0 30 5B 21 4C EA 18  ...3..]...0[!L..
+0010: 18 1E AF 4E                                        ...N
+]
+]
+
+[3]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: F6 52 22 17 15 13 08 03   59 BF 18 95 9F 48 B4 B9  .R".....Y....H..
+0010: E9 FE F8 66                                        ...f
+]
+
+]
+
+[4]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://crl.comodo.net/Class3SecurityServices_2.crl]
+, DistributionPoint:
+     [URIName: http://crl.comodoca.com/Class3SecurityServices_2.crl]
+, DistributionPoint:
+     [RFC822Name: Class3SecurityServices_2@crl.comodo.net]
+]]
+
+[5]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [1.3.6.1.4.1.6449.1.2.1.3.4]
+[PolicyQualifierInfo: [
+  qualifierID: 1.3.6.1.5.5.7.2.1
+  qualifier: 0000: 16 1D 68 74 74 70 73 3A   2F 2F 73 65 63 75 72 65  ..https://secure
+0010: 2E 63 6F 6D 6F 64 6F 2E   6E 65 74 2F 43 50 53     .comodo.net/CPS
+
+]]  ]
+]
+
+[6]: ObjectId: 2.5.29.37 Criticality=false
+ExtendedKeyUsages [
+[1.3.6.1.5.5.7.3.1, 1.3.6.1.5.5.7.3.2]]
+
+[7]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  DigitalSignature
+  Key_Encipherment
+]
+
+[8]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+CA:false
+PathLen: undefined
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 98 D5 6E F4 FD 22 11 27   6D 77 83 92 7D 8C 6E DB  ..n..".'mw....n.
+0010: BA 56 27 BB 72 E5 EF 1B   08 12 E5 36 50 46 B5 DE  .V'.r......6PF..
+0020: 15 F3 95 62 9D 90 74 DF   3E 30 16 C0 D3 F4 8C 61  ...b..t.>0.....a
+0030: 55 14 6C B1 37 B4 2F 53   4B 2D 0B 47 39 C9 40 0B  U.l.7./SK-.G9.@.
+0040: 03 B9 F3 BC CA 9C FC 62   A0 19 D1 31 92 62 A2 F5  .......b...1.b..
+0050: A6 FC 7E 37 41 7B 8A 61   32 FA 0B 60 85 1C 23 0F  ...7A..a2..`..#.
+0060: F8 CD 8E 41 E2 5E 57 70   66 00 80 C0 1F 33 FF 18  ...A.^Wpf....3..
+0070: 39 EE 36 DA E8 B6 3B C8   65 4A 54 3B 52 47 FC 8E  9.6...;.eJT;RG..
+0080: 8D 15 99 D6 EA A9 06 01   A1 DA 86 0C 5D D6 71 08  ............].q.
+0090: DA 97 0B 11 95 CF 84 37   9F 17 06 24 DE 47 4C 08  .......7...$.GL.
+00A0: 7C 92 64 EB 40 EE EF 8F   1E 8D 75 D9 45 C1 15 DE  ..d.@.....u.E...
+00B0: AD 72 00 6A 12 0B 66 7C   EA AF C0 03 FC D2 1B 4B  .r.j..f........K
+00C0: 72 14 8F 78 41 6C 54 F3   B0 79 6F D5 64 07 6B DC  r..xAlT..yo.d.k.
+00D0: 96 8F 32 17 33 40 52 D3   10 13 DF 27 1C 59 EA BE  ..2.3@R....'.Y..
+00E0: 46 CB 57 1F 92 12 3A 70   03 8F DD C3 05 4D 46 ED  F.W...:p.....MF.
+00F0: 02 8C 4F BC EE 1D 00 5C   CC 07 03 DD 39 AC 0E D6  ..O....\....9...
+
+]
+RouteLeaseListener.doGet: invalid signature

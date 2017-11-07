@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+	PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+	"http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+	<display-name>ioBeam Gateway Services</display-name>
+	<description>iobeam gateway services</description>
+	
+	<servlet>
+		<servlet-name>AdminController</servlet-name>
+		<servlet-class>com.iobeam.gateway.web.admin.AdminController
+			</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>AdminReset</servlet-name>
+		<servlet-class>com.iobeam.gateway.web.admin.AdminReset
+			</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>AdminChangePassword</servlet-name>
+		<servlet-class>com.iobeam.gateway.web.admin.AdminChangePassword
+			</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AdminLogon</servlet-name>
+		<servlet-class>com.iobeam.gateway.web.admin.AdminLogon
+			</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AdminUpdate</servlet-name>
+		<servlet-class>com.iobeam.gateway.web.admin.AdminUpdate
+			</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>GatewayBootServlet</servlet-name>
+		<servlet-class>com.iobeam.gateway.boot.BootServlet
+			</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>MainController</servlet-name>
+		<servlet-class>
+			com.iobeam.gateway.web.MainController
+		</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>RouteLeaseListener</servlet-name>
+		<servlet-class>
+			com.iobeam.gateway.router.RouteLeaseListener
+		</servlet-class>
+	</servlet>
+
+
+<!--
+Automatically created by Tomcat JspC.
+Place this fragement in the web.xml before all icon, display-name,
+description, distributable, and context-param elements.
+-->
+
+	<servlet>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.admin_jsp</servlet-name>
+		<servlet-class>com.iobeam.gateway.web.gwadmin.admin_jsp</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.rebootack_jsp</servlet-name>
+		<servlet-class>com.iobeam.gateway.web.gwadmin.rebootack_jsp</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.error_jsp</servlet-name>
+		<servlet-class>com.iobeam.gateway.web.gwadmin.error_jsp</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.index_jsp</servlet-name>
+		<servlet-class>com.iobeam.gateway.web.gwadmin.index_jsp</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.leases_jsp</servlet-name>
+		<servlet-class>com.iobeam.gateway.web.gwadmin.leases_jsp</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.login_jsp</servlet-name>
+		<servlet-class>com.iobeam.gateway.web.gwadmin.login_jsp</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.tasks_jsp</servlet-name>
+		<servlet-class>com.iobeam.gateway.web.gwadmin.tasks_jsp</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.admin_jsp</servlet-name>
+		<url-pattern>/gwadmin/admin.jsp</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.rebootack_jsp</servlet-name>
+		<url-pattern>/gwadmin/rebootack.jsp</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.error_jsp</servlet-name>
+		<url-pattern>/gwadmin/error.jsp</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.index_jsp</servlet-name>
+		<url-pattern>/gwadmin/index.jsp</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.leases_jsp</servlet-name>
+		<url-pattern>/gwadmin/leases.jsp</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.login_jsp</servlet-name>
+		<url-pattern>/gwadmin/login.jsp</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>com.iobeam.gateway.web.gwadmin.tasks_jsp</servlet-name>
+		<url-pattern>/gwadmin/tasks.jsp</url-pattern>
+	</servlet-mapping>
+
+<!--
+All session-config, mime-mapping, welcome-file-list, error-page, taglib,
+resource-ref, security-constraint, login-config, security-role,
+env-entry, and ejb-ref elements should follow this fragment.
+-->
+
+	<servlet-mapping>
+		<servlet-name>MainController</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>RouteLeaseListener</servlet-name>
+		<url-pattern>/routeLeaseListener</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AdminController</servlet-name>
+		<url-pattern>/admincontrol</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AdminReset</servlet-name>
+		<url-pattern>/gwadmin/reset</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AdminChangePassword</servlet-name>
+		<url-pattern>/gwadmin/changepassword</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AdminLogon</servlet-name>
+		<url-pattern>/gwadmin/logon</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AdminUpdate</servlet-name>
+		<url-pattern>/gwadmin/update</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+	<error-page>
+		<error-code>
+			500
+		</error-code>
+		<location>
+			/gwadmin/error.jsp
+		</location>
+	</error-page>
+
+</web-app>

@@ -1,0 +1,46 @@
+billableentity - interface that defines billing information (contact name,
+address, billing method, payment method (cc or terms)
+
+customer - composite billableentity; aggregates billableentities;
+
+user - service end-user; includes logon info as well as other demographical
+information.  this entity is  a "billableentity", can contain billing info (cc#, addr,
+etc). 
+
+venue - venue information including last known ip address, mac address, venue
+operator info.  this entity is a "billableentity".
+
+-----------------------------------------------------------------------------
+
+account - accounts are assigned to "billables". accounts encapsulate 
+subscriptions which describe service obligations.
+
+subscription - describes service obligations for venue or end-user; 
+in the venue's case, can describe service for multiple users 
+(ie: subscription for 50 users).  may also describe an "equipment" subscription. 
+an equipment subscription is an equipment lease.  both subscription types have 
+billing intervals and costs or fees per billing cycle; also have "expiration" 
+dates or may be open-ended.
+
+-----------------------------------------------------------------------------
+
+Order - describes the hardware and services purchass by a billable under an
+account..  used to track the purchase history of the "billable"; 
+contains line items for services and/or equipment.  one time hardware purchases
+are line items on an order.  Processing orders (invoicing) which contain
+subscription line items creates "subscriptions".
+
+Invoice - the result of processing orders for new service and equipment
+purchases.  Invoices are also created for recurring service and equipment lease
+subscriptions.  invoice line items describe payables (equipment, leases or
+services).
+
+Payment - receivable from user or venue for an invoice.
+
+Statement - one to one with account - captures a period of time for all
+open invoices as well as any payments received for those invoices during that
+period.
+
+
+
+

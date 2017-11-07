@@ -1,0 +1,465 @@
+<project name="iobeam_gateway" basedir="." default="compile">
+
+	<property file="build.properties"/>
+	<property environment="env"/>
+
+	<property name="projectdir" value="${project.home}"/>
+
+	<property name="wlsdeploypath"
+			value="/usr/local/bea/projects/iobeam.com/applications"/>
+
+	<property name="tmpdir" value="tmp"/>
+
+	<property name="wlsdir"
+		value="${wls.path}"/>
+
+	<property name="src" value="src"/>
+	<property name="srcdir" value="${projectdir}/${src}"/>
+
+	<property name="archivedir" value="${projectdir}/archive"/>
+
+	<property name="build" value="build"/>
+	<property name="stagingdir" value="${projectdir}/${build}"/>
+
+	<property name="classes" value="classes"/>
+	<property name="bindir" value="${stagingdir}/${classes}"/>
+
+	<property name="libpath" value="${projectdir}/lib"/>
+
+	<property name="etc" value="etc"/>
+	<property name="etcdir" value="${projectdir}/${etc}"/>
+
+	<property name="docroot" value="docroot"/>
+
+	<property name="docrootdir" 
+			value="${projectdir}/${src}/${docroot}"/>
+	
+	<property name="docrootdir_portal" 
+			value="${projectdir}/${src}/${docroot}/portal"/>
+	
+	<property name="docrootdir_admin"
+			value="${projectdir}/${src}/${docroot}/admin"/>
+
+<!--	<property name="wlsclasspath" 
+			value="${wlsdir}/weblogic.jar"/>
+-->
+	<property name="wlsclasspath" 
+			value="${wlsdir}/weblogic700.jar"/> 
+	
+	<property name="struts.version" value="1.1"/>
+
+	<property name="struts.path" value="${etcdir}/portal/struts-${struts.version}"/>
+
+	<property name="struts.classpath"
+			value="${projectdir}/lib/struts-${struts.version}/struts.jar:${projectdir}/lib/struts-${struts.version}/commons-beanutils.jar"/>
+
+	<property name="verisign.classpath"
+			value="${libpath}/Verisign.jar"/>
+
+	<property name="mbeantypes" value="${wlsdir}/mbeantypes"/>
+	<property name="providersjar" value="wlPortalSecurityProviders.jar"/>
+
+
+	<property name="mbean.classpath"
+		value="${wlsdir}/mbeantypes/wlManagement.jar"/>
+
+	<path id="ant.classpath">
+		<fileset dir="/Developer/Java/Ant/lib">
+			<include name="ant.jar"/>
+		</fileset>
+	</path>
+
+	<path id="jetty.classpath">
+		<fileset dir="${libpath}/jetty">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+
+	<path id="project.classpath">
+		<path refid="ant.classpath"/>
+		<path refid="jetty.classpath"/>
+		<pathelement path="${struts.classpath}"/>
+		<fileset dir="${libpath}">
+			<include name="*.jar"/>
+		</fileset>
+		<pathelement path="${wlsclasspath}"/>
+		<pathelement path="${verisign.classpath}"/>
+		<pathelement path="${providers.classpath}"/>
+		<pathelement path="${mbean.classpath}"/>
+	</path>
+
+	<path id="client.classpath">
+		<pathelement path="${struts.classpath}"/>
+		<fileset dir="${libpath}">
+			<include name="*.jar"/>
+		</fileset>
+		<pathelement path="${wlsclasspath}"/>
+		<pathelement path="${verisign.classpath}"/>
+		<pathelement path="${providers.classpath}"/>
+		<pathelement path="${mbean.classpath}"/>
+		<pathelement path="${bindir}"/>
+	</path>
+
+	<path id="mbean.classpath">
+		<pathelement path="${struts.classpath}"/>
+		<fileset dir="${libpath}">
+			<include name="*.jar"/>
+		</fileset>
+		<pathelement path="${wlsclasspath}"/>
+		<pathelement path="${verisign.classpath}"/>
+		<pathelement path="${providers.classpath}"/>
+		<pathelement path="${mbean.classpath}"/>
+		<pathelement path="${stagingdir}/tmp"/>
+	</path>
+
+	<target name="archive" depends="init">
+		<tstamp>
+			<format property="arch_stamp" pattern="yyMMdd_HHmm"/>
+		</tstamp>
+		<jar destfile="${archivedir}/iobeam_${arch_stamp}.jar">
+			<fileset dir="${projectdir}"
+					includes="${src}/**, ${etc}/**, build.xml"/>
+		</jar>
+	</target>
+
+	<target name="model_archive">
+		<tstamp>
+			<format property="arch_stamp" pattern="yyMMdd_HHmm"/>
+		</tstamp>
+		<jar destfile="${projectdir}/model/iobeam_mdl_${arch_stamp}.jar">
+			<fileset dir="${projectdir}/model"
+					includes="control/**/*.cat, iobeam.mdl"/>
+		</jar>
+	</target>
+
+	<target name="clean">
+		<delete dir="${stagingdir}"/>
+		<delete dir="${tmpdir}"/>
+	</target>
+
+
+	<target name="init">
+		<mkdir dir="${stagingdir}"/>
+		<mkdir dir="${bindir}"/>
+		<mkdir dir="${archivedir}"/>
+		<mkdir dir="${tmpdir}"/>
+	</target>
+
+
+	<target name="compile" depends="init">
+		<echo message="compiling"/>
+
+		<javac debug="true" deprecation="true"
+				destdir="${bindir}" srcdir="${srcdir}">		
+			<classpath refid="project.classpath"/>
+		</javac>
+	</target>
+
+	<target name="portal.filter" depends="init, compile">
+		<echo message="executing portal filter"/>
+		<filterset id="portal.filterset">
+			<filtersfile file="${etcdir}/portal/filter_portal_${portal.platform}.env"/>
+		</filterset>
+		<copy file="${etcdir}/portal/portal.properties" todir="${tmpdir}">
+			<filterset refid="portal.filterset"/>
+		</copy>
+	</target>
+
+	<target name="gw.filter" depends="init, compile">
+		<echo message="executing gw filter"/>
+		<delete dir="${tmpdir}"/>
+		<filterset id="gw.filterset" recurse="true">
+			<filtersfile
+			file="build.properties"/>
+			<filtersfile
+			file="${etcdir}/gateway/filter_gw_${build.status}_${portal.platform}.env"/>
+		</filterset>
+		<copy file="${etcdir}/gateway/gateway.properties" todir="${tmpdir}">
+			<filterset refid="gw.filterset"/>
+		</copy>
+	</target>
+
+	<target name="gw.war" depends="gw.jspc, gw.filter">
+		<echo message="creating war in ${stagingdir}"/>
+		<war destfile="${stagingdir}/iobeam_gw.war.${iobeam.gateway.name}"
+				webxml="${etcdir}/gateway/web.xml"> 
+			<classes dir="${bindir}" excludes="**/portal/**"/>
+			<fileset dir="${docrootdir}/gateway" excludes="**/portal/**,**/*.jsp"/>
+
+			<zipfileset dir="${projectdir}/${etc}/gateway"
+					includes="templates/**,config*.xml"
+					prefix="WEB-INF/classes/etc"/>
+
+			<zipfileset dir="${tmpdir}"
+					includes="gateway.properties"
+					prefix="WEB-INF/classes/etc"/>
+
+		</war>
+	</target>
+	
+	<target name="admin.war" depends="init,compile">
+		<echo message="creating admin war in ${stagingdir}"/>
+
+		<copy file="${etc}/admin/application.properties" 
+				todir="${bindir}"/>
+
+		<war destfile="${stagingdir}/admin.war"
+				webxml="${etcdir}/admin/web.xml" manifest="${etc}/portal/MANIFEST.MF"> 
+
+			<classes dir="${bindir}" excludes="**/*Bean.class"/>
+			
+			<fileset dir="${docrootdir_admin}"/>
+			
+			<zipfileset dir="${etc}/admin" 
+				includes="weblogic.xml"
+				prefix="WEB-INF"/>
+		
+			<!-- add struts library tlds and xml files -->
+			<zipfileset dir="${struts.path}" 
+				includes="*.tld" prefix="WEB-INF"/>
+
+			<zipfileset dir="${etcdir}/admin" 
+				includes="struts-config.xml" prefix="WEB-INF"/>
+
+			<zipfileset dir="${etcdir}/admin" excludes="application.properties"
+					includes="*.properties" prefix="/etc"/>
+
+			<zipfileset dir="${libpath}" includes="*.jar" excludes="weblogic700.jar"
+					prefix="WEB-INF/lib"/>
+			<zipfileset dir="${libpath}/struts-${struts.version}" includes="*.jar"
+					prefix="WEB-INF/lib"/>
+
+		</war>
+
+	</target>
+	
+	<target name="portal.war" depends="init,compile">
+		<echo message="creating portal war in ${stagingdir}"/>
+		<copy file="${etc}/portal/application.properties" 
+				todir="${bindir}"/>
+
+		<war destfile="${stagingdir}/portal.war"
+				webxml="${etcdir}/portal/web.xml" manifest="${etc}/portal/MANIFEST.MF"> 
+
+			<classes dir="${bindir}" excludes="**/*Bean.class"/>
+			
+			<fileset dir="${docrootdir_portal}"/>
+			
+			<zipfileset dir="${etc}/portal" 
+				includes="weblogic.xml,app.tld"
+				prefix="WEB-INF"/>
+		
+			<!-- add struts library tlds and xml files -->
+			<zipfileset dir="${struts.path}" 
+				includes="*.tld, *.xml"
+				prefix="WEB-INF"/>
+
+			<zipfileset dir="${etc}/portal" excludes="application.properties"
+					includes="*.properties" prefix="/etc"/>
+
+			<zipfileset dir="${libpath}" includes="*.jar" excludes="weblogic700.jar"
+					prefix="WEB-INF/lib"/>
+			<zipfileset dir="${libpath}/struts-${struts.version}" includes="*.jar"
+					prefix="WEB-INF/lib"/>
+
+		</war>
+
+	</target>
+
+	<target name="appc" depends="init,compile,portal.war, portal.filter">
+		<echo message="running weblogic.appc"/>
+		<echo message="${wlsclasspath}"/>
+		<echo message="${project.classpath}"/>
+		<jar destfile="${stagingdir}/std_portal.jar"
+				manifest="${etc}/portal/MANIFEST.MF">
+			<fileset dir="${bindir}" excludes="jnetfilter/**"/>
+			<zipfileset dir="${tmpdir}" includes="portal.properties"
+				prefix="etc"/>
+			<zipfileset dir="${etc}/portal"
+				includes="ejb-jar.xml, weblogic-ejb-jar.xml"
+				prefix="META-INF"/>
+		</jar>
+		<java fork="true" 
+				classname="weblogic.appc">
+			<classpath refid="project.classpath"/>
+			<arg line="${stagingdir}/std_portal.jar -output ${stagingdir}/portal_EJB.jar"/>
+		</java>
+	</target>
+
+	<target name="ejbc" depends="init,compile,portal.war">
+		<echo message="running weblogic.ejbc"/>
+		<echo message="${wlsclasspath}"/>
+		<jar destfile="${stagingdir}/std_portal.jar"
+				manifest="${etc}/portal/MANIFEST.MF">
+			<fileset dir="${bindir}" excludes="jnetfilter/**"/>
+			<zipfileset dir="${etc}/portal" includes="*.properties"
+				prefix="etc"/>
+			<zipfileset dir="${etc}/portal"
+				includes="ejb-jar.xml, weblogic-ejb-jar.xml"
+				prefix="META-INF"/>
+		</jar>
+			
+		<java fork="true" 
+				classname="weblogic.ejbc">
+			<classpath refid="project.classpath"/>
+			<arg line="${stagingdir}/std_portal.jar ${stagingdir}/portal_EJB.jar"/>
+		</java>
+	</target>
+	
+	<target name="logging.jar" depends="compile">
+		<jar destfile="${stagingdir}/logging.jar">
+			<fileset dir="${bindir}" includes="**/*/logging/*.class"/>
+		</jar>
+	</target>
+
+	<target name="portal.ear" depends="ejbc,admin.war">
+		<jar destfile="${stagingdir}/portal.ear"
+		manifest="${etc}/portal/MANIFEST.MF">
+			<zipfileset dir="${etc}/portal" 
+				includes="application.xml" prefix="META-INF"/>
+			<zipfileset dir="${etc}/portal" includes="verisign/**"/>
+			<fileset dir="${stagingdir}" 
+					includes="portal_EJB.jar,portal.war,admin.war"/>
+			<zipfileset dir="${libpath}" prefix="lib" includes="Verisign.jar"/>
+			<zipfileset dir="${libpath}/struts-${struts.version}" prefix="WEB-INF/lib" includes="*.jar"/>
+		</jar>
+
+	</target>
+	
+	<target name="portal.mbean" depends="compile">
+
+		<mkdir dir="${stagingdir}/tmp"/>
+		
+		<copy todir="${stagingdir}/tmp">
+			<fileset dir="${etcdir}/portal">
+				<include name="Portal*.xml"/>
+			</fileset>
+		</copy>
+		<copy todir="${stagingdir}/tmp">
+			<fileset dir="${etcdir}/portal">
+				<include name="commo.dtd"/>
+			</fileset>
+		</copy>
+
+		<copy todir="${stagingdir}/tmp" flatten="true" overwrite="true">
+			<fileset dir="${srcdir}"
+			includes="com/iobeam/portal/security/rdbms/authenticator/*.java,
+				com/iobeam/portal/util/DBHelper.java,
+				com/iobeam/portal/util/DataSources.java"/>
+		</copy>
+
+		<antcall target="mbean.build">
+			<param name="mdf" value="PortalAuthenticator.xml"/>
+		</antcall>
+		<antcall target="mbean.build">
+			<param name="mdf" value="PortalIdentityAsserter.xml"/>
+		</antcall>
+	
+		<java classname="weblogic.management.commo.WebLogicMBeanMaker" fork="true"
+				failonerror="true">
+			<jvmarg line="-Dfiles=${stagingdir}/tmp -DMJF=${stagingdir}/tmp/${providersjar}"/>
+			<classpath refid="${mbean.classpath}"/>
+		</java>
+
+		<copy todir="${mbeantypes}" flatten="true">
+			<fileset dir="${stagingdir}/tmp">
+				<include name="${providersjar}"/>
+			</fileset>
+		</copy>
+
+	</target>
+
+	<target name="mbean.build">
+		<java classname="weblogic.management.commo.WebLogicMBeanMaker" fork="true"
+				failonerror="true">
+			<jvmarg line="-Dfiles=${stagingdir}/tmp -DMDF=${stagingdir}/tmp/${mdf} -DcreateStubs=true"/>
+			<classpath refid="${mbean.classpath}"/>
+		</java>
+	</target>
+
+	
+	<target name="portal.deploy" depends="ejbc, portal.ear">
+		<echo message="copying portal ear to ${wlsdeploypath}"/>
+		<copy file="${stagingdir}/portal.ear"
+				todir="${wlsdeploypath}"/>
+	</target>
+
+	<target name="source.jar">
+		<tstamp>
+			<format property="arch_stamp" pattern="yyMMdd_hhmm"/>
+		</tstamp>
+
+		<jar jarfile="iobeam_${arch_stamp}.jar"
+			basedir="."
+			includes="docs/**, dd/**, etc/**, src/**, build.xml"/>
+	</target>
+
+	<target name="venue.usage" depends="compile">
+		<java 
+		classname="com.iobeam.portal.model.gateway.usercontact.AccessUserContactClient">
+			<classpath refid="client.classpath"/>
+
+			<sysproperty key="DEBUG" value="true"/>
+			<arg value="t3://iobeam.com:80"/>
+			<arg value="weblogic"/>
+			<arg value="password"/>
+			<arg value="81"/>
+			<arg value="01/01/2004 00:00:00"/>
+			<arg value="01/01/2005 00:00:00"/>
+		</java>
+	</target>
+
+	<target name="venue.register" depends="compile">
+		<java 
+		classname="com.iobeam.portal.task.customer.managevenue.ManageVenueClient">
+			<classpath refid="client.classpath"/>
+
+			<sysproperty key="DEBUG" value="true"/>
+			<arg value="iobeam.com"/>
+			<arg value="80"/>
+			<arg value="weblogic"/>
+			<arg value="password"/>
+			<arg value="register"/>
+		</java>
+	</target>
+
+	<target name="venue.install" depends="compile">
+		<java 
+		classname="com.iobeam.portal.task.customer.managevenue.ManageVenueClient">
+			<classpath refid="client.classpath"/>
+
+			<sysproperty key="DEBUG" value="true"/>
+			<arg value="iobeam.com"/>
+			<arg value="7001"/>
+			<arg value="weblogic"/>
+			<arg value="password"/>
+			<arg value="install"/>
+		</java>
+	</target>
+	<target name="venue.create" depends="compile">
+		<java 
+		classname="com.iobeam.portal.task.customer.setupvenue.SetupVenueClient">
+			<classpath refid="client.classpath"/>
+
+			<sysproperty key="DEBUG" value="true"/>
+			<arg value="iobeam.com"/>
+			<arg value="7001"/>
+			<arg value="weblogic"/>
+			<arg value="password"/>
+			<arg value="public"/>
+			<arg value="create"/>
+		</java>
+	</target>
+	
+	<target name="gw.jspc" depends="init">
+		<java classname="org.apache.jasper.JspC">
+			<classpath refid="project.classpath"/>
+			<arg line="-p com.iobeam.gateway.web -uriroot ${docrootdir}/gateway
+					-webapp ${docrootdir}/gateway -d
+					${srcdir}/com/iobeam/gateway/web
+					-webinc gw.admin.web.xml"/>
+		</java>
+	</target>
+
+
+</project>

@@ -1,0 +1,50 @@
+services - venue operator
+
+Do you own or operate a restarant, cafe, office building or other location
+where people congregate?
+
+Information is everything.  Access to information has revolutionized modern
+society.  It has changed the landscape of business and leisure forever.
+
+Would you like to be on the cutting edge and offer your current customers and
+potential customers the ability to be connected while at your location?  
+
+Benefits:
+Differentiate yourself from your competitor by allowing your patrons to be
+connected while at your location.
+
+We help promote your location!
+
+Create a new revenue stream for your business. 
+
+What's required:
+
+Iobeam wireless requires an internet connection at your location.  The
+connection type and speed is irrelevant.  Our serivce works over ISDN, DSL,
+T1.  It does *NOT* require a static IP address.
+
+Iobeam wireless requires an Iobeam Service Gateway at each location you wish
+you deploy wireless service.  You can purchase the gateway or use one of our
+convenient lease options.
+
+After a site survey, it might be necessary to add specialized antennas to
+maximize coverage and signal strength at your location.  Most indoor locations
+need only the standard antenna, included with the Iobeam Service Gateway.
+
+How it works:
+
+Install an internet connection at your location.  Purchase an Iobeam Service
+Gateway from our online store, from your local sales representative or through 
+an authorized Iobeam reseller.
+
+Connect the gateway and configure it to use your ISP.
+
+Wireless users can then immediately come and enjoy the benefits of wireless
+internet access at your location.
+
+At the end of every billing cycle, you will receive a revenue-share  check from Iobeam for
+each installed location.
+
+
+
+

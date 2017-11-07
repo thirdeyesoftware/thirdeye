@@ -1,0 +1,3 @@
+nameserver ${iobeam.gateway.address.dns.1}
+nameserver ${iobeam.gateway.address.dns.2}
+

@@ -1,0 +1,137 @@
+<%@page info="index page"
+	import="com.iobeam.portal.ui.web.user.UserSessionHelper"%>
+
+<%@taglib uri="/WEB-INF/struts-html.tld" prefix="html"%>
+
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+		<title>iobeam : wireless where you need it :</title>
+		<link rel="stylesheet" href="/iobeam.css">
+		<style media="screen" type="text/css"><!--
+#news  { position: absolute; top: 375px; left: 32px; width: 475px; height: 100px; visibility: visible }
+#layer1 { position: absolute; top: 330px; left: 32px; width: 450px; height: 18px; visibility: visible }
+#layer2 { position: absolute; top: 517px; left: 145px; width: 352px; height: 32px; visibility: visible }
+--></style>
+	</head>
+
+	<body bgcolor="#ffffff" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" background="/images/splash/splashBkgd.jpg">
+		<table cool width="761" height="560" usegridx usegridy showgridx showgridy gridx="16" gridy="16" border="0" cellpadding="0" cellspacing="0">
+			<tr height="137">
+				<td width="523" height="137" colspan="2" valign="top" align="left" xpos="0"><img src="/images/splash/splash_01.jpg" width="523" height="137" border="0"></td>
+				<td width="237" height="137" valign="top" align="left" xpos="523"><img src="/images/splash/splash_02.jpg" width="237" height="137" border="0"></td>
+				<td width="1" height="137"><spacer type="block" width="1" height="137"></td>
+			</tr>
+			<tr height="24">
+				<td width="760" height="24" colspan="3" valign="top" align="left" xpos="0"><img src="/images/splash/splash_03.jpg" width="760" height="24" border="0"></td>
+				<td width="1" height="24"><spacer type="block" width="1" height="24"></td>
+			</tr>
+			<tr height="145">
+				<td width="760" height="145" colspan="3" valign="top" align="left" xpos="0"><img src="/images/splash/splash_04.jpg" width="760" height="145" border="0"></td>
+				<td width="1" height="145"><spacer type="block" width="1" height="145"></td>
+			</tr>
+			<tr height="25">
+				<td width="760" height="25" colspan="3" valign="top" align="left" xpos="0"><img src="/images/splash/splash_05.jpg" width="760" height="25" border="0"></td>
+				<td width="1" height="25"><spacer type="block" width="1" height="25"></td>
+			</tr>
+			<tr height="13">
+				<td width="523" height="13" colspan="2" valign="top" align="left" xpos="0"><img src="/images/splash/splash_06.jpg" width="523" height="13" border="0"></td>
+				<td width="237" height="13" valign="top" align="left" xpos="523"><img src="/images/splash/splash_07.jpg" width="237" height="13" border="0"></td>
+				<td width="1" height="13"><spacer type="block" width="1" height="13"></td>
+			</tr>
+			<tr height="32">
+				<td width="760" height="32" colspan="3" valign="top" align="left" xpos="0"><img src="/images/splash/splash_08.jpg" width="760" height="32" border="0"></td>
+				<td width="1" height="32"><spacer type="block" width="1" height="32"></td>
+			</tr>
+			<tr height="97">
+				<td width="522" height="97" valign="top" align="left" xpos="0"><img src="/images/splash/splash_09.jpg" width="522" height="97" border="0"></td>
+				<td width="238" height="183" colspan="2" rowspan="2" valign="top" align="left" xpos="522"><img src="/images/splash/splash_10.jpg" width="238" height="183" border="0" usemap="#splash_10bad3f5b0"></td>
+				<td width="1" height="97"><spacer type="block" width="1" height="97"></td>
+<% if (UserSessionHelper.getUserSession(request.getSession()) == null) { %>
+			<tr height="86">
+				<td width="522" height="86" valign="top" align="left" xpos="0"><img src="/images/splash/splash_11.jpg" width="522" height="86" border="0"></td>
+				<td width="1" height="86"><spacer type="block" width="1" height="86"></td>
+			</tr>
+<% } %>
+
+			
+			<tr height="1" cntrlrow>
+				<td width="522" height="1"><spacer type="block" width="522" height="1"></td>
+				<td width="1" height="1"><spacer type="block" width="1" height="1"></td>
+				<td width="237" height="1"><spacer type="block" width="237" height="1"></td>
+				<td width="1" height="1"></td>
+			</tr>
+		</table>
+		<br>
+		<table border="0" cellpadding="0" cellspacing="0" width="760">
+			<tr>
+				<td width="100"></td>
+				<td><span class="footer"><span class="class">copyright&copy;2003 iobeam, Inc. : web site design by: lead free studio</span></span></td>
+			</tr>
+		</table>
+		<div id="news">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+					<td valign="top"><span class="newshead">Four Points Sheraton<br>
+						</span><span class="newsbody"><span class="class">i<i>o</i>beam
+						is proud to announce to addition of Four Points Sheraton<BR>
+						Oklahoma City Airport
+							</span></span><a href="#">:&gt; more</a></td>
+					<td width="15"></td>
+					<td valign="top"><span class="newshead">
+						<a href="http://www.atlantaclassiccars.com/Splash/Mercedes%20
+						Benz/" target="_new"><font class="linkfont">Atlanta
+						Classic Cars</font></a><br>
+						</span><span class="newsbody"><span class="class">i<i>o</i>beam
+						provides Wireless Internet Access to customers while they wait.
+						<BR>
+							</span></span><span class="newshead">:&gt; Details
+							Soon</span></td>
+					<td width="15"></td>
+					<td valign="top"><span class="newshead">Sonic Automotive<br>
+						</span><span class="newsbody"><span class="class">i<i>o</i>beam
+						selected to serve broadband wi-fi at Sonic Auto dealerships across
+						the US!
+						<BR>
+							</span></span><a target="_new" href="#">:&gt; more</a></td>
+				</tr>
+			</table>
+		</div> 
+		
+		<div id="layer2">
+		<% if (UserSessionHelper.getUserSession(request.getSession()) == null ||
+				UserSessionHelper.getUserSession(request.getSession()).getCustomer() == null) { %>
+			<form action="<%=response.encodeURL(
+				"https://" + request.getServerName() + 
+				"/user/portalsignonuseraction.do")%>"
+			method="post">
+			<input type="hidden" name="type" value="portalcredentials">
+			<table border="0" cellpadding="0" cellspacing="0" width="350">
+				<tr>
+					<td width="115" valign="middle"><input type="text" name="username" size="14" maxlength="20"></td>
+					<td valign="middle" width="100"><input type="password" name="password"  size="14" maxlength="15"></td>
+					<td valign="middle"><input type="image" src="/images/splash/splashGObutton.jpg"></td>
+				</tr>
+			</table>
+			</form>
+
+		<% } else {  %>
+			<table borde=r0 cellpadding=0 cellspacing=0 width="350">
+				<tr>
+					<td align="center" valign="middle">You are currently logged in.  To
+					enter the customer portal, click <a href="/jsp/portalwelcome.jsp"><font
+					class="linkfont">here</font></a>.
+					</td>
+				</tr>
+			</table>
+		<% } %>
+		</div>
+		<div id="layer1">
+			<div align="right">
+				<a href="/jsp/technology.jsp">the technology</a><span class="newsbody">  :  </span><a href="/jsp/services.jsp">services  </a><span class="newsbody">:  </span><a href="/jsp/products.jsp">products</a><span class="newsbody">  :  </span><a href="/jsp/contact.jsp">contact us</a><span class="newsbody">  :  </span><a href="/jsp/referLocation.jsp">refer a location</a><span class="newsbody">  :  </span><a href="https://www.iobeam.com/user/signup.jsp">sign up</a></div>
+		</div>
+		<map name="splash_10bad3f5b0"><area shape="rect" coords="11,34,231,91" href="<%=response.encodeURL("/jsp/referLocation.jsp")%>"></map>
+	</body>
+
+</html>

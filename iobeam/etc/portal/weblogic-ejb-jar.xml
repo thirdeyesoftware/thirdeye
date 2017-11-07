@@ -1,0 +1,295 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE weblogic-ejb-jar PUBLIC 
+'-//BEA Systems, Inc.//DTD WebLogic 7.0.0 EJB//EN' 
+'http://www.bea.com/servers/wls700/dtd/weblogic-ejb-jar.dtd'>
+
+<weblogic-ejb-jar>
+		
+	<weblogic-enterprise-bean>
+		<ejb-name>Sequence</ejb-name>
+		<transaction-descriptor>
+			<trans-timeout-seconds>360</trans-timeout-seconds>
+		</transaction-descriptor>
+		<jndi-name>iobeam.portal.SequenceHome</jndi-name>
+	</weblogic-enterprise-bean>
+	
+	<weblogic-enterprise-bean>
+		<ejb-name>Account</ejb-name>
+		<transaction-descriptor>
+			<trans-timeout-seconds> 360 </trans-timeout-seconds>
+		</transaction-descriptor>
+		<jndi-name>iobeam.portal.AccountHome</jndi-name>
+	</weblogic-enterprise-bean>
+
+	<weblogic-enterprise-bean>
+		<ejb-name>AccessAccount</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds> 360 </trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.AccessAccountHome</jndi-name>
+	</weblogic-enterprise-bean>
+	
+	<weblogic-enterprise-bean>
+		<ejb-name>AccessCustomerNotice</ejb-name>
+		<transaction-descriptor>
+			<trans-timeout-seconds> 360 </trans-timeout-seconds>
+		</transaction-descriptor>
+		<jndi-name>iobeam.portal.AccessCustomerNoticeHome</jndi-name>
+	</weblogic-enterprise-bean>
+	
+	<weblogic-enterprise-bean>
+		<ejb-name>BillableCustomer</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds> 360 </trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.BillableCustomerHome</jndi-name>
+	</weblogic-enterprise-bean>
+	
+	<weblogic-enterprise-bean>
+		<ejb-name>Customer</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds> 360 </trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.CustomerHome</jndi-name>
+	</weblogic-enterprise-bean>
+
+	<weblogic-enterprise-bean>
+		<ejb-name>ProcessAccounts</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.ProcessAccountsHome</jndi-name>
+	</weblogic-enterprise-bean>
+
+	<weblogic-enterprise-bean>
+		<ejb-name>AccessInvoice</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.AccessInvoiceHome</jndi-name>
+	</weblogic-enterprise-bean>
+	
+	<weblogic-enterprise-bean>
+		<ejb-name>NotifyBillableParty</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.NotifyBillablePartyHome</jndi-name>
+	</weblogic-enterprise-bean>
+	
+	<weblogic-enterprise-bean>
+		<ejb-name>BillingController</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.BillingControllerHome</jndi-name>
+	</weblogic-enterprise-bean>
+	
+	<weblogic-enterprise-bean>
+		<ejb-name>ProcessStatements</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.ProcessStatementsHome</jndi-name>
+	</weblogic-enterprise-bean>
+	
+	<weblogic-enterprise-bean>
+		<ejb-name>ApplyPayment</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.ApplyPayment</jndi-name>
+	</weblogic-enterprise-bean>
+
+	<weblogic-enterprise-bean>
+		<ejb-name>ProcessAutomaticPayment</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.ProcessAutomaticPayment</jndi-name>
+	</weblogic-enterprise-bean>
+
+	<weblogic-enterprise-bean>
+		<ejb-name>ProcessInvoices</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.ProcessInvoicesHome</jndi-name>
+	</weblogic-enterprise-bean>
+
+	<weblogic-enterprise-bean>
+		<ejb-name>CreateInvoice</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.CreateInvoiceHome</jndi-name>
+	</weblogic-enterprise-bean>
+
+	<weblogic-enterprise-bean>
+		<ejb-name>AccessProduct</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.AccessProductHome</jndi-name>
+	</weblogic-enterprise-bean>
+
+	<weblogic-enterprise-bean>
+		<ejb-name>AccessSubscription</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.AccessSubscriptionHome</jndi-name>
+	</weblogic-enterprise-bean>
+
+	<weblogic-enterprise-bean>
+		<ejb-name>ManageVenue</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.ManageVenueHome</jndi-name>
+	</weblogic-enterprise-bean>
+
+	<weblogic-enterprise-bean>
+		<ejb-name>ManageUser</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.ManageUserHome</jndi-name>
+	</weblogic-enterprise-bean>
+
+	<weblogic-enterprise-bean>
+		<ejb-name>SetupVenue</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.SetupVenueHome</jndi-name>
+	</weblogic-enterprise-bean>
+
+	<weblogic-enterprise-bean>
+		<ejb-name>SetupUser</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.SetupUserHome</jndi-name>
+	</weblogic-enterprise-bean>
+
+	<weblogic-enterprise-bean>
+		<ejb-name>ManageCustomer</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.ManageCustomerHome</jndi-name>
+	</weblogic-enterprise-bean>
+	
+	<weblogic-enterprise-bean>
+		<ejb-name>AccessSubscriptionPrototype</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.AccessSubscriptionPrototypeHome</jndi-name>
+	</weblogic-enterprise-bean>
+
+	<weblogic-enterprise-bean>
+		<ejb-name>AccessUser</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.AccessUserHome</jndi-name>
+	</weblogic-enterprise-bean>
+	
+	<weblogic-enterprise-bean>
+		<ejb-name>NotifyGateway</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.NotifyGatewayHome</jndi-name>
+	</weblogic-enterprise-bean>
+	
+	<weblogic-enterprise-bean>
+		<ejb-name>ManageUserContact</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.ManageUserContactHome</jndi-name>
+	</weblogic-enterprise-bean>
+
+	<weblogic-enterprise-bean>
+		<ejb-name>SignonUser</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.SignonUserHome</jndi-name>
+	</weblogic-enterprise-bean>
+
+	<weblogic-enterprise-bean>
+		<ejb-name>ManageSubscription</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.ManageSubscriptionHome</jndi-name>
+	</weblogic-enterprise-bean>
+
+	<weblogic-enterprise-bean>
+		<ejb-name>AccessCountry</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.AccessCountryHome</jndi-name>
+	</weblogic-enterprise-bean>
+
+	<weblogic-enterprise-bean>
+		<ejb-name>UserSession</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.UserSessionHome</jndi-name>
+	</weblogic-enterprise-bean>
+
+	<weblogic-enterprise-bean>
+		<ejb-name>AccessVenue</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.AccessVenueHome</jndi-name>
+	</weblogic-enterprise-bean>
+	
+	<weblogic-enterprise-bean>
+		<ejb-name>AccessUserContact</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.AccessUserContactHome</jndi-name>
+	</weblogic-enterprise-bean>
+
+	<weblogic-enterprise-bean>
+		<ejb-name>AccessAsset</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.AccessAssetHome</jndi-name>
+	</weblogic-enterprise-bean>
+	
+	<weblogic-enterprise-bean>
+		<ejb-name>AccessGateway</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.AccessGatewayHome</jndi-name>
+	</weblogic-enterprise-bean>
+
+	<weblogic-enterprise-bean>
+		<ejb-name>RegisterGateway</ejb-name>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+		<jndi-name>iobeam.portal.RegisterGatewayHome</jndi-name>
+	</weblogic-enterprise-bean>
+
+	<weblogic-enterprise-bean>
+		<ejb-name>MailerService</ejb-name>
+		<message-driven-descriptor>
+			<destination-jndi-name>
+				iobeam.portal.MailerQueue
+			</destination-jndi-name>
+		</message-driven-descriptor>
+		<transaction-descriptor><trans-timeout-seconds>
+			360
+		</trans-timeout-seconds></transaction-descriptor>
+	</weblogic-enterprise-bean>
+
+</weblogic-ejb-jar>

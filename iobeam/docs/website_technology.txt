@@ -1,0 +1,19 @@
+technology
+
+
+Iobeam's wireless network uses industry standards to communicate wirelessly
+between the network access point and client devices such as PDAs and laptops.
+The defacto standard and most commonly deployed wireless networks use
+the unlicensed 2.4ghz radio frequency and the 802.11b protocol,
+also called WiFi.  Wireless reception distance can vary but can be between 200 and 1000
+feet.  Signal reception depends on many factors.  Environments free of radio
+noise and other electro-magnetic interference yield the strongest signal and
+longest ranges.
+
+The Iobeam Service Gateway is a small, highly integrated  access device that 
+provides a connection  between the hot spot venue and Iobeam's authentication and 
+usage accounting services.  Hot Spot operators connect the ISG to their ISDN, DSL or 
+Cable modems.  The ISG also has the capability to bridge the wireless network and an
+existing local area network.  Once the ISG is configured, the hot spot location
+is ready to accept wireless internet users.  
+

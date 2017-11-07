@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE ejb-jar PUBLIC 
+'-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 2.0//EN' 
+'http://java.sun.com/dtd/ejb-jar_2_0.dtd'>
+
+<ejb-jar>
+  <description>iobeam middleware</description>
+  <display-name>iobeam portal services</display-name>
+  <enterprise-beans>
+		<entity>
+			<ejb-name>Account</ejb-name>
+			<home>com.iobeam.portal.model.account.AccountHome</home>
+			<remote>com.iobeam.portal.model.account.Account</remote>
+			<ejb-class>com.iobeam.portal.model.account.AccountBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>com.iobeam.portal.model.account.AccountPK</prim-key-class>
+			<reentrant>False</reentrant>
+		</entity>
+		
+		<entity>
+			<ejb-name>Customer</ejb-name>
+			<home>com.iobeam.portal.model.customer.CustomerHome</home>
+			<remote>com.iobeam.portal.model.customer.Customer</remote>
+			<ejb-class>com.iobeam.portal.model.customer.CustomerBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>com.iobeam.portal.model.customer.CustomerPK</prim-key-class>
+			<reentrant>False</reentrant>
+		</entity>
+		
+		<entity>
+			<ejb-name>BillableCustomer</ejb-name>
+			<home>com.iobeam.portal.model.billablecustomer.BillableCustomerHome</home>
+			<remote>com.iobeam.portal.model.billablecustomer.BillableCustomer</remote>
+			<ejb-class>com.iobeam.portal.model.billablecustomer.BillableCustomerBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>com.iobeam.portal.model.billablecustomer.BillableCustomerPK</prim-key-class>
+			<reentrant>False</reentrant>
+		</entity>
+
+		<message-driven>
+			<ejb-name>MailerService</ejb-name>
+			<ejb-class>com.iobeam.portal.service.jms.mailer.MailerServiceBean</ejb-class>
+			<transaction-type>Container</transaction-type>
+			<message-driven-destination>
+				<destination-type>
+					javax.jms.Queue
+				</destination-type>
+			</message-driven-destination>
+		</message-driven>
+		
+		<session>
+			<ejb-name>AccessCustomerNotice</ejb-name>
+			<home>com.iobeam.portal.model.customernotice.AccessCustomerNoticeHome</home>
+			<remote>com.iobeam.portal.model.customernotice.AccessCustomerNotice</remote>
+			<ejb-class>com.iobeam.portal.model.customernotice.AccessCustomerNoticeBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+    </session>
+
+		<session>
+			<ejb-name>AccessAccount</ejb-name>
+			<home>com.iobeam.portal.model.account.AccessAccountHome</home>
+			<remote>com.iobeam.portal.model.account.AccessAccount</remote>
+			<ejb-class>com.iobeam.portal.model.account.AccessAccountBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+    </session>
+  
+		<session>
+			<ejb-name>AccessInvoice</ejb-name>
+			<home>com.iobeam.portal.model.invoice.AccessInvoiceHome</home>
+			<remote>com.iobeam.portal.model.invoice.AccessInvoice</remote>
+			<ejb-class>com.iobeam.portal.model.invoice.AccessInvoiceBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+    </session>
+		
+		<session>
+			<ejb-name>NotifyBillableParty</ejb-name>
+			<home>com.iobeam.portal.task.billing.notifybillableparty.NotifyBillablePartyHome</home>
+			<remote>com.iobeam.portal.task.billing.notifybillableparty.NotifyBillableParty</remote>
+			<ejb-class>com.iobeam.portal.task.billing.notifybillableparty.NotifyBillablePartyBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+    </session>
+		
+		<session>
+			<ejb-name>BillingController</ejb-name>
+			<home>com.iobeam.portal.task.billing.BillingControllerHome</home>
+			<remote>com.iobeam.portal.task.billing.BillingController</remote>
+			<ejb-class>com.iobeam.portal.task.billing.BillingControllerBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+    </session>
+		
+		<session>
+			<ejb-name>CreateInvoice</ejb-name>
+			<home>com.iobeam.portal.task.billing.invoice.createinvoice.CreateInvoiceHome</home>
+			<remote>com.iobeam.portal.task.billing.invoice.createinvoice.CreateInvoice</remote>
+			<ejb-class>com.iobeam.portal.task.billing.invoice.createinvoice.CreateInvoiceBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+    </session>
+		
+		<session>
+			<ejb-name>ProcessStatements</ejb-name>
+			<home>com.iobeam.portal.task.billing.statement.processstatements.ProcessStatementsHome</home>
+			<remote>com.iobeam.portal.task.billing.statement.processstatements.ProcessStatements</remote>
+			<ejb-class>com.iobeam.portal.task.billing.statement.processstatements.ProcessStatementsBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+    </session>
+		
+		<session>
+			<ejb-name>ApplyPayment</ejb-name>
+			<home>com.iobeam.portal.task.billing.payment.applypayment.ApplyPaymentHome</home>
+			<remote>com.iobeam.portal.task.billing.payment.applypayment.ApplyPayment</remote>
+			<ejb-class>com.iobeam.portal.task.billing.payment.applypayment.ApplyPaymentBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+    </session>
+		
+		<session>
+			<ejb-name>ProcessAutomaticPayment</ejb-name>
+			<home>com.iobeam.portal.task.billing.payment.processautomaticpayment.ProcessAutomaticPaymentHome</home>
+			<remote>com.iobeam.portal.task.billing.payment.processautomaticpayment.ProcessAutomaticPayment</remote>
+			<ejb-class>com.iobeam.portal.task.billing.payment.processautomaticpayment.ProcessAutomaticPaymentBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+    </session>
+		
+		<session>
+			<ejb-name>ProcessInvoices</ejb-name>
+			<home>com.iobeam.portal.task.billing.invoice.processinvoices.ProcessInvoicesHome</home>
+			<remote>com.iobeam.portal.task.billing.invoice.processinvoices.ProcessInvoices</remote>
+			<ejb-class>com.iobeam.portal.task.billing.invoice.processinvoices.ProcessInvoicesBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+    </session>
+		
+		<session>
+			<ejb-name>ProcessAccounts</ejb-name>
+			<home>com.iobeam.portal.task.billing.account.processaccounts.ProcessAccountsHome</home>
+			<remote>com.iobeam.portal.task.billing.account.processaccounts.ProcessAccounts</remote>
+			<ejb-class>com.iobeam.portal.task.billing.account.processaccounts.ProcessAccountsBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+    </session>
+
+		<session>
+			<ejb-name>AccessProduct</ejb-name>
+			<home>com.iobeam.portal.model.product.AccessProductHome</home>
+			<remote>com.iobeam.portal.model.product.AccessProduct</remote>
+			<ejb-class>com.iobeam.portal.model.product.AccessProductBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+    </session>
+		
+		<session>
+			<ejb-name>AccessUserContact</ejb-name>
+			<home>com.iobeam.portal.model.gateway.usercontact.AccessUserContactHome</home>
+			<remote>com.iobeam.portal.model.gateway.usercontact.AccessUserContact</remote>
+			<ejb-class>com.iobeam.portal.model.gateway.usercontact.AccessUserContactBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+    </session>
+
+	<session>
+		<ejb-name>AccessUser</ejb-name>
+		<home>com.iobeam.portal.model.user.AccessUserHome</home>
+		<remote>com.iobeam.portal.model.user.AccessUser</remote>
+		<ejb-class>com.iobeam.portal.model.user.AccessUserBean</ejb-class>
+		<session-type>Stateless</session-type>
+		<transaction-type>Container</transaction-type>
+    </session>
+
+	<session>
+		<ejb-name>AccessAsset</ejb-name>
+		<home>com.iobeam.portal.model.asset.AccessAssetHome</home>
+		<remote>com.iobeam.portal.model.asset.AccessAsset</remote>
+		<ejb-class>com.iobeam.portal.model.asset.AccessAssetBean</ejb-class>
+		<session-type>Stateless</session-type>
+		<transaction-type>Container</transaction-type>
+    </session>
+	
+	<session>
+		<ejb-name>AccessVenue</ejb-name>
+		<home>com.iobeam.portal.model.venue.AccessVenueHome</home>
+		<remote>com.iobeam.portal.model.venue.AccessVenue</remote>
+		<ejb-class>com.iobeam.portal.model.venue.AccessVenueBean</ejb-class>
+		<session-type>Stateless</session-type>
+		<transaction-type>Container</transaction-type>
+    </session>
+		
+	<session>
+		<ejb-name>RegisterGateway</ejb-name>
+		<home>com.iobeam.portal.task.actor.gateway.register.RegisterGatewayHome</home>
+		<remote>com.iobeam.portal.task.actor.gateway.register.RegisterGateway</remote>
+		<ejb-class>com.iobeam.portal.task.actor.gateway.register.RegisterGatewayBean</ejb-class>
+		<session-type>Stateless</session-type>
+		<transaction-type>Container</transaction-type>
+    </session>
+		
+	<session>
+		<ejb-name>AccessGateway</ejb-name>
+		<home>com.iobeam.portal.model.gateway.AccessGatewayHome</home>
+		<remote>com.iobeam.portal.model.gateway.AccessGateway</remote>
+		<ejb-class>com.iobeam.portal.model.gateway.AccessGatewayBean</ejb-class>
+		<session-type>Stateless</session-type>
+		<transaction-type>Container</transaction-type>
+    </session>
+		
+	<session>
+		<ejb-name>NotifyGateway</ejb-name>
+		<home>com.iobeam.portal.task.gateway.leasenotify.NotifyGatewayHome</home>
+		<remote>com.iobeam.portal.task.gateway.leasenotify.NotifyGateway</remote>
+		<ejb-class>com.iobeam.portal.task.gateway.leasenotify.NotifyGatewayBean</ejb-class>
+		<session-type>Stateless</session-type>
+		<transaction-type>Container</transaction-type>
+    </session>
+		
+	<session>
+		<ejb-name>ManageUserContact</ejb-name>
+		<home>com.iobeam.portal.task.gateway.manageusercontact.ManageUserContactHome</home>
+		<remote>com.iobeam.portal.task.gateway.manageusercontact.ManageUserContact</remote>
+		<ejb-class>com.iobeam.portal.task.gateway.manageusercontact.ManageUserContactBean</ejb-class>
+		<session-type>Stateless</session-type>
+		<transaction-type>Container</transaction-type>
+    </session>
+
+	<session>
+		<ejb-name>AccessSubscription</ejb-name>
+		<home>com.iobeam.portal.model.subscription.AccessSubscriptionHome</home>
+		<remote>com.iobeam.portal.model.subscription.AccessSubscription</remote>
+		<ejb-class>com.iobeam.portal.model.subscription.AccessSubscriptionBean</ejb-class>
+		<session-type>Stateless</session-type>
+		<transaction-type>Container</transaction-type>
+    </session>
+		
+	<session>
+		<ejb-name>AccessSubscriptionPrototype</ejb-name>
+		<home>com.iobeam.portal.model.prototype.subscription.AccessSubscriptionPrototypeHome</home>
+		<remote>com.iobeam.portal.model.prototype.subscription.AccessSubscriptionPrototype</remote>
+		<ejb-class>com.iobeam.portal.model.prototype.subscription.AccessSubscriptionPrototypeBean</ejb-class>
+		<session-type>Stateless</session-type>
+		<transaction-type>Container</transaction-type>
+    </session>
+		
+	<session>
+		<ejb-name>SignonUser</ejb-name>
+		<home>com.iobeam.portal.task.actor.user.signon.SignonUserHome</home>
+		<remote>com.iobeam.portal.task.actor.user.signon.SignonUser</remote>
+		<ejb-class>com.iobeam.portal.task.actor.user.signon.SignonUserBean</ejb-class>
+		<session-type>Stateless</session-type>
+		<transaction-type>Container</transaction-type>
+	</session>
+
+	<session>
+		<ejb-name>ManageSubscription</ejb-name>
+		<home>com.iobeam.portal.task.vendible.managesubscription.ManageSubscriptionHome</home>
+		<remote>com.iobeam.portal.task.vendible.managesubscription.ManageSubscription</remote>
+		<ejb-class>com.iobeam.portal.task.vendible.managesubscription.ManageSubscriptionBean</ejb-class>
+		<session-type>Stateless</session-type>
+		<transaction-type>Container</transaction-type>
+	</session>
+
+	<session>
+		<ejb-name>AccessCountry</ejb-name>
+		<home>com.iobeam.portal.model.country.AccessCountryHome</home>
+		<remote>com.iobeam.portal.model.country.AccessCountry</remote>
+		<ejb-class>com.iobeam.portal.model.country.AccessCountryBean</ejb-class>
+		<session-type>Stateless</session-type>
+		<transaction-type>Container</transaction-type>
+	</session>
+
+	<session>
+		<ejb-name>ManageVenue</ejb-name>
+		<home>com.iobeam.portal.task.customer.managevenue.ManageVenueHome</home>
+		<remote>com.iobeam.portal.task.customer.managevenue.ManageVenue</remote>
+		<ejb-class>com.iobeam.portal.task.customer.managevenue.ManageVenueBean</ejb-class>
+		<session-type>Stateless</session-type>
+		<transaction-type>Container</transaction-type>
+	</session>
+
+	<session>
+		<ejb-name>ManageUser</ejb-name>
+		<home>com.iobeam.portal.task.customer.manageuser.ManageUserHome</home>
+		<remote>com.iobeam.portal.task.customer.manageuser.ManageUser</remote>
+		<ejb-class>com.iobeam.portal.task.customer.manageuser.ManageUserBean</ejb-class>
+		<session-type>Stateless</session-type>
+		<transaction-type>Container</transaction-type>
+	</session>
+
+	<session>
+		<ejb-name>SetupVenue</ejb-name>
+		<home>com.iobeam.portal.task.customer.setupvenue.SetupVenueHome</home>
+		<remote>com.iobeam.portal.task.customer.setupvenue.SetupVenue</remote>
+		<ejb-class>com.iobeam.portal.task.customer.setupvenue.SetupVenueBean</ejb-class>
+		<session-type>Stateless</session-type>
+		<transaction-type>Container</transaction-type>
+	</session>
+
+	<session>
+		<ejb-name>SetupUser</ejb-name>
+		<home>com.iobeam.portal.task.customer.setupuser.SetupUserHome</home>
+		<remote>com.iobeam.portal.task.customer.setupuser.SetupUser</remote>
+		<ejb-class>com.iobeam.portal.task.customer.setupuser.SetupUserBean</ejb-class>
+		<session-type>Stateless</session-type>
+		<transaction-type>Container</transaction-type>
+	</session>
+
+	<session>
+		<ejb-name>ManageCustomer</ejb-name>
+		<home>com.iobeam.portal.task.customer.managecustomer.ManageCustomerHome</home>
+		<remote>com.iobeam.portal.task.customer.managecustomer.ManageCustomer</remote>
+		<ejb-class>com.iobeam.portal.task.customer.managecustomer.ManageCustomerBean</ejb-class>
+		<session-type>Stateless</session-type>
+		<transaction-type>Container</transaction-type>
+	</session>
+
+    <session>
+			<ejb-name>UserSession</ejb-name>
+			<home>com.iobeam.portal.task.actor.user.usersession.UserSessionHome</home>
+			<remote>com.iobeam.portal.task.actor.user.usersession.UserSession</remote>
+			<ejb-class>com.iobeam.portal.task.actor.user.usersession.UserSessionBean</ejb-class>
+			<session-type>Stateful</session-type>
+			<transaction-type>Container</transaction-type>
+    </session>
+
+    <session>
+			<ejb-name>Sequence</ejb-name>
+			<home>com.iobeam.portal.util.sequence.SequenceHome</home>
+			<remote>com.iobeam.portal.util.sequence.Sequence</remote>
+			<ejb-class>com.iobeam.portal.util.sequence.SequenceImpl</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+    </session>
+ 	
+ 	</enterprise-beans>
+ 
+  <assembly-descriptor>
+		<container-transaction>
+			<method>
+				<ejb-name>Account</ejb-name>
+				<method-intf>Remote</method-intf>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Required</trans-attribute>
+		</container-transaction>
+		
+		<container-transaction>
+			<method>
+				<ejb-name>Customer</ejb-name>
+				<method-intf>Remote</method-intf>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Required</trans-attribute>
+		</container-transaction>
+		
+		<container-transaction>
+			<method>
+				<ejb-name>BillableCustomer</ejb-name>
+				<method-intf>Remote</method-intf>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Required</trans-attribute>
+		</container-transaction>
+		
+		<container-transaction>
+			<method>
+				<ejb-name>AccessAccount</ejb-name>
+				<method-intf>Remote</method-intf>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Required</trans-attribute>
+		</container-transaction>
+		
+		<container-transaction>
+			<method>
+				<ejb-name>AccessInvoice</ejb-name>
+				<method-intf>Remote</method-intf>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Required</trans-attribute>
+		</container-transaction>
+		
+		<container-transaction>
+			<method>
+				<ejb-name>ProcessInvoices</ejb-name>
+				<method-intf>Remote</method-intf>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Required</trans-attribute>
+		</container-transaction>
+		
+		<container-transaction>
+			<method>
+				<ejb-name>CreateInvoice</ejb-name>
+				<method-intf>Remote</method-intf>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Required</trans-attribute>
+		</container-transaction>
+		
+		<container-transaction>
+			<method>
+				<ejb-name>ProcessAccounts</ejb-name>
+				<method-intf>Remote</method-intf>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+		
+		<container-transaction>
+			<method>
+				<ejb-name>AccessProduct</ejb-name>
+				<method-intf>Remote</method-intf>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Required</trans-attribute>
+		</container-transaction>
+		
+	<container-transaction>
+		<method>
+			<ejb-name>AccessSubscription</ejb-name>
+			<method-intf>Remote</method-intf>
+			<method-name>*</method-name>
+		</method>
+		<trans-attribute>Required</trans-attribute>
+	</container-transaction>
+		
+	<container-transaction>
+		<method>
+			<ejb-name>AccessSubscriptionPrototype</ejb-name>
+			<method-intf>Remote</method-intf>
+			<method-name>*</method-name>
+		</method>
+		<trans-attribute>Required</trans-attribute>
+	</container-transaction>
+		
+	<container-transaction>
+		<method>
+			<ejb-name>AccessVenue</ejb-name>
+			<method-intf>Remote</method-intf>
+			<method-name>*</method-name>
+		</method>
+		<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+		
+	<container-transaction>
+		<method>
+			<ejb-name>AccessUser</ejb-name>
+			<method-intf>Remote</method-intf>
+			<method-name>*</method-name>
+		</method>
+		<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+		
+	<container-transaction>
+		<method>
+			<ejb-name>AccessUserContact</ejb-name>
+			<method-intf>Remote</method-intf>
+			<method-name>*</method-name>
+		</method>
+		<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+		
+	<container-transaction>
+		<method>
+			<ejb-name>RegisterGateway</ejb-name>
+			<method-intf>Remote</method-intf>
+			<method-name>*</method-name>
+		</method>
+		<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+		
+	<container-transaction>
+		<method>
+			<ejb-name>AccessGateway</ejb-name>
+			<method-intf>Remote</method-intf>
+			<method-name>*</method-name>
+		</method>
+		<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+
+	<container-transaction>
+		<method>
+			<ejb-name>AccessAsset</ejb-name>
+			<method-intf>Remote</method-intf>
+			<method-name>*</method-name>
+		</method>
+		<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+		
+	<container-transaction>
+		<method>
+			<ejb-name>ManageUserContact</ejb-name>
+			<method-intf>Remote</method-intf>
+			<method-name>*</method-name>
+		</method>
+		<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+		
+	<container-transaction>
+		<method>
+			<ejb-name>NotifyGateway</ejb-name>
+			<method-intf>Remote</method-intf>
+			<method-name>*</method-name>
+		</method>
+		<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+
+	<container-transaction>
+		<method>
+			<ejb-name>SignonUser</ejb-name>
+			<method-intf>Remote</method-intf>
+			<method-name>*</method-name>
+		</method>
+		<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+
+	<container-transaction>
+		<method>
+			<ejb-name>ManageSubscription</ejb-name>
+			<method-intf>Remote</method-intf>
+			<method-name>*</method-name>
+		</method>
+		<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+
+	<container-transaction>
+		<method>
+			<ejb-name>AccessCountry</ejb-name>
+			<method-intf>Remote</method-intf>
+			<method-name>*</method-name>
+		</method>
+		<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+
+	<container-transaction>
+		<method>
+			<ejb-name>ManageVenue</ejb-name>
+			<method-intf>Remote</method-intf>
+			<method-name>*</method-name>
+		</method>
+		<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+
+	<container-transaction>
+		<method>
+			<ejb-name>ManageUser</ejb-name>
+			<method-intf>Remote</method-intf>
+			<method-name>*</method-name>
+		</method>
+		<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+
+	<container-transaction>
+		<method>
+			<ejb-name>SetupVenue</ejb-name>
+			<method-intf>Remote</method-intf>
+			<method-name>*</method-name>
+		</method>
+		<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+
+	<container-transaction>
+		<method>
+			<ejb-name>SetupUser</ejb-name>
+			<method-intf>Remote</method-intf>
+			<method-name>*</method-name>
+		</method>
+		<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+
+	<container-transaction>
+		<method>
+			<ejb-name>ManageCustomer</ejb-name>
+			<method-intf>Remote</method-intf>
+			<method-name>*</method-name>
+		</method>
+		<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+
+		<container-transaction>
+			<method>
+				<ejb-name>UserSession</ejb-name>
+				<method-intf>Remote</method-intf>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+
+		<container-transaction>
+			<method>
+				<ejb-name>Sequence</ejb-name>
+				<method-intf>Remote</method-intf>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+
+		<container-transaction>
+			<method>
+				<ejb-name>ApplyPayment</ejb-name>
+				<method-intf>Remote</method-intf>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+		
+		<container-transaction>
+			<method>
+				<ejb-name>ProcessAutomaticPayment</ejb-name>
+				<method-intf>Remote</method-intf>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+
+		<container-transaction>
+			<method>
+				<ejb-name>MailerService</ejb-name>
+				<method-intf>Remote</method-intf>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+
+		<container-transaction>
+			<method>
+				<ejb-name>NotifyBillableParty</ejb-name>
+				<method-intf>Remote</method-intf>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+
+		<container-transaction>
+			<method>
+				<ejb-name>BillingController</ejb-name>
+				<method-intf>Remote</method-intf>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+
+		<container-transaction>
+			<method>
+				<ejb-name>ProcessStatements</ejb-name>
+				<method-intf>Remote</method-intf>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+
+		<container-transaction>
+			<method>
+				<ejb-name>AccessCustomerNotice</ejb-name>
+				<method-intf>Remote</method-intf>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Required</trans-attribute>
+    </container-transaction>
+
+		
+	</assembly-descriptor>
+</ejb-jar>
+

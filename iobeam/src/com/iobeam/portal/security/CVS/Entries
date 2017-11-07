@@ -1,0 +1,16 @@
+/DuplicateUserException.java/1.1/Mon Jun  2 17:37:56 2003//
+/GatewayException.java/1.1/Tue Apr 29 21:30:50 2003//
+/IllegalGatewayException.java/1.2/Tue Jul  8 19:53:49 2003//
+/InvalidPasswordException.java/1.1/Mon Apr 21 22:46:50 2003//
+/MalformedPasswordException.java/1.1/Mon Apr 21 22:46:50 2003//
+/NoSuchGatewayException.java/1.2/Wed Apr 30 23:38:42 2003//
+/NoSuchUserException.java/1.2/Mon Apr 28 20:58:10 2003//
+/NoSuchVenueException.java/1.2/Fri Apr 25 22:39:57 2003//
+/PasswordException.java/1.1/Mon Apr 21 22:46:50 2003//
+/PasswordHash.java/1.4/Fri May  2 20:57:33 2003//
+/PortalKeyStore.java/1.4/Thu Jun 12 06:18:41 2003//
+/SecureID.java/1.2/Wed May  7 20:08:40 2003//
+/SecureIDFactory.java/1.5/Sat Jul 19 13:30:31 2003//
+/StringRandomizer.java/1.1/Tue Jul 22 05:08:39 2003//
+/User.java/1.4/Mon Jul 21 05:57:05 2003//
+D/rdbms////
