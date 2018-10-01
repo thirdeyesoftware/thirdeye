@@ -7,5 +7,12 @@ alias vi='/usr/local/bin/vim'
 export PATH=$PATH:/usr/local/mysql/bin
 COPYFILE_DISABLE=1
 export COPYFILE_DISABLE
-
+#export https_proxy=http://thd-corp-proxy.homedepot.com
 alias gcp='git cherry-pick'
+
+export GOOGLE_APPLICATION_CREDENTIALS=/Users/jblau/.config/gcloud/application_default_credentials.json
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/private/tmp/google-cloud-sdk/path.bash.inc' ]; then source '/private/tmp/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/private/tmp/google-cloud-sdk/completion.bash.inc' ]; then source '/private/tmp/google-cloud-sdk/completion.bash.inc'; fi
